@@ -33,7 +33,7 @@ extra:
     pegasys_website: https://pegasys.tech/
     issues: https://pegasys1.atlassian.net/secure/Dashboard.jspa?selectPageId=10000
   google:
-    analytics_id: 'UA-117921923-3'
+    tag_manager: 'GTM-T5Q86JM'
     site_verification: 'mB1S8j-y6oz3sfp36Q81dzMFyM7WEU5GHCImddGCqu8'
   search:
     language: 'en'
