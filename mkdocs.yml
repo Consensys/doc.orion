@@ -53,6 +53,7 @@ theme:
   logo: orion_logo.svg
 nav:
   - Installation:
+    - Installation Overview: Installation/Overview.md
     - Dependencies: Installation/Dependencies.md
     - Install Binary Distribution: Installation/Install-Binaries.md
     - Build from Source: Installation/Build-From-Source.md
