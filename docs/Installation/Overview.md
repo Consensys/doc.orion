@@ -8,3 +8,6 @@ You can install Orion by:
 
 * [Installing the binary distribution](Install-Binaries.md) 
 * [Building from source](Build-From-Source.md)
+
+!!! important
+    Orion requires the [Sodium crypto library](Dependencies.md) (libsodium).
