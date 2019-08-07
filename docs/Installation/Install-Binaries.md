@@ -9,7 +9,7 @@ description: Install Orion from binary distribution
 * [libsodium](Dependencies.md)
 
 !!!important
-    Orion requires Java 8+ to compile; earlier versions are not supported.
+    Orion is supported on Java 11+. Java 8 support is deprecated and will be removed in a future release.
     
 ## Install Binaries
 
