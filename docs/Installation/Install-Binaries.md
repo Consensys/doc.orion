@@ -6,6 +6,7 @@ description: Install Orion from binary distribution
 ## Prerequisites
 
 * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [libsodium](Dependencies.md)
 
 !!!important
     Orion requires Java 8+ to compile; earlier versions are not supported.
