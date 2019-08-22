@@ -68,6 +68,8 @@ nav:
   - Reference:
     - Orion Command Line: Reference/Orion-CLI-Syntax.md
     - Client API Methods: Reference/API-Methods.md
+  - Security Disclosure:
+    - Security Disclosure Policy: Security/Responsible-Disclosure.md
 
 
 markdown_extensions:
