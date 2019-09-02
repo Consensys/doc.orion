@@ -220,6 +220,6 @@ in this guide.
 [private@pegasys.tech]: mailto:private@pegasys.tech
 [Gitter]: https://gitter.im/PegaSysEng/Orion
 [Orion documentation]: https://docs.orion.pegasys.tech
-[CLA.md]: /CLA.md
-[Code Reviews]: /docs/community/code-reviews.md
+[CLA.md]: ./CLA.md
+[Code Reviews]: ./docs/community/code-reviews.md
 [MkDocs]: https://www.mkdocs.org/
