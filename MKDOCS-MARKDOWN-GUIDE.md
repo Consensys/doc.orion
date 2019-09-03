@@ -4,20 +4,20 @@ Orion documentation is written using [Markdown](https://daringfireball.net/proje
 
 However, we use two flavors of this syntax:
 
-- One for pages inside the [/docs](/docs) directory that will be rendered by [MkDocs] as described below
+- One for pages inside the [/docs] directory that will be rendered by [MkDocs] as described below
 in the [Installed Markdown Extensions](#installed-markdown-extensions) section.
 - Another using the [Github syntax](https://guides.github.com/features/mastering-markdown/) 
 for pages outside of this documentation directory. These are mainly files to support our [open source 
-community](https://github.com/PegaSysEng/Orion/community).
+community](https://github.com/PegaSysEng/doc.orion/community).
 
 ## MkDocs Documentation Website
 
 The [Orion documentation website](https://docs.orion.pegasys.tech/) is maintained by PegaSys from 
-the content of the [/docs](/docs) directory.
+the content of the [/docs] directory.
 
 ### /docs Directory
 
-The [/docs](/docs) directory in the Orion documentation repository contains all the documentation that 
+The [/docs] directory in the Orion documentation repository contains all the documentation that 
 is generated into a static HTML website using [MkDocs] and the [Mkdocs Material] theme and hosted by [readthedocs.org].
 
 The documentation is automatically updated using [WebHooks](https://docs.readthedocs.io/en/stable/webhooks.html)
@@ -27,7 +27,7 @@ Orion documentation.
 The system also detects tags in the Github repository and takes care of making the latest stable release
 and previous versions available.
 
-If any issues occur, contact the maintainers of the [Orion documentation project](https://readthedocs.org/projects/Orion/).
+If any issues occur, contact the maintainers of the [Orion documentation project](https://readthedocs.org/projects/orionprivtx/).
 
 ### MkDocs Configuration
 
@@ -35,7 +35,7 @@ If any issues occur, contact the maintainers of the [Orion documentation project
 
 Our [MkDocs] setup uses a [Mkdocs Material] theme to render the html pages. It also comes with a number of useful extensions.
 
-[MkDocs] in configured in the [mdkocs.yml](/mkdocs.yml) file.
+[MkDocs] in configured in the [mdkocs.yml](./mkdocs.yml) file.
 
 This file configures:
 
@@ -103,7 +103,7 @@ You can quickly achieve this by using a tool like http://markdowntable.com/
 ## Installed Markdown Extensions
 
 >**Important** 
-> Extensions are only available for the docs under [/docs](/docs) directory.
+> Extensions are only available for the docs under [/docs] directory.
 
 As markdown can be a bit limited when it comes to some specific rendering of code, TOCs, and other documentation 
 elements, we configured some extensions for these items.
@@ -397,6 +397,7 @@ Pygment is the implementation for this extension, refer to Pygment website for a
 
 
 
+[/docs]: ./docs
 [MkDocs]: https://www.mkdocs.org/
 [readthedocs.org]: https://readthedocs.org/
 [Mkdocs Material]: https://squidfunk.github.io/mkdocs-material/

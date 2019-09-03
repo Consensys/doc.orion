@@ -23,5 +23,5 @@ If a PR has gone 2 work days without an approver emerging, please ask on [Orion 
 This Document was adapted by the following:
 - Kubernetes collab.md, available at [kub collab]  
 
-[kub collab]: https://raw.githubusercontent.com/kubernetes/community/master/contributors/devel/collab.md
+[kub collab]: https://raw.githubusercontent.com/kubernetes/community/master/contributors/guide/collab.md
 [Orion Gitter]: https://gitter.im/PegaSysEng/orion
