@@ -3,7 +3,7 @@ description: Storing Information with PostgreSQL
 
 # Store Information with PostgreSQL
 
-PostgreSQL is an object-relational database management system you can use to store key values for Orion.
+PostgreSQL is an object-relational database you can use to store private transaction payloads for Orion. Consider using this option as an aid in [disaster recovery](Disaster-Recovery.md).
 
 ## Prerequisites
 
@@ -11,18 +11,20 @@ PostgreSQL is an object-relational database management system you can use to sto
 
 ## Set up your PostgreSQL database
 
-1. In your database, create the `store` table by using the provided DDL script, as shown in the following example: 
+In your database:
 
-    `psql -h HOST-NAME -U USER-NAME -d DATABASE-NAME -f ./docs/Configuring-Orion/database/postgres_storage.sql` 
+1. Create the `store` table by using the provided DDL script, as shown in the following example. Substute your own values for `HOST-NAME`, `USER-NAME`, and `DATABASE-NAME`.
+
+    `psql -h <HOST-NAME> -U <USER-NAME> -d <DATABASE-NAME> -f ~/orion/docs/configuring-orion/database/postgres_storage.sql` 
     
-2. In your database, specify the users for the `store` table and assign permissions to them.
+2. Specify the users for the `store` table and assign permissions to them.
 
 ## Configure Orion to use PostgreSQL
 
-In your [Orion configuration file](Configuration-File.md), specify `postgresql` for the `storage` property, as shown in the following example. Substitute your own values for `DATABASE-NAME`, `USER-NAME`, and `PASSWORD`. 
+In your [Orion configuration file](Configuration-File.md), specify `postgresql` for the `storage` property, as shown in the following example. Substitute your own values for `HOST`, `PORT`, `DATABASE-NAME`, `USER-NAME`, and `PASSWORD`. 
 
   ```
-  storage="sql:jdbc:postgresql://localhost:5432/<DATABASE-NAME>?user=<USER-NAME>&password=<PASSWORD>"
+  storage="sql:jdbc:postgresql://<HOST>:<PORT>/<DATABASE-NAME>?user=<USER-NAME>&password=<PASSWORD>"
   ```
   
 ## Test your updated configuration
