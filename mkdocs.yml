@@ -64,7 +64,6 @@ nav:
     - Configuration File: Configuring-Orion/Configuration-File.md
     - TLS: Configuring-Orion/TLS.md
     - Disaster Recovery: Configuring-Orion/Disaster-Recovery.md
-    - Disaster Recovery Examples: Configuring-Orion/Backup-Example.md
   - Reference:
     - Orion Command Line: Reference/Orion-CLI-Syntax.md
     - Client API Methods: Reference/API-Methods.md
