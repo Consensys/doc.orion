@@ -29,29 +29,29 @@ In your [Orion configuration file](Configuration-File.md), specify `postgresql` 
 
 1. Send the payload to Orion by running the following request:
 
-  ```
-  curl -X POST \
-  http://localhost:8888/send \
-  -H 'Content-Type: application/json' \
-  -d '{ 
-        "payload": "SGVsbG8sIFdvcmxkIQ==",
-        "from": "<KEY-IN-NODEKEY>.PUB",
-        "to": ["<KEY-IN-NODEKEY>.PUB"]
-      }'
-  ```
+     ```
+     curl -X POST \
+     http://localhost:8888/send \
+     -H 'Content-Type: application/json' \
+     -d '{ 
+           "payload": "SGVsbG8sIFdvcmxkIQ==",
+           "from": "<KEY-IN-NODEKEY>.PUB",
+           "to": ["<KEY-IN-NODEKEY>.PUB"]
+          }'
+      ```
 
 1. Using psql, the terminal-based front-end to PostgreSQL, retrieve the new row in the `store` table.
 
 1. Receive the payload by running the following request:
 
-  ```
-  curl -X POST \
-  http://localhost:8888/receive \
-  -H 'Content-Type: application/json' \
-  -d '{
-        "key": "<KEY-RETURNED-IN-STEP-1>",
-        "to": "<KEY-IN-NODEKEY>.PUB"
-      }'
-  ```
+     ```
+      curl -X POST \
+      http://localhost:8888/receive \
+      -H 'Content-Type: application/json' \
+      -d '{
+           "key": "<KEY-RETURNED-IN-STEP-1>",
+            "to": "<KEY-IN-NODEKEY>.PUB"
+          }'
+      ```
   
 1. Using psql, retrieve the data in the `store` table.
