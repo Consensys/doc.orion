@@ -22,7 +22,7 @@ Specify the configuration file when [starting Orion](../Reference/Orion-CLI-Synt
 | `libsodiumpath`          | Optional | Path to libsodium shared library                                                          | [Dependant on OS](#libsodiumpath) |
 | `alwayssendto`           | Optional | List of files containing public keys to include as recipients for every transaction       | `[]`                              |
 | `passwords`              | Optional | File containing [passwords](#passwords) to unlock `privatekeys`                           | `Not set`                         |
-| `storage`                | Optional | [Storage](#storage) for payloads and related information. To use PostgreSQL as your storage option, see [Using PostgreSQL](#Using-PostgreSQL).                                | `"leveldb"`                       |
+| `storage`                | Optional | [Storage](#storage) for payloads and related information. To use PostgreSQL as your storage option, see [Using PostgreSQL](Using-PostgreSQL.md).                                | `"leveldb"`                       |
 | `tls`                    | Optional | [TLS status options](TLS.md)                                                              | `"strict"`                        |
 | `tlsservercert`          | Optional | [Server TLS certificate](TLS.md#tlsservercert)                                            | `"tls-server-cert.pem"`           |
 | `tlsserverchain`         | Optional | [Files that make up the CA trust chain](TLS.md#tlsserverchain)                            | `[]`                              |
