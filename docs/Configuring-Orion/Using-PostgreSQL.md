@@ -13,7 +13,7 @@ PostgreSQL is an object-relational database you can use to store private transac
 
 In your database:
 
-1. Create the `store` table by using the provided DDL script, as shown in the following example. Substute your own values for `HOST-NAME`, `USER-NAME`, and `DATABASE-NAME`.
+1. Create the `store` table by using the provided DDL script, as shown in the following example. Substitute your own values for `HOST-NAME`, `USER-NAME`, and `DATABASE-NAME`.
 
     `psql -h <HOST-NAME> -U <USER-NAME> -d <DATABASE-NAME> -f ~<INSTALLATION_DIRECTORY>/orion/database/postgres_ddl.sql` 
     
@@ -37,8 +37,8 @@ In your [Orion configuration file](Configuration-File.md), specify `postgresql` 
      -H 'Content-Type: application/json' \
      -d '{ 
            "payload": "SGVsbG8sIFdvcmxkIQ==",
-           "from": "<KEY-IN-NODEKEY>.PUB",
-           "to": ["<KEY-IN-NODEKEY>.PUB"]
+           "from": "<OrionPublicKey>",
+           "to": ["<OrionPublicKey>"]
           }'
       ```
 
@@ -52,7 +52,7 @@ In your [Orion configuration file](Configuration-File.md), specify `postgresql` 
       -H 'Content-Type: application/json' \
       -d '{
            "key": "<KEY-RETURNED-IN-STEP-1>",
-            "to": "<KEY-IN-NODEKEY>.PUB"
+            "to": "<OrionPublicKey>"
           }'
       ```
   
