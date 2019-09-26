@@ -36,7 +36,7 @@ If you want to use a public DNS as the CN, complete the following steps:
 
 #### Generating a new certificate for a node
 
-Each node needs its own certificate. To generate the certificate, complete the following process:
+We recommend each node has its own certificate. To generate the certificate, complete the following process:
 
 1. Generate a key file called orion_cer.key by running the following command:
 
