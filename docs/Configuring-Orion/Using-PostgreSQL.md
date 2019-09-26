@@ -3,7 +3,7 @@ description: Storing Information with PostgreSQL
 
 # Store Information with PostgreSQL
 
-PostgreSQL is an object-relational database you can use to store private transaction payloads for Orion. Consider using this option as an aid in [disaster recovery](Disaster-Recovery.md).
+PostgreSQL is an object-relational database you can use to store private transaction payloads for Orion. Use a relational database to support your [disaster recovery strategy](Disaster-Recovery.md).
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ In your database:
 
 1. Create the `store` table by using the provided DDL script, as shown in the following example. Substute your own values for `HOST-NAME`, `USER-NAME`, and `DATABASE-NAME`.
 
-    `psql -h <HOST-NAME> -U <USER-NAME> -d <DATABASE-NAME> -f ~/orion/docs/configuring-orion/database/postgres_storage.sql` 
+    `psql -h <HOST-NAME> -U <USER-NAME> -d <DATABASE-NAME> -f ~<INSTALLATION_DIRECTORY>/orion/database/postgres_ddl.sql` 
     
 2. Specify the users for the `store` table and assign permissions to them.
 
