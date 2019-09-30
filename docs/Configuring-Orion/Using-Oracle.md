@@ -13,15 +13,15 @@ Oracle is an object-relational database you can use to store private transaction
 
 In your database:
 
-1. Create the `store` table by using the provided DDL script, as shown in the following example. Substitute your own values for `HOST-NAME`, `USER-NAME`, and `DATABASE-NAME`.
+1. Create the `store` table by using the provided DDL script, as shown in the following example. Substitute your own values for `USER-NAME`, `PASSWORD`, `DATABASE-NAME`, and `INSTALLATION-DIRECTORY`.
 
-    `sqlplus -h <HOST-NAME> -U <USER-NAME> -d <DATABASE-NAME> -f ~<INSTALLATION_DIRECTORY>/orion/database/oracle_ddl.sql` 
+    `sqlplus <USER-NAME>/<PASSWORD>@<DATABASE-NAME> @<INSTALLATION-DIRECTORY>/orion/database/oracle_ddl.sql` 
     
 2. Specify the users for the `store` table and assign permissions to them.
 
 ## Configure Orion to use Oracle
 
-In your [Orion configuration file](Configuration-File.md), specify `oracle` for the `storage` property, as shown in the following example. Substitute your own values for `USER-NAME`, `PASSWORD`, `HOST`, `PORT`, and `SID`. `SID` identifies a specific database on a system. 
+In your [Orion configuration file](Configuration-File.md), specify `oracle` for the `storage` property, as shown in the following example. Substitute your own values for `USER-NAME`, `PASSWORD`, `HOST`, `PORT`, and `SID`. `SID` identifies a specific Oracle database. 
 
   ```
   storage="jdbc:oracle:thin:<USER-NAME>, <PASSWORD>, <HOST>, <PORT>, <SID>"

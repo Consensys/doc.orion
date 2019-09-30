@@ -62,6 +62,7 @@ nav:
     - Privacy Groups: Using-Orion/Privacy-Groups.md
   - Configuring Orion:
     - Configuration File: Configuring-Orion/Configuration-File.md
+    - Using Oracle: Configuring-Orion/Using-Oracle.md
     - Using PostgreSQL: Configuring-Orion/Using-PostgreSQL.md
     - TLS: Configuring-Orion/TLS.md
     - Disaster Recovery: Configuring-Orion/Disaster-Recovery.md
