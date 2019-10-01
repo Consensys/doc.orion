@@ -7,7 +7,7 @@ description: Orion is an open-source private transaction manager developed under
 ## What is Orion?
 
 Orion is an open-source private transaction manager developed under the Apache 2.0 license and written in Java. 
-The primary application of Orion is as the private transaction manager for [Pantheon](https://docs.pantheon.pegasys.tech/en/stable/).
+The primary application of Orion is as the private transaction manager for [Hyperledger Besu](https://besu.hyperledger.org/en/stable/).
 
 ## What can you do with Orion?
 
@@ -20,4 +20,4 @@ Orion:
 * Self manages and discovers all nodes in the Orion network.
 
 * Provides an API for communicating between Orion nodes and an API for communicating with Ethereum 
-clients (for example, Pantheon). 
+clients (for example, Hyperlegder Besu). 
