@@ -45,7 +45,7 @@ We recommend each node has its own certificate. To generate the certificate:
   
 1. Answer each prompt for information to be added to the certificate request. Ensure the
 value you specify for Common Name (CN) matches the host public DNS so the requests from the server are accepted. The name 
-is specified in the configuration file for the `nodeurl` and `clienturl` options too.
+is also specified in the configuration file for the `nodeurl` and `clienturl` options.
 
 1. Generate a certificate called `orion_cer.pem` signed by the CA certificate:
 
