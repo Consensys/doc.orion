@@ -59,13 +59,13 @@ nav:
             - Install Binary Distribution: Installation/Install-Binaries.md
             - Build from Source: Installation/Build-From-Source.md
             - Start Orion: Getting-Started/Quickstart.md
-    - Concepts:
-        - Privacy Groups: Using-Orion/Privacy-Groups.md
-        - Disaster Recovery: Configuring-Orion/Disaster-Recovery.md
     - Tutorials:
         - Using Oracle: Configuring-Orion/Using-Oracle.md
         - Using PostgreSQL: Configuring-Orion/Using-PostgreSQL.md
         - TLS: Configuring-Orion/TLS.md
+    - Concepts:
+        - Privacy Groups: Using-Orion/Privacy-Groups.md
+        - Disaster Recovery: Configuring-Orion/Disaster-Recovery.md
     - Reference:
         - Orion Command Line: Reference/Orion-CLI-Syntax.md
         - Client API Methods: Reference/API-Methods.md
