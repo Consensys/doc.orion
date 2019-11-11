@@ -5,7 +5,7 @@ description: TLS
 
 Orion supports the Transport Layer Security (TLS) protocol to enable secure communications. TLS is used between Orion nodes only. TLS is not used between Besu and Orion nodes.
 
-Enable TLS by setting the `tls` property to `strict` in the [Orion configuration file](Configuration-File.md).  
+Enable TLS by setting the `tls` property to `strict` in the [Orion configuration file](../Reference/Configuration-File.md).  
 
 ## Generating certificates using Orion
 
@@ -158,7 +158,7 @@ To use a public IP address as CN:
 
 ## TLS Properties in Orion Configuration File 
 
-TLS properties are specified in the [configuration file](Configuration-File.md). 
+TLS properties are specified in the [configuration file](../Reference/Configuration-File.md). 
 
 ### tls 
 

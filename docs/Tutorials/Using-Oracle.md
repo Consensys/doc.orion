@@ -3,7 +3,7 @@ description: Storing Information with Oracle
 
 # Store Information with Oracle
 
-Oracle is an object-relational database you can use to store private transaction payloads for Orion. Use a relational database to support your [disaster recovery strategy](Disaster-Recovery.md).
+Oracle is an object-relational database you can use to store private transaction payloads for Orion. Use a relational database to support your [disaster recovery strategy](../Concepts/Disaster-Recovery.md).
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ In your database:
 
 ## Configure Orion to use Oracle
 
-In your [Orion configuration file](Configuration-File.md), specify `oracle` for the `storage` property, as shown in the following example. Substitute your own values for `USER-NAME`, `PASSWORD`, `HOST`, `PORT`, and `SID`. `SID` identifies a specific Oracle database. 
+In your [Orion configuration file](../Reference/Configuration-File.md), specify `oracle` for the `storage` property, as shown in the following example. Substitute your own values for `USER-NAME`, `PASSWORD`, `HOST`, `PORT`, and `SID`. `SID` identifies a specific Oracle database. 
 
   ```
   storage="jdbc:oracle:thin:<USER-NAME>, <PASSWORD>, <HOST>, <PORT>, <SID>"

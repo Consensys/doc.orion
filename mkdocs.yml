@@ -52,26 +52,24 @@ theme:
   favicon: favicon.ico
   logo: orion_logo.svg
 nav:
-  - Installation:
-    - Installation Overview: Installation/Overview.md
-    - Dependencies: Installation/Dependencies.md
-    - Install Binary Distribution: Installation/Install-Binaries.md
-    - Build from Source: Installation/Build-From-Source.md
-  - Using Orion:
-    - Getting Started: Getting-Started/Quickstart.md
-    - Privacy Groups: Using-Orion/Privacy-Groups.md
-  - Configuring Orion:
-    - Configuration File: Configuring-Orion/Configuration-File.md
-    - Using Oracle: Configuring-Orion/Using-Oracle.md
-    - Using PostgreSQL: Configuring-Orion/Using-PostgreSQL.md
-    - TLS: Configuring-Orion/TLS.md
-    - Disaster Recovery: Configuring-Orion/Disaster-Recovery.md
-  - Reference:
-    - Orion Command Line: Reference/Orion-CLI-Syntax.md
-    - Client API Methods: Reference/API-Methods.md
-  - Security Disclosure:
-    - Security Disclosure Policy: Security/Responsible-Disclosure.md
-
+    - How To:
+        - Get Started with Orion:
+            - Dependencies: HowTo/Dependencies.md
+            - Install Binary Distribution: HowTo/Install-Binaries.md
+            - Build from Source: HowTo/Build-From-Source.md
+            - Start Orion: HowTo/Quickstart.md
+    - Tutorials:
+        - Using Oracle: Tutorials/Using-Oracle.md
+        - Using PostgreSQL: Tutorials/Using-PostgreSQL.md
+        - TLS: Tutorials/TLS.md
+    - Concepts:
+        - Privacy Groups: Concepts/Privacy-Groups.md
+        - Disaster Recovery: Concepts/Disaster-Recovery.md
+    - Reference:
+        - Orion Command Line: Reference/Orion-CLI-Syntax.md
+        - Client API Methods: Reference/API-Methods.md
+        - Configuration File: Reference/Configuration-File.md
+        - Security Disclosure Policy: Reference/Responsible-Disclosure.md
 
 markdown_extensions:
   - toc:
