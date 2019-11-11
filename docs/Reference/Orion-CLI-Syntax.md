@@ -52,4 +52,4 @@ orion <configFile>
 orion orion.conf
 ```
 
-Specifies the [configuration file](../Configuring-Orion/Configuration-File.md) with which to start Orion. 
+Specifies the [configuration file](../Reference/Configuration-File.md) with which to start Orion. 

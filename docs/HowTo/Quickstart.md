@@ -2,7 +2,7 @@
 
 ## Prequisites
 
-[Orion](../Installation/Install-Binaries.md)
+[Orion](../HowTo/Install-Binaries.md)
 
 ## Starting Orion and Sending a Payload
 

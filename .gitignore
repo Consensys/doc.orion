@@ -3,3 +3,4 @@ site/
 env/
 *.out
 node_modules/
+.DS_Store

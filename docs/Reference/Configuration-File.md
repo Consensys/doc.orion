@@ -22,18 +22,18 @@ Specify the configuration file when [starting Orion](../Reference/Orion-CLI-Synt
 | `libsodiumpath`          | Optional | Path to libsodium shared library                                                          | [Dependant on OS](#libsodiumpath) |
 | `alwayssendto`           | Optional | List of files containing public keys to include as recipients for every transaction       | `[]`                              |
 | `passwords`              | Optional | File containing [passwords](#passwords) to unlock `privatekeys`                           | `Not set`                         |
-| `storage`                | Optional | [Storage](#storage) for payloads and related information. Relational databases [PostgreSQL](Using-PostgreSQL.md) and [Oracle](Using-Oracle.md) are supported.                               | `"leveldb"`                       |
-| `tls`                    | Optional | [TLS status options](TLS.md)                                                              | `"strict"`                        |
-| `tlsservercert`          | Optional | [Server TLS certificate](TLS.md#tlsservercert)                                            | `"tls-server-cert.pem"`           |
-| `tlsserverchain`         | Optional | [Files that make up the CA trust chain](TLS.md#tlsserverchain)                            | `[]`                              |
-| `tlsserverkey`           | Optional | [Private key for the server TLS certificate](TLS.md#tlsserverkey)                         | `"tls-server-key.pem"`            |
-| `tlsservertrust`         | Optional | [TLS trust mode for the server](TLS.md#tlsservertrust)                                    | `"tofu"`                          |
-| `tlsknownclients`        | Optional | [TLS known clients for the server](TLS.md#tlsknownclients)                                | `"tls-known-clients"`             |
-| `tlsclientcert`          | Optional | [Client TLS certificate](TLS.md#tlsclientcert)                                            | `"tls-client-cert.pem"`           |
-| `tlsclientchain`         | Optional | [Files that make up the CA trust chain](TLS.md#tlsclientchain)                            | `[]`                              |
-| `tlsclientkey`           | Optional | [Private key for the client TLS certificate](TLS.md#tlsclientkey)                         | `"tls-client-key.pem"`            |
-| `tlsclienttrust`         | Optional | [TLS trust mode for the client](TLS.md#tlsclienttrust)                                    | `"ca-or-tofu"`                    |
-| `tlsknownservers`        | Optional | [TLS known servers for the client](TLS.md#tlsknownservers)                                | `"tls-known-servers"`             |
+| `storage`                | Optional | [Storage](#storage) for payloads and related information. Relational databases [PostgreSQL](../Tutorials/Using-PostgreSQL.md) and [Oracle](../Tutorials/Using-Oracle.md) are supported.                               | `"leveldb"`                       |
+| `tls`                    | Optional | [TLS status options](../Tutorials/TLS.md)                                                              | `"strict"`                        |
+| `tlsservercert`          | Optional | [Server TLS certificate](../Tutorials/TLS.md#tlsservercert)                                            | `"tls-server-cert.pem"`           |
+| `tlsserverchain`         | Optional | [Files that make up the CA trust chain](../Tutorials/TLS.md#tlsserverchain)                            | `[]`                              |
+| `tlsserverkey`           | Optional | [Private key for the server TLS certificate](../Tutorials/TLS.md#tlsserverkey)                         | `"tls-server-key.pem"`            |
+| `tlsservertrust`         | Optional | [TLS trust mode for the server](../Tutorials/TLS.md#tlsservertrust)                                    | `"tofu"`                          |
+| `tlsknownclients`        | Optional | [TLS known clients for the server](../Tutorials/TLS.md#tlsknownclients)                                | `"tls-known-clients"`             |
+| `tlsclientcert`          | Optional | [Client TLS certificate](../Tutorials/TLS.md#tlsclientcert)                                            | `"tls-client-cert.pem"`           |
+| `tlsclientchain`         | Optional | [Files that make up the CA trust chain](../Tutorials/TLS.md#tlsclientchain)                            | `[]`                              |
+| `tlsclientkey`           | Optional | [Private key for the client TLS certificate](../Tutorials/TLS.md#tlsclientkey)                         | `"tls-client-key.pem"`            |
+| `tlsclienttrust`         | Optional | [TLS trust mode for the client](../Tutorials/TLS.md#tlsclienttrust)                                    | `"ca-or-tofu"`                    |
+| `tlsknownservers`        | Optional | [TLS known servers for the client](../Tutorials/TLS.md#tlsknownservers)                                | `"tls-known-servers"`             |
 
 ### libsodiumpath
 

@@ -2,7 +2,7 @@
 
 The Client API is used by Ethereum clients (for example, Hyperledger Besu) to interact with Orion.
 
-The port used by the Client API is defined by the `clientport ` property in the [configuration file](../Configuring-Orion/Configuration-File.md). 
+The port used by the Client API is defined by the `clientport ` property in the [configuration file](../Reference/Configuration-File.md). 
 The default port is `8888`.
 
 ## createPrivacyGroup

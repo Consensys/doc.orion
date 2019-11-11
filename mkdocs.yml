@@ -54,23 +54,22 @@ theme:
 nav:
     - How To:
         - Get Started with Orion:
-            - Installation Overview: Installation/Overview.md
-            - Dependencies: Installation/Dependencies.md
-            - Install Binary Distribution: Installation/Install-Binaries.md
-            - Build from Source: Installation/Build-From-Source.md
-            - Start Orion: Getting-Started/Quickstart.md
+            - Dependencies: HowTo/Dependencies.md
+            - Install Binary Distribution: HowTo/Install-Binaries.md
+            - Build from Source: HowTo/Build-From-Source.md
+            - Start Orion: HowTo/Quickstart.md
     - Tutorials:
-        - Using Oracle: Configuring-Orion/Using-Oracle.md
-        - Using PostgreSQL: Configuring-Orion/Using-PostgreSQL.md
-        - TLS: Configuring-Orion/TLS.md
+        - Using Oracle: Tutorials/Using-Oracle.md
+        - Using PostgreSQL: Tutorials/Using-PostgreSQL.md
+        - TLS: Tutorials/TLS.md
     - Concepts:
-        - Privacy Groups: Using-Orion/Privacy-Groups.md
-        - Disaster Recovery: Configuring-Orion/Disaster-Recovery.md
+        - Privacy Groups: Concepts/Privacy-Groups.md
+        - Disaster Recovery: Concepts/Disaster-Recovery.md
     - Reference:
         - Orion Command Line: Reference/Orion-CLI-Syntax.md
         - Client API Methods: Reference/API-Methods.md
-        - Configuration File: Configuring-Orion/Configuration-File.md
-        - Security Disclosure Policy: Security/Responsible-Disclosure.md
+        - Configuration File: Reference/Configuration-File.md
+        - Security Disclosure Policy: Reference/Responsible-Disclosure.md
 
 markdown_extensions:
   - toc:
