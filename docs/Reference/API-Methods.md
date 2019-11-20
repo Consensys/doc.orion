@@ -141,6 +141,41 @@ Content-Type: application/json
     ]
     ``` 
 
+## knownnodes
+
+Returns a list of nodes discovered by Orion.
+
+**HTTP Verb**
+GET 
+
+**Headers:**
+None
+
+**Request Body**
+None
+
+**Returns**
+
+`array of objects` - Public key and URL for each discovered node.
+
+!!! example
+    ```bash tab="curl HTTP request"
+    curl -X GET http://127.0.0.1:8888/knownnodes
+    ```
+   
+    ```json tab="Result"
+    [
+      {
+        "publicKey": "i/6jwvVSK/V2qvbXSuXG6/jEHZFcjkE/qLD3rs47PDs=",
+        "nodeUrl": "http://127.0.0.1:8080/"
+      },
+      {
+        "publicKey": "Gy/mgkqgCZ960o9pmYAONmPHRD0LDH/5ymywNLrzz08=",
+        "nodeUrl": "http://127.0.0.1:9090/"
+      }
+    ]
+    ```
+
 ## receive
 
 Receives a payload from Orion using the payload key. The payload key is returned by the [send](#send) method.
