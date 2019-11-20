@@ -143,7 +143,7 @@ Content-Type: application/json
 
 ## knownnodes
 
-Returns a list of nodes discovered by Orion.
+Returns the public key and URL for nodes discovered by Orion.
 
 **HTTP Verb**
 GET 
