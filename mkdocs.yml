@@ -103,6 +103,4 @@ plugins:
   - markdownextradata
   - exclude:
       glob:
-        - development/*
-        - community/*
         - global/*
