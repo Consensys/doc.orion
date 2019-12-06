@@ -1,18 +1,16 @@
 ---
 version: 2.1
 executors:
+  working_directory: ~/project
   python_executor:
     docker:
       - image: circleci/python:3.7.4
-      - working_directory: ~/project
   node_executor:
     docker:
       - image: circleci/node:12.9.0-stretch
-      - working_directory: ~/project
   ruby_executor:
     docker:
       - image: circleci/ruby:2-stretch
-      - working_directory: ~/projects
 
 jobs:
   build:
