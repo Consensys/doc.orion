@@ -45,12 +45,12 @@ repo_url: https://github.com/PegaSysEng/orion
 
 theme:
   name: material
-  custom_dir: docs/custom_theme
+  custom_dir: common/custom_theme
   palette:
     primary: deep-purple
     accent: teal
   favicon: favicon.ico
-  logo: orion_logo.svg
+  logo: logo.svg
 nav:
     - How To:
         - Get Started with Orion:
@@ -103,6 +103,4 @@ plugins:
   - markdownextradata
   - exclude:
       glob:
-        - development/*
-        - community/*
         - global/*
