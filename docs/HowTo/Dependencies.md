@@ -42,7 +42,7 @@ Perform the following steps:
 1. Navigate to the _dynamic_ directory
 1. Copy the _libsodium.dll_ file to a directory that is on the system path.  eg: `C:\Windows\System32\`
 
-#### Other Systems
+#### Other systems
 
 Refer to the [libsodium installation docs](https://download.libsodium.org/doc/installation/). 
 

@@ -1,7 +1,7 @@
 description: Building Orion from source code
 <!--- END of page meta data -->
 
-# Build from Source
+# Build from source
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ description: Building Orion from source code
 
 ## Installation on Linux / Unix / Mac OS X
 
-###Clone the Orion Repository
+###Clone the Orion repository
 
 Clone the **PegaSysEng/orion** repository:
 

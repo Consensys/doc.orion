@@ -1,7 +1,7 @@
 description: Configuration File 
 <!--- END of page meta data -->
 
-# Configuration File 
+# Configuration file 
 
 Specify the configuration file when [starting Orion](../Reference/Orion-CLI-Syntax.md#configuration-file). 
 
