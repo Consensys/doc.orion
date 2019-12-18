@@ -58,6 +58,7 @@ nav:
             - Install Binary Distribution: HowTo/Install-Binaries.md
             - Build from Source: HowTo/Build-From-Source.md
             - Start Orion: HowTo/Quickstart.md
+            - Run Orion from Docker Image: HowTo/Run-Docker-Image.md
     - Tutorials:
         - Using Oracle: Tutorials/Using-Oracle.md
         - Using PostgreSQL: Tutorials/Using-PostgreSQL.md
