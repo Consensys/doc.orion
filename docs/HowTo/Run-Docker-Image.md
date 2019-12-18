@@ -3,9 +3,7 @@ description: Run Orion using the official docker image
 
 # Running the Orion Docker Image
 
-A Docker image is provided to run an Orion node in a Docker container.
-
-Use this Docker image to run a single Orion node without installing Orion.
+Use the Orion Docker image to run a single Orion node without installing Orion.
 
 __Prerequisites__:
 
@@ -19,18 +17,18 @@ In this example, the [password file](#1-create-password-file), [public/private k
     Do not mount a volume at the (`/opt/orion`) path, this prevents
     Orion from safely launching.
 
-    In this example the required files are mounted at the `/data` path.
+    In this example the required volume is mounted at the `/data` path.
 
 ## 1. Create Password File
 
 Create a file containing the password used to encrypt the key pair.
 
-The password is specified when [generating the keys](#2-generate-keys) and the
+Specify the password when [generating the keys](#2-generate-keys), the
 file is specified for the `passwords` property in the [configuration file](#3-create-a-configuration-file).
 
 ## 2. Generate Keys
 
-To generate a public/private keypair for the Orion node using Docker:
+Generate a public/private keypair for the Orion node using Docker:
 
 ``` bash
 docker run -i --rm --mount type=bind,source=/Users/user1/Node1/Orion,target=/data pegasyseng/orion:develop -g /data/testKey
@@ -60,7 +58,14 @@ workdir = "/data"
 tls = "off"
 ```
 
-The file locations specified in `orion.conf` must be relative the mounted path (`/data`).
+!!! note
+
+    * The file locations specified in `orion.conf` is relative the mounted
+      path (`/data`).
+    * `nodeurl` and `clienturl` is set to the host IP address, not the
+      Docker container's internal IP address.
+    * `clientnetworkinterface` is set to listen on all available network
+      interfaces (`0.0.0.0`).
 
 ## 4. Start Orion
 
