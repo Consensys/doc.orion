@@ -14,9 +14,9 @@ description: Building Orion from source code
 
 * [libsodium](Dependencies.md)
 
-## Installation on Linux / Unix / Mac OS X
+## Installation on Linux / Unix / MacOS X
 
-###Clone the Orion Repository
+### Clone the Orion Repository
 
 Clone the **PegaSysEng/orion** repository:
 

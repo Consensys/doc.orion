@@ -212,7 +212,7 @@ Content-Type: application/json
 
 ### receive with Privacy Group ID 
 
-To return the Privacy Group ID with the payload, use the `receive` method with the header `Content-Type: application/vnd.orion.v1+json`. 
+To return the privacy group ID with the payload, use the `receive` method with the header `Content-Type: application/vnd.orion.v1+json`. 
 
 !!! example
     ```bash tab="curl HTTP request"
@@ -276,7 +276,7 @@ Content-Type: application/json
 
 **Request Body**
 
-`payload` : *string* - Base64 encoded payload
+`payload` : *string* - Base64-encoded payload
 
 `from` : *string*  - Orion node key of sender
 
