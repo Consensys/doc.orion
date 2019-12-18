@@ -50,7 +50,7 @@ See the [libsodium installation docs](https://download.libsodium.org/doc/install
 
 ### Windows
 
-Windows _may_ require the Microsoft Visual C++ 2010 Redistributable Package to utilize LevelDB.  The distributables:
+Windows _may_ require the Microsoft Visual C++ 2010 Redistributable Package to utilize LevelDB. The distributables:
 
 * [32 bit](https://www.microsoft.com/en-au/download/details.aspx?id=5555)
 * [64 bit](https://www.microsoft.com/en-au/download/details.aspx?id=14632)
