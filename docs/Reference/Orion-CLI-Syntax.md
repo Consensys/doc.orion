@@ -41,7 +41,7 @@ Displays help and exits.
 
 Displays version information and exits.
 
-### configuration file 
+## Configuration file 
 
 ```bash tab="Syntax"
 orion <configFile>

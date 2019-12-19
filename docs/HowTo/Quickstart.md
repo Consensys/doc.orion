@@ -48,7 +48,7 @@ Start Orion specifying the [configuration file](#3-create-a-configuration-file):
 orion orion.conf
 ```
 
-### 5. Confirm Orion is funning
+### 5. Confirm Orion is running
 
 Use the `upcheck` method to confirm Orion is up and running:
 
