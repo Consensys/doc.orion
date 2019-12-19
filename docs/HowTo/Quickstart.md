@@ -36,7 +36,7 @@ clienturl = "http://127.0.0.1:8888/"
 clientport = 8888
 publickeys = ["nodeKey.pub"]
 privatekeys = ["nodeKey.key"]
-passwords = "<PathToPasswordFile>"
+passwords = "<PathToPasswordFile>/passwordFile"
 tls = "off"
 ```
 
