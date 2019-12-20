@@ -31,7 +31,7 @@ file is specified for the `passwords` property in the [configuration file](#3-cr
 Generate a public/private keypair for the Orion node using Docker:
 
 ``` bash
-docker run -i --rm --mount type=bind,source=/Users/user1/Node1/Orion,target=/data pegasyseng/orion:develop -g /data/testKey
+docker run -i --rm --mount type=bind,source=/Users/user1/Node1/Orion,target=/data pegasyseng/orion:develop -g /data/nodeKey
 ```
 
 At the prompt, enter the [password](#1-create-password-file) to encrypt the
