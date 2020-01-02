@@ -79,7 +79,7 @@ tls = "off"
     * `clientnetworkinterface` is set to listen on all available network
       interfaces (`0.0.0.0`).
 
-## 4. Start Orion
+## 5. Start Orion
 
 To start the Orion node:
 
