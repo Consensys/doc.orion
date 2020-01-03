@@ -37,7 +37,7 @@ Specify the configuration file when [starting Orion](../Reference/Orion-CLI-Synt
 
 ### libsodiumpath
 
-Depends on the operational system, check the class LibSodiumSettings for more details. 
+Depends on the operational system. Check the class LibSodiumSettings for more details. 
 
 ### alwayssendto
 

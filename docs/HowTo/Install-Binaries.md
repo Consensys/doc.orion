@@ -21,7 +21,7 @@ Download the Orion [packaged binaries](https://bintray.com/consensys/binaries/or
 
 Unpack the downloaded files and change into the `orion-<release>` directory. 
 
-Display Orion command line help to confirm installation: 
+Display Orion command-line help to confirm installation: 
 
 ```bash tab="Linux/macOS"
 $ bin/orion --help

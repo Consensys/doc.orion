@@ -23,7 +23,7 @@ Runs Orion private transaction manager.
 --generatekeys orion
 ```
 
-Generates public/private key pairs for each name supplied where `<names>` is a comma-seperated list. 
+Generates public/private key pairs for each name supplied where `<names>` is a comma-separated list. 
 
 ### help
 

@@ -1,6 +1,6 @@
 # Getting Started
 
-## Prequisites
+## Prerequisites
 
 [Orion](../HowTo/Install-Binaries.md)
 
@@ -10,20 +10,20 @@
 
 Create a file containing the password used to encrypt the key pair. 
 
-The password is specified when [generating the keys](#2-generate-keys) and the file is specified for the `passwords` property in the 
+The password is specified when [generating the keys](#2-generate-keys), and the file is specified for the `passwords` property in the 
 [configuration file](#3-create-a-configuration-file). 
 
 ### 2. Generate keys
 
-To generate a public/private keypair for the Orion node:
+To generate a public/private key pair for the Orion node:
 
 ``` bash
 orion -g nodeKey
 ```
 
-At the prompt, enter the [password](#1-create-password-file) to encrypt the key pair. 
+At the prompt, specify the [password](#1-create-password-file) to encrypt the key pair. 
 
-The public/private key pair is generated and the keys saved in the `nodeKey.pub` and `nodeKey.key` files.
+The public/private key pair is generated, and the keys are saved in the `nodeKey.pub` and `nodeKey.key` files.
 
 ### 3. Create a configuration file
 
@@ -36,7 +36,7 @@ clienturl = "http://127.0.0.1:8888/"
 clientport = 8888
 publickeys = ["nodeKey.pub"]
 privatekeys = ["nodeKey.key"]
-passwords = "/<pathToPasswordFile>"/passwordFile
+passwords = "<PathToPasswordFile>/passwordFile"
 tls = "off"
 ```
 
@@ -61,6 +61,7 @@ I'm up!
 ```
 
 ### 6. Send a payload
+>>>>>>> master
 
 With one node running, send a payload to yourself where the `from` and `to` values are the [generated public key](#2-generate-keys) (`nodeKey.pub`):
 
