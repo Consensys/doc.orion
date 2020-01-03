@@ -210,7 +210,7 @@ Content-Type: application/json
      {"payload":"SGVsbG8sIFdvcmxkIQ=="}
     ```
 
-### receive with Privacy Group ID 
+### receive with privacy group ID 
 
 To return the Privacy Group ID with the payload, use the `receive` method with the header `Content-Type: application/vnd.orion.v1+json`. 
 

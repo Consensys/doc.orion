@@ -1,4 +1,4 @@
-# Privacy Groups 
+# Privacy groups 
 
 When [transactions are sent](../Reference/API-Methods.md#send) to: 
 
