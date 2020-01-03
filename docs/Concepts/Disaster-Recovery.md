@@ -1,7 +1,7 @@
 description: Disaster recovery strategies 
 <!--- END of page meta data -->
 
-# Disaster Recovery
+# Disaster recovery
 
 !!! danger
     If the Orion database is deleted or corrupted, all private transaction payloads for the node are lost. 

@@ -4,16 +4,16 @@
 
 [Orion](../HowTo/Install-Binaries.md)
 
-## Starting Orion and Sending a Payload
+## Starting Orion and sending a payload
 
-### Create Password File
+### 1. Create password file
 
 Create a file containing the password used to encrypt the key pair. 
 
 The password is specified when [generating the keys](#2-generate-keys), and the file is specified for the `passwords` property in the 
 [configuration file](#3-create-a-configuration-file). 
 
-### Generate Keys
+### 2. Generate keys
 
 To generate a public/private key pair for the Orion node:
 
@@ -25,7 +25,7 @@ At the prompt, specify the [password](#1-create-password-file) to encrypt the ke
 
 The public/private key pair is generated, and the keys are saved in the `nodeKey.pub` and `nodeKey.key` files.
 
-### Create a Configuration File
+### 3. Create a configuration file
 
 Create a file called `orion.conf` and add the following properties:
 
@@ -40,7 +40,7 @@ passwords = "<PathToPasswordFile>/passwordFile"
 tls = "off"
 ```
 
-### Start Orion
+### 4. Start Orion
 
 Start Orion specifying the [configuration file](#3-create-a-configuration-file):
 
@@ -48,7 +48,7 @@ Start Orion specifying the [configuration file](#3-create-a-configuration-file):
 orion orion.conf
 ```
 
-### Confirm Orion is Running
+### 5. Confirm Orion is running
 
 Use the `upcheck` method to confirm Orion is up and running:
 
@@ -60,7 +60,8 @@ curl http://localhost:8888/upcheck
 I'm up!
 ```
 
-### Send a Payload
+### 6. Send a payload
+>>>>>>> master
 
 With one node running, send a payload to yourself where the `from` and `to` values are the [generated public key](#2-generate-keys) (`nodeKey.pub`):
 
@@ -90,7 +91,7 @@ http://localhost:8888/send \
 {"key":"LcF7I+UnR2XBdSxZesiYE/lTtxVfFeY4EvL9fDXb0Uo="}
 ```
 
-### Receive a Payload
+### 7. Receive a payload
 
 Use the key received when [sending the payload](#6-send-a-payload) to receive the payload:
 

@@ -1,7 +1,7 @@
 description: Orion command line interface reference
 <!--- END of page meta data -->
 
-# Orion Command Line
+# Orion command line
 
 This reference describes the syntax of the Orion Command Line Interface (CLI) options and subcommands.
 
@@ -41,8 +41,7 @@ Displays help and exits.
 
 Displays version information and exits.
 
- 
-## Configuration File 
+## Configuration file 
 
 ```bash tab="Syntax"
 orion <configFile>
