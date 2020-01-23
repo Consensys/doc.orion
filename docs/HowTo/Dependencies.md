@@ -11,7 +11,7 @@ primitives.
  
 ### Install libsodium
 
-#### MacOS
+#### MacOS 
 
 Install using [homebrew](https://brew.sh/):
 ```bash
@@ -35,22 +35,22 @@ sudo make install
 Perform the following steps:
 
 1. Download the [latest stable **msvc** build](https://download.libsodium.org/libsodium/releases/) of libsodium.
-1. Extract the libsodium archive
-1. Navigate to the current OS architecture (win32 or x64) directory
-1. Navigate to the _Release_ directory
-1. Navigate to the relevant version directory (v120 for Windows 8.1, v140+ for Windows 10)
-1. Navigate to the _dynamic_ directory
-1. Copy the _libsodium.dll_ file to a directory that is on the system path.  eg: `C:\Windows\System32\`
+1. Extract the libsodium archive.
+1. Navigate to the current OS architecture (win32 or x64) directory.
+1. Navigate to the _Release_ directory.
+1. Navigate to the relevant version directory (v120 for Windows 8.1, v140+ for Windows 10).
+1. Navigate to the _dynamic_ directory.
+1. Copy the _libsodium.dll_ file to a directory that is on the system path. For example, `C:\Windows\System32\`.
 
-#### Other Systems
+#### Other systems
 
-Refer to the [libsodium installation docs](https://download.libsodium.org/doc/installation/). 
+See the [libsodium installation docs](https://download.libsodium.org/doc/installation/). 
 
 ## LevelDB
 
 ### Windows
 
-Windows _may_ require the Microsoft Visual C++ 2010 Redistributable Package to utilise LevelDB.  The distributables are available here:
+Windows _may_ require the Microsoft Visual C++ 2010 Redistributable Package to utilize LevelDB. The distributables:
 
 * [32 bit](https://www.microsoft.com/en-au/download/details.aspx?id=5555)
 * [64 bit](https://www.microsoft.com/en-au/download/details.aspx?id=14632)

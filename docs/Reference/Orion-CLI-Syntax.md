@@ -1,7 +1,7 @@
 description: Orion command line interface reference
 <!--- END of page meta data -->
 
-# Orion Command Line
+# Orion command line
 
 This reference describes the syntax of the Orion Command Line Interface (CLI) options and subcommands.
 
@@ -23,7 +23,7 @@ Runs Orion private transaction manager.
 --generatekeys orion
 ```
 
-Generates public/private key pairs for each name supplied where `<names>` is a comma-seperated list. 
+Generates public/private key pairs for each name supplied where `<names>` is a comma-separated list. 
 
 ### help
 
@@ -41,8 +41,7 @@ Displays help and exits.
 
 Displays version information and exits.
 
- 
-## Configuration File 
+## Configuration file 
 
 ```bash tab="Syntax"
 orion <configFile>

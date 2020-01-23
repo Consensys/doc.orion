@@ -1,7 +1,7 @@
 description: Storing Information with Oracle
 <!--- END of page meta data -->
 
-# Store Information with Oracle
+# Store information with Oracle
 
 Oracle is an object-relational database you can use to store private transaction payloads for Orion. Use a relational database to support your [disaster recovery strategy](../Concepts/Disaster-Recovery.md).
 
