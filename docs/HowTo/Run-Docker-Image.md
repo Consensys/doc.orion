@@ -19,9 +19,6 @@ In this example we create the [password file](#2-create-password-file), [public/
 and [Orion configuration file](#4-create-a-configuration-file) in the
 `/Users/user1/Node1/Orion` directory.
 
-!!! note
-    On macOS the default home directory is `/Users/<username>`, and on Linux it
-    is usually `/home/<username>`.
 
 ## 1. Create the Directory Structure
 
@@ -50,7 +47,8 @@ At the prompt, enter the [password](#2-create-password-file) to encrypt the
 key pair.
 
 The public/private key pair is generated and the keys saved in the `nodeKey.pub`
-and `nodeKey.key` files.
+and `nodeKey.key` files. The files are generated in the `/Users/user1/Node1/Orion`
+directory.
 
 ## 4. Create a Configuration File
 

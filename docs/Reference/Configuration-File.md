@@ -3,7 +3,8 @@ description: Configuration File
 
 # Configuration File 
 
-Specify the configuration file when [starting Orion](../Reference/Orion-CLI-Syntax.md#configuration-file). 
+The Configuration file is a TOML file that must be specified when
+[starting Orion](../Reference/Orion-CLI-Syntax.md#configuration-file). 
 
 ## Properties 
 
