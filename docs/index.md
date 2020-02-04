@@ -20,4 +20,4 @@ Orion:
 * Self manages and discovers all nodes in the Orion network.
 
 * Provides an API for communicating between Orion nodes and an API for communicating with Ethereum 
-clients (for example, Hyperlegder Besu). 
+clients (for example, Hyperledger Besu). 
