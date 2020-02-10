@@ -66,6 +66,7 @@ nav:
     - Concepts:
         - Privacy groups: Concepts/Privacy-Groups.md
         - Disaster recovery: Concepts/Disaster-Recovery.md
+        - Multi-Tenancy: Concepts/Multi-Tenancy.md
     - Reference:
         - Orion command line: Reference/Orion-CLI-Syntax.md
         - Client API methods: Reference/API-Methods.md
