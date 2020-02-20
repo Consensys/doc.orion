@@ -3,53 +3,21 @@ description: TLS
 
 # TLS
 
-Orion supports the Transport Layer Security (TLS) protocol to enable secure communications. TLS is used between Orion nodes only. TLS is not used between Besu and Orion nodes.
+Orion supports the Transport Layer Security (TLS) protocol to enable secure
+communications between clients (for example Besu) and Orion, and
+between Orion nodes. 
 
-Enable TLS by setting the `tls` property to `strict` in the [Orion configuration file](../Reference/Configuration-File.md).  
+Enable TLS and set TLS properties in the [Orion configuration file](../Reference/Configuration-File.md):
 
-## Generating certificates using Orion
+* For client TLS, set the `clientconnectiontls` property to
+`strict`.
+* For TLS between Orion nodes set the `tls` property to `strict`.
 
-To have Orion generate certificates, start the nodes with the TLS trust mode set to `insecure-no-validation` for `tlsclienttrust` 
-and `tlsservertrust` until the `tlsknownclients` and `tlsknownservers` files are populated. When the files are populated, 
-restart the nodes with the TLS trust mode set to `whitelist` for `tlsclienttrust` and `tlsservertrust`.
+[Generate Orion certificates](Generating-Certificates.md) before configuring TLS.
 
-## Generating certificates using OpenSSL
+## Configure TLS
 
-These procedures explain how to use [OpenSSL](https://www.openssl.org/source/) to generate certificates when the Common Name (CN) is either the [public DNS](#public-dns-is-cn) or an [IP address](#ip-address-is-cn). Before you begin, ensure OpenSSL is installed.
-
-### Public DNS is CN
-
-To use a public DNS as CN:
-
-#### Generating a CA certificate
-
-1. Generate a key file called `orion_ca.key`:
-
-    `openssl genrsa -out orion_ca.key 2048`
-  
-1. Generate a certificate authority (CA) certificate called `orion_ca.pem` that uses `orion_ca.key`:
-
-    `openssl req -x509 -new -nodes -key orion_ca.key -sha256 -days 1024 -out orion_ca.pem`
-
-#### Generating a new certificate for a node
-
-We recommend each node has its own certificate. To generate the certificate:
-
-1. Generate a key file called `orion_cer.key`:
-
-    `openssl genrsa -out orion_cer.key 2048`
-  
-1. Generate a certificate signing request (CSR) called `orion_cer.csr`:
-
-    `openssl req -new -key orion_cer.key -out orion_cer.csr`
-  
-1. Answer each prompt for information to be added to the certificate request. Ensure the
-value you specify for Common Name (CN) matches the host public DNS so the requests from the server are accepted. The name 
-is also specified in the configuration file for the `nodeurl` and `clienturl` options.
-
-1. Generate a certificate called `orion_cer.pem` signed by the CA certificate:
-
-    `openssl x509 -req -in orion_cer.csr -CA orion_ca.pem -CAkey orion_ca.key -CAcreateserial -out orion_cer.pem -days 500 -sha256`
+Configure TLS in the [Orion configuration file](../Reference/Configuration-File.md).
 
 !!! Example "Example Orion configuration file using the created certificates"
     ```
@@ -79,86 +47,20 @@ is also specified in the configuration file for the `nodeurl` and `clienturl` op
     tlsclienttrust = "ca"
     tlsservertrust = "ca"
 
+    clientconnectiontls = "strict"
+    clientconnectiontlsservercert = "<PATH-TO>/orion/bin/orion_cer.pem"
+    clientconnectiontlscertchain = []
+    clientconnectiontlsserverkey = "<PATH-TO>/orion/bin/orion_cer.key"
+    clientconnectiontlsservertrust = "whitelist"
+    clientconnectiontlsknownclients = "<PATH-TO>/orion/bin/orionKnownClients"
+    
     nodenetworkinterface = "0.0.0.0"
     clientnetworkinterface = "0.0.0.0"
     ```
 
-### IP address is CN 
+## Orion-to-Orion TLS Properties 
 
-To use a public IP address as CN:
-
-#### Updating the `openssl.cfn` file
-
-1. Find the `openssl.cfn` file, and create a copy of it.
-1. In your copy of the `openssl.cfn` file, find the `[req]` section, and add:
-
-    ```
-    req_extensions = v3_req
-  
-    [ v3_req ]
-    basicConstraints = CA:FALSE
-    keyUsage = nonRepudiation, digitalSignature, keyEncipherment
-    subjectAltName = @alt_names
-
-    [alt_names]
-    DNS.1 = <DNS-PUBLIC-RECORD>
-    DNS.2 = <DNS-PRIVATE-RECORD>
-    IP.1 = <PUBLIC-IP-ADDRESS>
-    IP.2 = <PRIVATE-IP-ADDRESS>
-    ```
-
-1. For each DNS you want to use as an alternate name, specify a DNS._n_ entry.
-1. For each IP address you want as an alternate IP address, specify an IP._n_ entry.
-
-#### Generating a new CSR for a node
-
-1. Run the following command. Substitute your values for all variables.
-
-    `openssl req -new -key orion_cer.key -out orion_cer.csr -config <PATH-TO>/openssl.cnf`
-
-1. Test whether the certificate was generated with the expected subject alternative names:
-
-    `openssl req -text -noout -in orion_cer.csr`
-
-    !!! Example "Example of command output"
-
-        ```
-        [...]
-        Requested Extensions:
-              X509v3 Subject Alternative Name:            
-        DNS:<DNS-PUBLIC-RECORD>,
-        DNS:<DNS-PRIVATE-RECORD>, 
-        IP Address:<PUBLIC-IP-ADDRESS>, 
-        IP Address:<PRIVATE-IP-ADDRESS>
-        [...]
-        ```
-
-#### Generating a new certificate
-
-1. Run the following command. Substitute your values for all variables.
-
-    `openssl x509 -req -in orion_cer.csr -CA orion_ca.pem -CAkey orion_ca.key -CAcreateserial -out orion_cer.pem -days 500 -sha256 -extfile <PATH-TO>/openssl.cnf -extensions v3_req`
-
-1. Test whether the generated certificate contains the subject alternative names:
-
-    `openssl x509 -in orion_cer.pem -text -noout`
-
-    !!! Example "Example of command output"
-
-        ```
-        [...]
-        X509v3 extensions:
-            X509v3 Subject Alternative Name:
-        DNS:<DNS-PUBLIC-RECORD>,
-        DNS:<DNS-PRIVATE-RECORD>, 
-        IP Address:<PUBLIC-IP-ADDRESS>, 
-        IP Address:<PRIVATE-IP-ADDRESS>
-        [...]
-        ```
-
-## TLS Properties in Orion Configuration File 
-
-TLS properties are specified in the [configuration file](../Reference/Configuration-File.md). 
+Properties to configure TLS between Orion nodes.
 
 ### tls 
 
@@ -190,8 +92,8 @@ created.
 
 TLS trust mode for the server. The trust mode defines which nodes can connect to the server. Options:
 
-* `whitelist` - Only nodes that have previously connected to this node and have been added to `tlsknownclients`
- can connect. New clients are not added to `tlsknownclients`.
+* `whitelist` - Only nodes presenting certificates with fingerprints in `tlsknownclients`
+ can connect.
 
 * `tofu` - Trust-on-first-use. Only the first node that connects identifying as a certain host can connect
  as the same host in the future. Nodes identifying as other hosts can still connect. To restrict access, change
@@ -201,9 +103,23 @@ TLS trust mode for the server. The trust mode defines which nodes can connect to
 can connect.  Use the `SYSTEM_CERTIFICATE_PATH` environment variable to override the directory containing
  trusted root certificates.
 
+* `ca-or-whitelist` - Combination of `ca` and `whitelist`. 
+
 * `ca-or-tofu` - Combination of `ca` and `tofu`. If a certificate is valid, it is always allowed and added 
 to the `tlsknownclients` list. If it is self-signed, it is allowed only if it is the first certificate 
 this node has seen for that host.
+
+* `insecure-tofa` - Trust-on-first-access. On first connection, the Common Name
+and fingerprint of the presented certificate is added to `tlsknownclients`.
+In subsequent connections, the client connection is rejected if the fingerprint
+has changed.
+
+* `insecure-ca-or-tofa` - A combination of `ca` and `insecure-tofa`.
+
+* `insecure-record` - Any client can connect. The client certificate fingerprint
+is added to the `tlsknownclients` file.
+
+* `insecure-ca-or-record` - A combination of `ca` and `insecure-record`.
 
 * `insecure-no-validation` - Any client can connect. Clients are added to the `tlsknownclients` file.
 
@@ -211,6 +127,9 @@ this node has seen for that host.
 
 TLS known clients for the server. The `tlsknownclients` contains the fingerprints of public keys of other
 nodes that can connect to this node for the `ca-or-tofu`, `tofu`, and `whitelist` trust modes.
+
+You can [use Orion to generate certificates](Generating-Certificates.md#generating-certificates-using-orion) and automatically populate the
+`tlsknownclients` file.
 
 ### tlsclientcert
 
@@ -230,21 +149,28 @@ created.
 
 ### tlsclienttrust
 
-TLS trust mode for the client. The trust mode defines the servers to which the client connects. Options:
+TLS trust mode for the client. The trust mode defines the servers to which this node connects. Options:
 
 * `whitelist` - Nodes only connects to servers it has previously seen and have been added to `tlsknownservers`. 
 New servers are not added to `tlsknownservers`.
 
-* `tofu` - Trust-on-first-use. Node only connects same server for any given host. This is similar to how
+* `tofu` - Trust-on-first-use. Node only connects to the same server for any given host. This is similar to how
 OpenSSH works. 
 
 * `ca` -  Node only connects to servers with a valid certificate and chain of trust to one of the system 
 root certificates. Use the `SYSTEM_CERTIFICATE_PATH` environment variable to override the directory containing
  trusted root certificates.
 
+* `ca-or-whitelist` - Combination of `ca` and `whitelist`.
+
 * `ca-or-tofu` - Combination of `ca` and `tofu`. If a certificate is valid, it is always allowed and added 
 to the `tlsknownservers` list. If it is self-signed, it is allowed only if it is the first certificate 
 this node has seen for that host.
+
+* `insecure-record` - This node connects to any server, regardless of
+certificate, and is added to the `tlsknownservers` file.
+
+* `insecure-ca-or-record` - Combination of `ca` and `insecure-record`.
 
 * `insecure-no-validation` - Node connects to any server. Servers are added to the `tlsknownservers` file.
 
@@ -252,3 +178,85 @@ this node has seen for that host.
 
 TLS known servers for the client. The `tlsknownservers` contains the fingerprints of public keys of other
 nodes that this node has encountered for the `ca-or-tofu`, `tofu`, and `whitelist` trust modes.
+
+You can [use Orion to generate certificates](Generating-Certificates.md#generating-certificates-using-orion) and automatically populate the
+`tlsknownservers` file.
+
+## Client-to-Orion TLS Properties
+
+Properties to configure TLS between the client (for example Besu) and Orion.
+
+### clientconnectiontls
+
+TLS status options are:
+
+* `strict` - All connections to and from this node must use TLS with mutual
+authentication. See [clientconnectiontlsservertrust](#clientconnectiontlsservertrust). 
+* `off` - Mutually authenticated TLS is not used for client connections.
+Unauthenticated connections to HTTPS hosts are still possible. Use only if
+another transport security mechanism like WireGuard is in place.
+
+### clientconnectiontlsservercert
+
+File containing the server TLS certificate in Apache format. The certificate
+identifies this node to clients when they connect. If the certificate does
+not exist, itis created.
+
+### clientconnectiontlsserverchain
+
+List of files that make up the CA trust chain for the server certificate. The
+list can be empty for auto-generated/non-PKI-based certificates.
+
+### clientconnectiontlsserverkey
+
+File containing the private key for the server TLS certificate. If the private
+key does not exist, it is created. 
+
+### clientconnectiontlsservertrust
+
+The trust mode defines which clients can connect. Options:
+
+* `whitelist` - Only clients presenting certificates with fingerprints in
+`clientconnectiontlsknownclients` are allowed to connect.
+
+* `tofu` - Trust-on-first-use. The client is trusted to connect when first
+connecting to the server. The Common Name and fingerprint of the presented
+certificate is added to the `clientconnectiontlsknownclients` file. The client
+must present the same fingerprint on subsequent connections.
+
+* `ca` -  Only clients certificates signed by a trusted CA and chain of trust to
+one of the system root certificates can connect. Use the `SYSTEM_CERTIFICATE_PATH`
+environment variable to override the directory containing trusted root
+certificates.
+
+* `ca-or-whitelist` - Combination of `ca` and `whitelist` clients are allowed
+to connect.
+
+* `ca-or-tofu` - Combination of `ca` and `tofu`.
+
+* `insecure-tofa` - Trust-on-first-access. The client is trusted to connect when
+first connecting to the server. The Common Name and fingerprint of the presented
+certificate is added to the `clientconnectiontlsknownclients` file. The client
+must present the same fingerprint on subsequent connections.
+
+* `insecure-ca-or-tofa` - Combination of `ca` and `insecure-tofa`.
+
+* `insecure-record` - Any client can connect and the certificate fingerprint
+is be added to the `clientconnectiontlsknownclients` file.
+
+* `insecure-ca-or-record` - Combination of `ca` and `insecure-record`
+
+* `insecure-no-validation` - Node connects to any server. Servers are added to
+the `clientconnectiontlsknownclients` file.
+
+### clientconnectiontlsknownclients
+
+TLS known clients file for the client interface. Lists one or more clients
+that are trusted to connect to Orion. The file contents use the format
+`<common_name> <hex-string>` where:
+
+* `<common_name>` is the Common Name used for the client's keystore
+* `<hex-string>` is the SHA-256 fingerprint of the client's keystore.
+
+Clients can connect to this node for the `ca-or-tofu`, `tofu`, and `whitelist`
+trust modes.

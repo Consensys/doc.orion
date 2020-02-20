@@ -63,9 +63,11 @@ nav:
         - Using Oracle: Tutorials/Using-Oracle.md
         - Using PostgreSQL: Tutorials/Using-PostgreSQL.md
         - TLS: Tutorials/TLS.md
+        - Generating Orion Certificates: Tutorials/Generating-Certificates.md
     - Concepts:
         - Privacy groups: Concepts/Privacy-Groups.md
         - Disaster recovery: Concepts/Disaster-Recovery.md
+        - TLS Communication: Concepts/TLS-Communication.md
     - Reference:
         - Orion command line: Reference/Orion-CLI-Syntax.md
         - Client API methods: Reference/API-Methods.md
