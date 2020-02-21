@@ -3,8 +3,8 @@ description: Orion TLS
 
 # TLS Communication
 
-Orion supports TLS to secure communication between a client
-(for example Hyperledger Besu), and other Orion nodes.
+Orion supports TLS to secure communication to a client
+(for example Hyperledger Besu), and to other Orion nodes.
 
 ![Orion TLS](../images/Orion_TLS.png)
 

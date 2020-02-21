@@ -9,9 +9,9 @@ between Orion nodes.
 
 Enable TLS and set TLS properties in the [Orion configuration file](../Reference/Configuration-File.md):
 
-* For client TLS, set the `clientconnectiontls` property to
+* For client TLS, set the [`clientconnectiontls`](#clientconnectiontls) property to
 `strict`.
-* For TLS between Orion nodes set the `tls` property to `strict`.
+* For TLS between Orion nodes set the [`tls`](#tls) property to `strict`.
 
 [Generate Orion certificates](Generating-Certificates.md) before configuring TLS.
 
@@ -66,11 +66,12 @@ Properties to configure TLS between Orion nodes.
 
 TLS status options are:
 
-* `strict` - All connections to and from this node must use TLS with mutual authentication. See [tlsservertrust](#tlsservertrust)
-and [tlsclienttrust](#tlsclienttrust). 
-* `off` - Mutually authenticated TLS is not used for in- and outbound connections. Unauthenticated 
-connections to HTTPS hosts are still possible. Use only if another transport security mechanism like 
-WireGuard is in place.
+* `strict` - All connections to and from other Orion nodes must use TLS with
+mutual authentication. See [tlsservertrust](#tlsservertrust) and 
+[tlsclienttrust](#tlsclienttrust). 
+* `off` - Mutually authenticated TLS is not used between Orion nodes.
+Unauthenticated connections to HTTPS hosts are still possible. Use only if
+another transport security mechanism like WireGuard is in place.
 
 ### tlsservercert
 
@@ -190,8 +191,8 @@ Properties to configure TLS between the client (for example Besu) and Orion.
 
 TLS status options are:
 
-* `strict` - All connections to and from this node must use TLS with mutual
-authentication. See [clientconnectiontlsservertrust](#clientconnectiontlsservertrust). 
+* `strict` - All connections between the client and Orion must use TLS with
+mutual authentication. See [clientconnectiontlsservertrust](#clientconnectiontlsservertrust). 
 * `off` - Mutually authenticated TLS is not used for client connections.
 Unauthenticated connections to HTTPS hosts are still possible. Use only if
 another transport security mechanism like WireGuard is in place.
@@ -200,7 +201,7 @@ another transport security mechanism like WireGuard is in place.
 
 File containing the server TLS certificate in Apache format. The certificate
 identifies this node to clients when they connect. If the certificate does
-not exist, itis created.
+not exist, it is created.
 
 ### clientconnectiontlsserverchain
 

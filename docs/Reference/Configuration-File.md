@@ -39,7 +39,7 @@ The Configuration file is a TOML file that must be specified when
 | `clientconnectiontlsservercert` | Optional | [Server TLS certificate](../Tutorials/TLS.md#clientconnectiontlsservercert)                                            | `"client-connection-tls-server-cert.pem"`    |
 | `clientconnectiontlsserverchain`| Optional | [Files that make up the CA trust chain](../Tutorials/TLS.md#clientconnectiontlsserverchain)                            | `[]`                              |
 | `clientconnectiontlsserverkey`  | Optional | [Private key for the server TLS certificate](../Tutorials/TLS.md#clientconnectiontlsserverkey)                         | `"client-connection-tls-server-key.pem"`            |
-| `clientConnectionTlsServerTrust`         | Optional | [TLS trust mode for the server](../Tutorials/TLS.md#clientconnectiontlsservertrust)                                    | `"tofu"`                          |
+| `clientconnectionTlsServerTrust`         | Optional | [TLS trust mode for the server](../Tutorials/TLS.md#clientconnectiontlsservertrust)                                    | `"tofu"`                          |
 | `clientconnectiontlsknownclients`        | Optional | [TLS known clients for the server](../Tutorials/TLS.md#clientconnectiontlsknownclients)                                | `"client-connection-tls-known-clients"`             |
 
 ### libsodiumpath

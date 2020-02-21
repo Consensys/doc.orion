@@ -14,6 +14,10 @@ and `tlsservertrust` until the `tlsknownclients` and `tlsknownservers` files are
 populated. When the files are populated, restart the nodes with the TLS trust
 mode set to `whitelist` for `tlsclienttrust` and `tlsservertrust`.
 
+!!! note
+    For TLS connections between the client (Besu) and Orion, manually configure
+    the client to trust the server connection.
+
 ## Generating certificates using OpenSSL
 
 These procedures explain how to use [OpenSSL](https://www.openssl.org/source/) to generate certificates when the Common Name (CN) is either the [public DNS](#public-dns-is-cn) or an [IP address](#ip-address-is-cn). Before you begin, ensure OpenSSL is installed.
