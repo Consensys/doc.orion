@@ -4,7 +4,7 @@ description: TLS
 # TLS
 
 Orion supports the Transport Layer Security (TLS) protocol to enable secure
-communications between clients (for example Besu) and Orion, and
+communications between clients (for example [Besu](https://besu.hyperledger.org/en/latest/Concepts/TLS/)) and Orion, and
 between Orion nodes. 
 
 Enable TLS and set TLS properties in the [Orion configuration file](../Reference/Configuration-File.md):
@@ -185,7 +185,7 @@ You can [use Orion to generate certificates](Generating-Certificates.md#generati
 
 ## Client-to-Orion TLS Properties
 
-Properties to configure TLS between the client (for example Besu) and Orion.
+Properties to configure TLS between the client (for example [Besu](https://besu.hyperledger.org/en/latest/Concepts/TLS/)) and Orion.
 
 ### clientconnectiontls
 

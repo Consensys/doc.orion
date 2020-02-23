@@ -8,7 +8,7 @@ Orion supports TLS to secure communication to a client
 
 ![Orion TLS](../images/Orion_TLS.png)
 
-The client (in this example, Hyperledger Besu) must be configured to send and
+[The client (in this example, Hyperledger Besu) must be configured](https://besu.hyperledger.org/en/latest/HowTo/Configure/Configure-TLS/) to send and
 accept TLS communication between itself and Orion.
 
 Use the configuration file options to
