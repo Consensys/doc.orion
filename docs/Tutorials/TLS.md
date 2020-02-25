@@ -215,6 +215,12 @@ key does not exist, it is created.
 
 ### clientconnectiontlsservertrust
 
+!!! important
+    When using [multi-tenancy](../Concepts/Multi-Tenancy.md), ensure the multi-tenant Orion node client API is
+    configured to allow access only by the multi-tenant Besu node.
+    
+    Use the `whitelist` trust mode to allow access to the appropriate Besu node.
+    
 The trust mode defines which clients can connect. Options:
 
 * `whitelist` - Only clients presenting certificates with fingerprints in
