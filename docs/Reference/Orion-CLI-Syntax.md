@@ -41,6 +41,14 @@ Displays help and exits.
 
 Displays version information and exits.
 
+## clear known nodes
+
+```bash tab="Syntax"
+  --clear-known-nodes
+```
+
+Clears cached known nodes.
+
 ## Configuration file 
 
 ```bash tab="Syntax"
