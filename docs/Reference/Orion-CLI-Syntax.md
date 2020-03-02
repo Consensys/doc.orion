@@ -41,7 +41,7 @@ Displays help and exits.
 
 Displays version information and exits.
 
-## clear known nodes
+### clear known nodes
 
 ```bash tab="Syntax"
   --clear-known-nodes
