@@ -9,7 +9,11 @@ By placing the instances behind a load balancer, downtime can be limited during 
 # Storage for highly available scenarios
 
 When configuring for high availability, both storage and known nodes storage must match so Orion 
-provides up to date information.
+provides up to date information. Known nodes are discovered Orion nodes. 
+
+!!! tip
+    Use the [`knownnodes`](../Reference/API-Methods.md#knownnodes) client API methods to retrieve the 
+    known nodes.  
 
 Orion supports LevelDB and MapDB stores. However, LevelDB and MapDB lock the local file system and 
 are not suitable for highly available scenarios.
