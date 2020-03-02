@@ -59,16 +59,16 @@ nav:
             - Build from source: HowTo/Build-From-Source.md
             - Start Orion: HowTo/Quickstart.md
             - Run Orion from Docker Image: HowTo/Run-Docker-Image.md
-            - Configure For High Availability: HowTo/High-Availability.md
+        - Configure for high availability: HowTo/High-Availability.md
     - Tutorials:
         - Using Oracle: Tutorials/Using-Oracle.md
         - Using PostgreSQL: Tutorials/Using-PostgreSQL.md
         - TLS: Tutorials/TLS.md
-        - Generating Orion Certificates: Tutorials/Generating-Certificates.md
+        - Generating Orion certificates: Tutorials/Generating-Certificates.md
     - Concepts:
         - Privacy groups: Concepts/Privacy-Groups.md
         - Disaster recovery: Concepts/Disaster-Recovery.md
-        - TLS Communication: Concepts/TLS-Communication.md
+        - TLS communication: Concepts/TLS-Communication.md
         - Multi-Tenancy: Concepts/Multi-Tenancy.md
     - Reference:
         - Orion command line: Reference/Orion-CLI-Syntax.md
