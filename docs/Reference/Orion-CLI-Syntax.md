@@ -41,6 +41,16 @@ Displays help and exits.
 
 Displays version information and exits.
 
+### clear-known-nodes
+
+```bash tab="Syntax"
+  --clear-known-nodes
+```
+
+Clears known nodes. By default, known nodes are stored in memory but can be stored persistently to 
+enable [high availability](../HowTo/High-Availability.md). `knownnodestorage` is defined in the 
+[configuration file](../Reference/Configuration-File.md). 
+
 ## Configuration file 
 
 ```bash tab="Syntax"
