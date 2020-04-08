@@ -109,3 +109,21 @@ plugins:
   - exclude:
       glob:
         - global/*
+  - redirects:
+      redirect_maps:
+        # Configure redirects using key:value pairs:
+        # old_path.md: new_path.md
+        # you can't use an already redirected path as an old_path.
+        # new_path can be a file inside the docs/ folder or any URL (http://...)
+        Security/Responsible-Disclosure.md: Reference/Responsible-Disclosure.md
+        Configuring-Orion/Disaster-Recovery.md: Concepts/Disaster-Recovery.md
+        Configuring-Orion/TLS.md: Tutorials/TLS.md
+        Configuring-Orion/Using-PostgreSQL.md: Tutorials/Using-PostgreSQL.md
+        Configuring-Orion/Using-Oracle.md: Tutorials/Using-Oracle.md
+        Configuring-Orion/Configuration-File.md: Reference/Configuration-File.md
+        Using-Orion/Privacy-Groups.md: Concepts/Privacy-Groups.md
+        Getting-Started/Quickstart.md: HowTo/Quickstart.md
+        Installation/Build-From-Source.md: HowTo/Build-From-Source.md
+        Installation/Install-Binaries.md: HowTo/Install-Binaries.md
+        Installation/Dependencies.md: HowTo/Dependencies.md
+        Installation/Overview.md: HowTo/Dependencies.md
