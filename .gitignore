@@ -4,3 +4,4 @@ env/
 *.out
 node_modules/
 .DS_Store
+.circleci/process.yml
