@@ -15,11 +15,11 @@ provides up to date information. Known nodes are discovered Orion nodes.
     Use the [`knownnodes`](../Reference/API-Methods.md#knownnodes) client API methods to retrieve the 
     known nodes.  
 
-Orion supports LevelDB and MapDB stores. However, LevelDB and MapDB lock the local file system and 
-are not suitable for highly available scenarios.
+Use a relational database to enable highly available scenarios. Orion supports relational databases 
+[PostgreSQL](../Tutorials/Using-PostgreSQL.md) and [Oracle](../Tutorials/Using-Oracle.md). 
 
-A relational database enables highly available scenarios. Orion supports [PostgreSQL](../Tutorials/Using-PostgreSQL.md)
-and [Oracle](../Tutorials/Using-Oracle.md). 
+Orion also supports LevelDB and MapDB stores. LevelDB and MapDB lock the local file system and 
+are not suitable for highly available scenarios.
 
 For high availability, ensure the `storage` and `knownnodesstorage` in the [configuration file](../Reference/Configuration-File.md)
 match for all Orion nodes.
