@@ -6,6 +6,8 @@ description: Orion deployment for high availability
 Orion supports deploying more than one instance sharing the same backend stores.
 By placing the instances behind a load balancer, downtime can be limited during maintenance operations.
 
+![Orion HA](../images/Orion-HA.png)
+
 # Storage for highly available scenarios
 
 When configuring for high availability, both storage and known nodes storage must match so Orion 
