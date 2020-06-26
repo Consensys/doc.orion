@@ -7,8 +7,8 @@ description: Disaster recovery strategies
     If the Orion database is deleted or corrupted, all private transaction payloads for the node are lost. 
     You cannot recover a lost database without a backup.
 
-Orion supports using relational databases PostgreSQL and Oracle. To enable disaster recovery for Orion, 
-use a relational database and backup. 
+Orion supports using relational databases [PostgreSQL](../Tutorials/Using-PostgreSQL.md) and [Oracle](../Tutorials/Using-Oracle.md). 
+To enable disaster recovery for Orion, use a relational database and backup. 
 
 To recover after a failure:
 
