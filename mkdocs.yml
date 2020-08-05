@@ -49,8 +49,8 @@ theme:
   palette:
     primary: deep-purple
     accent: teal
-  favicon: favicon.ico
-  logo: logo.svg
+  logo: 'images/logo.svg'
+  favicon: 'images/favicon.svg'
 nav:
     - How to:
         - Get started with Orion:
