@@ -14,12 +14,10 @@ site_name: Orion
 site_url: https://docs.orion.pegasys.tech/en/latest/
 site_description: Orion Transaction Manager documentation.
 site_author: Orion community
-copyright: Orion and its documentation are licensed under Apache 2.0 license /
-  This <a href="https://readthedocs.org/">Readthedocs.org</a> documentation is maintained with love by <a href="https://pegasys.tech/">PegaSys</a>.
+copyright: Orion and its documentation are licensed under Apache 2.0 license.
 
 #extra project info and template customisation
 extra:
-  doc_site_edit_url: https://github.com/PegaSysEng/doc.orion/
   versions:
     stable: '1.3.2'
   latest_version_warning:
@@ -28,10 +26,12 @@ extra:
     some displayed features may not be available in the stable release.
     You can switch to stable version using the version box at screen bottom.'
   support:
-    gitter: https://gitter.im/PegaSysEng/orion
+    tool: Discord
+    channel: https://discord.gg/n8m22JK
     email: support@pegasys.tech
-    pegasys_website: https://pegasys.tech/
-    issues: https://pegasys1.atlassian.net/secure/Dashboard.jspa?selectPageId=10000
+    website: https://pegasys.tech/
+    company: Pegasys
+    issues: https://github.com/PegaSysEng/orion/issues
   google:
     tag_manager: 'GTM-T5Q86JM'
     site_verification: 'za1cLzyS6LXDGO-pMzvfQdYTZ0Zc67uZtY0asA4YXZ0'
@@ -81,6 +81,8 @@ markdown_extensions:
       permalink: 
       toc_depth: 3
   - codehilite
+  - pymdownx.tabbed
+  - pymdownx.superfences
   - markdown_include.include:
       base_path: docs
   - admonition
@@ -96,19 +98,19 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  # pymdownx.superfences is deprecated.
-  # It must be replaced with pymdownx.tabbed but it requires new CSS
-  # TODO with material 5 update
-  - pymdownx.superfences:
-      legacy_tab_classes: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
   - meta
   - smarty
+  - attr_list
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
 
 plugins:
-  - search
+  - search:
+      lang: 'en'
+      separator: '[\s]+'
   - markdownextradata
   - exclude:
       glob:
