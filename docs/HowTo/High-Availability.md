@@ -8,7 +8,7 @@ By placing the instances behind a load balancer, downtime can be limited during 
 
 ![Orion HA](../images/Orion-HA.png)
 
-# Storage for highly available scenarios
+## Storage
 
 When configuring for high availability, both storage and known nodes storage must match so Orion 
 provides up to date information. Known nodes are discovered Orion nodes. 
@@ -26,9 +26,12 @@ are not suitable for highly available scenarios.
 For high availability, ensure the `storage` and `knownnodesstorage` in the [configuration file](../Reference/Configuration-File.md)
 match for all Orion nodes.
 
-# Load balancer configuration
+## Load balancer configuration
 
 The load balancer must expose both client and node interfaces.
+
+When configuring for high availability, configure the nodes in the Orion cluster (Orion A and Orion B in the
+above diagram) with the same set of keys and advertise the load balancer address.
 
 !!! example "Nginx configuration with two Orion nodes"
     ```
