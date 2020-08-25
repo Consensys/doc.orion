@@ -1,4 +1,4 @@
-# Copyright 2018 ConsenSys AG.
+# Copyright 2020 ConsenSys AG.
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
 # the License. You may obtain a copy of the License at
@@ -11,7 +11,7 @@
 
 # Project information
 site_name: Orion
-site_url: https://docs.orion.pegasys.tech/en/latest/
+site_url: https://docs.orion.consensys.net/
 site_description: Orion Transaction Manager documentation.
 site_author: Orion community
 copyright: Orion and its documentation are licensed under Apache 2.0 license.
@@ -27,16 +27,13 @@ extra:
   support:
     tool: Discord
     channel: https://discord.gg/n8m22JK
-    email: support@pegasys.tech
-    website: https://pegasys.tech/
-    company: Pegasys
+    email: quorum@consensys.net
+    website: https://consensys.net/quorum/developers
+    company: Consensys
     issues: https://github.com/PegaSysEng/orion/issues
   google:
     tag_manager: 'GTM-T5Q86JM'
     site_verification: 'za1cLzyS6LXDGO-pMzvfQdYTZ0Zc67uZtY0asA4YXZ0'
-  search:
-    language: 'en'
-    tokenizer: '[\s]+'
 
 # Repository
 repo_name: PegaSysEng/orion
