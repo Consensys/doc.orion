@@ -1,11 +1,11 @@
-description: TLS 
+description: TLS
 <!--- END of page meta data -->
 
 # TLS
 
 Orion supports the Transport Layer Security (TLS) protocol to enable secure
 communications between clients (for example [Besu](https://besu.hyperledger.org/en/latest/Concepts/TLS/)) and Orion, and
-between Orion nodes. 
+between Orion nodes.
 
 Enable TLS and set TLS properties in the [Orion configuration file](../Reference/Configuration-File.md):
 
@@ -53,22 +53,22 @@ Configure TLS in the [Orion configuration file](../Reference/Configuration-File.
     clientconnectiontlsserverkey = "<PATH-TO>/orion/bin/orion_cer.key"
     clientconnectiontlsservertrust = "whitelist"
     clientconnectiontlsknownclients = "<PATH-TO>/orion/bin/orionKnownClients"
-    
+
     nodenetworkinterface = "0.0.0.0"
     clientnetworkinterface = "0.0.0.0"
     ```
 
-## Orion-to-Orion TLS Properties 
+## Orion-to-Orion TLS Properties
 
 Properties to configure TLS between Orion nodes.
 
-### tls 
+### tls
 
 TLS status options are:
 
 * `strict` - All connections to and from other Orion nodes must use TLS with
-mutual authentication. See [tlsservertrust](#tlsservertrust) and 
-[tlsclienttrust](#tlsclienttrust). 
+mutual authentication. See [tlsservertrust](#tlsservertrust) and
+[tlsclienttrust](#tlsclienttrust).
 * `off` - Mutually authenticated TLS is not used between Orion nodes.
 Unauthenticated connections to HTTPS hosts are still possible. Use only if
 another transport security mechanism like WireGuard is in place.
@@ -81,13 +81,13 @@ is created.
 
 ### tlsserverchain
 
-List of files that make up the CA trust chain for the server certificate. The list can be empty for auto-generated/non-PKI-based 
+List of files that make up the CA trust chain for the server certificate. The list can be empty for auto-generated/non-PKI-based
 certificates.
 
 ### tlsserverkey
 
 File containing the private key for the server TLS certificate. If the private key does not exist, it is
-created. 
+created.
 
 ### tlsservertrust
 
@@ -100,14 +100,14 @@ TLS trust mode for the server. The trust mode defines which nodes can connect to
  as the same host in the future. Nodes identifying as other hosts can still connect. To restrict access, change
  the mode to `whitelist` after populating the `tlsknownclients` list.
 
-* `ca` -  Only nodes with a valid certificate and chain of trust to one of the system root certificates 
+* `ca` -  Only nodes with a valid certificate and chain of trust to one of the system root certificates
 can connect.  Use the `SYSTEM_CERTIFICATE_PATH` environment variable to override the directory containing
  trusted root certificates.
 
-* `ca-or-whitelist` - Combination of `ca` and `whitelist`. 
+* `ca-or-whitelist` - Combination of `ca` and `whitelist`.
 
-* `ca-or-tofu` - Combination of `ca` and `tofu`. If a certificate is valid, it is always allowed and added 
-to the `tlsknownclients` list. If it is self-signed, it is allowed only if it is the first certificate 
+* `ca-or-tofu` - Combination of `ca` and `tofu`. If a certificate is valid, it is always allowed and added
+to the `tlsknownclients` list. If it is self-signed, it is allowed only if it is the first certificate
 this node has seen for that host.
 
 * `insecure-tofa` - Trust-on-first-access. On first connection, the Common Name
@@ -140,7 +140,7 @@ exist, it is created.
 
 ### tlsclientchain
 
-List of files that make up the CA trust chain for the client certificate. The list can be empty for auto-generated/non-PKI-based 
+List of files that make up the CA trust chain for the client certificate. The list can be empty for auto-generated/non-PKI-based
 certificates.
 
 ### tlsclientkey
@@ -152,20 +152,20 @@ created.
 
 TLS trust mode for the client. The trust mode defines the servers to which this node connects. Options:
 
-* `whitelist` - Nodes only connects to servers it has previously seen and have been added to `tlsknownservers`. 
+* `whitelist` - Nodes only connects to servers it has previously seen and have been added to `tlsknownservers`.
 New servers are not added to `tlsknownservers`.
 
 * `tofu` - Trust-on-first-use. Node only connects to the same server for any given host. This is similar to how
-OpenSSH works. 
+OpenSSH works.
 
-* `ca` -  Node only connects to servers with a valid certificate and chain of trust to one of the system 
+* `ca` -  Node only connects to servers with a valid certificate and chain of trust to one of the system
 root certificates. Use the `SYSTEM_CERTIFICATE_PATH` environment variable to override the directory containing
  trusted root certificates.
 
 * `ca-or-whitelist` - Combination of `ca` and `whitelist`.
 
-* `ca-or-tofu` - Combination of `ca` and `tofu`. If a certificate is valid, it is always allowed and added 
-to the `tlsknownservers` list. If it is self-signed, it is allowed only if it is the first certificate 
+* `ca-or-tofu` - Combination of `ca` and `tofu`. If a certificate is valid, it is always allowed and added
+to the `tlsknownservers` list. If it is self-signed, it is allowed only if it is the first certificate
 this node has seen for that host.
 
 * `insecure-record` - This node connects to any server, regardless of
@@ -175,7 +175,7 @@ certificate, and is added to the `tlsknownservers` file.
 
 * `insecure-no-validation` - Node connects to any server. Servers are added to the `tlsknownservers` file.
 
-### tlsknownservers 
+### tlsknownservers
 
 TLS known servers for the client. The `tlsknownservers` contains the fingerprints of public keys of other
 nodes that this node has encountered for the `ca-or-tofu`, `tofu`, and `whitelist` trust modes.
@@ -192,7 +192,7 @@ Properties to configure TLS between the client (for example [Besu](https://besu.
 TLS status options are:
 
 * `strict` - All connections between the client and Orion must use TLS with
-mutual authentication. See [clientconnectiontlsservertrust](#clientconnectiontlsservertrust). 
+mutual authentication. See [clientconnectiontlsservertrust](#clientconnectiontlsservertrust).
 * `off` - Mutually authenticated TLS is not used for client connections.
 Unauthenticated connections to HTTPS hosts are still possible. Use only if
 another transport security mechanism like WireGuard is in place.
@@ -211,16 +211,16 @@ list can be empty for auto-generated/non-PKI-based certificates.
 ### clientconnectiontlsserverkey
 
 File containing the private key for the server TLS certificate. If the private
-key does not exist, it is created. 
+key does not exist, it is created.
 
 ### clientconnectiontlsservertrust
 
 !!! important
     When using [multi-tenancy](../Concepts/Multi-Tenancy.md), ensure the multi-tenant Orion node client API is
     configured to allow access only by the multi-tenant Besu node.
-    
+
     Use the `whitelist` trust mode to allow access to the appropriate Besu node.
-    
+
 The trust mode defines which clients can connect. Options:
 
 * `whitelist` - Only clients presenting certificates with fingerprints in
