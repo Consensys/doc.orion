@@ -160,7 +160,7 @@ Content-Type: application/json
 
 ## knownnodes
 
-Returns the public key and URL for nodes discovered by Orion.
+Returns the public key and URL of nodes discovered by Orion.
 
 **HTTP Verb**
 GET
@@ -173,7 +173,7 @@ None
 
 **Returns**
 
-`array of objects` - Public key and URL for each discovered node.
+`array of objects` - Public key and URL of each discovered node.
 
 !!! example
 

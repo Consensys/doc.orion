@@ -4,7 +4,7 @@ Sign the CLA
 This page is the step-by-step guide to signing the Consensys AG
 Individual Contributor License Agreement.
 
-1. First and foremost, read [the current version of the CLA].
+1. First, read [the current version of the CLA].
    It is written to be as close to plain English as possible.
 
 2. Make an account on [GitHub] if you don't already have one.
