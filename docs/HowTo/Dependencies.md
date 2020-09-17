@@ -14,6 +14,7 @@ primitives.
 #### MacOS
 
 Install using [homebrew](https://brew.sh/):
+
 ```bash
 brew install libsodium
 ```
@@ -24,7 +25,8 @@ Download the [latest stable version](https://download.libsodium.org/libsodium/re
 of libsodium.
 
 Execute:
-``` bash
+
+```bash
 ./configure
 make && make check
 sudo make install

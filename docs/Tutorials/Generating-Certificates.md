@@ -45,15 +45,11 @@ We recommend each node has its own certificate. To generate the certificate:
     `openssl genrsa -out orion_cer.key 2048`
 
 1. Generate a certificate signing request (CSR) called `orion_cer.csr`:
-
     `openssl req -new -key orion_cer.key -out orion_cer.csr`
-
-1. Answer each prompt for information to be added to the certificate request. Ensure the
-value you specify for Common Name (CN) matches the host public DNS so the requests from the server are accepted. The name
-is also specified in the configuration file for the `nodeurl` and `clienturl` options.
-
+1. Answer each prompt for information to be added to the certificate request.
+    Ensure the value you specify for Common Name (CN) matches the host public DNS so the requests from the server are accepted.
+    The name is also specified in the configuration file for the `nodeurl` and `clienturl` options.
 1. Generate a certificate called `orion_cer.pem` signed by the CA certificate:
-
     `openssl x509 -req -in orion_cer.csr -CA orion_ca.pem -CAkey orion_ca.key -CAcreateserial -out orion_cer.pem -days 500 -sha256`
 
 ### IP address is CN

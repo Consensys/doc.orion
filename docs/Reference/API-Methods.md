@@ -1,3 +1,7 @@
+---
+description: Orion RPC API
+---
+
 # Client API
 
 The Client API is used by Ethereum clients (for example, Hyperledger Besu) to interact with Orion.
@@ -5,17 +9,21 @@ The Client API is used by Ethereum clients (for example, Hyperledger Besu) to in
 The port used by the Client API is defined by the `clientport ` property in the [configuration file](../Reference/Configuration-File.md).
 The default port is `8888`.
 
-## createPrivacyGroup
+## Methods
+
+### createPrivacyGroup
 
 Creates a privacy group with the specified members.
 
-**HTTP Verb**
+#### HTTP Verb
+
 POST
 
-**Headers:**
-Content-Type: application/json
+#### Headers
 
-**Request Body**
+- Content-Type: application/json
+
+#### Request Body
 
 `addresses` : *array of strings* - Orion node keys to include in the privacy group
 
@@ -25,7 +33,7 @@ Content-Type: application/json
 
 `description` : *string* - Description for the privacy group
 
-**Returns**
+#### Returns
 
 `privacy group` : *object* - Privacy group object
 
@@ -59,23 +67,25 @@ Content-Type: application/json
         }
         ```
 
-## deletePrivacyGroup
+### deletePrivacyGroup
 
 Deletes a privacy group.
 
-**HTTP Verb**
+#### HTTP Verb
+
 POST
 
-**Headers:**
-Content-Type: application/json
+#### Headers
 
-**Request Body**
+- Content-Type: application/json
+
+#### Request Body
 
 `privacyGroupId` : *string* - ID of the privacy group to delete
 
 `from` : *string* - Orion node key of node deleting the privacy group
 
-**Returns**
+#### Returns
 
 `privacyGroupId` : *string* - ID of the deleted privacy group
 
@@ -110,21 +120,23 @@ Content-Type: application/json
         "C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q="
         ```
 
-## findPrivacyGroup
+### findPrivacyGroup
 
 Finds all privacy groups containing only the specified members.
 
-**HTTP Verb**
+#### HTTP Verb
+
 POST
 
-**Headers:**
-Content-Type: application/json
+#### Headers
 
-**Request Body**
+- Content-Type: application/json
+
+#### Request Body
 
 `addresses` : *array of strings* - Orion node keys for which to return privacy groups
 
-**Returns**
+#### Returns
 
 `array of objects` - Privacy group objects for all privacy groups containing only the specified members
 
@@ -158,20 +170,23 @@ Content-Type: application/json
         ]
         ```
 
-## knownnodes
+### knownnodes
 
 Returns the public key and URL of nodes discovered by Orion.
 
-**HTTP Verb**
+#### HTTP Verb
+
 GET
 
-**Headers:**
+#### Headers
+
 None
 
-**Request Body**
+#### Request Body
+
 None
 
-**Returns**
+#### Returns
 
 `array of objects` - Public key and URL of each discovered node.
 
@@ -198,23 +213,25 @@ None
         ]
         ```
 
-## receive
+### receive
 
 Receives a payload from Orion using the payload key. The payload key is returned by the [send](#send) method.
 
-**HTTP Verb**
+#### HTTP Verb
+
 POST
 
-**Headers:**
-Content-Type: application/json
+#### Headers
 
-**Request Body**
+- Content-Type: application/json
+
+#### Request Body
 
 `key` : *string* - Key used to receive the payload
 
 `to` : *string* - Orion key of the receiver
 
-**Returns**
+#### Returns
 
 `payload` : *string* - Base64 encoded payload
 
@@ -237,7 +254,7 @@ Content-Type: application/json
          {"payload":"SGVsbG8sIFdvcmxkIQ=="}
         ```
 
-### receive with privacy group ID
+#### receive with privacy group ID
 
 To return the privacy group ID with the payload, use the `receive` method with the header `Content-Type: application/vnd.orion.v1+json`.
 
@@ -264,23 +281,24 @@ To return the privacy group ID with the payload, use the `receive` method with t
          }
         ```
 
-## receiveraw
+### receiveraw
 
 Receives a raw payload from Orion using the payload key. The payload key is returned by the [sendraw](#sendraw) method
 
-**HTTP Verb**
+#### HTTP Verb
+
 POST
 
-**Headers:**
-Content-Type: application/octet-stream
+#### Headers
 
-c11n-key: Key used to receive the payload
+- Content-Type: application/octet-stream
+- c11n-key: Key used to receive the payload
 
-**Request Body**
+#### Request Body
 
 None
 
-**Returns**
+#### Returns
 
 Payload
 
@@ -301,17 +319,19 @@ Payload
         Hello, World!
         ```
 
-## send
+### send
 
 Sends a payload to Orion.
 
-**HTTP Verb**
+#### HTTP Verb
+
 POST
 
-**Headers:**
-Content-Type: application/json
+#### Headers
 
-**Request Body**
+- Content-Type: application/json
+
+#### Request Body
 
 `payload` : *string* - Base64-encoded payload
 
@@ -323,7 +343,7 @@ or
 
  `privacyGroupId` : *string* - Privacy group to receive this payload
 
-**Returns**
+#### Returns
 
 `key` : *string* - Key used to receive the payload
 
@@ -359,24 +379,25 @@ or
         {"key":"wS+RMprLKIuCaHzOBfPeHmkJWUdOJ7Ji/9U3qj2jbXQ="}
         ```
 
-
-## sendraw
+### sendraw
 
 Sends a raw payload to Orion.
 
-**HTTP Verb**
+#### HTTP Verb
+
 POST
 
-**Headers:**
-Content-Type: application/octet-stream
-c11n-from: Orion node key of the sender
-c11n-to: List of Orion node keys to receive this payload
+#### Headers
 
-**Request Body**
+- Content-Type: application/octet-stream
+- c11n-from: Orion node key of the sender
+- c11n-to: List of Orion node keys to receive this payload
+
+#### Request Body
 
 `payload` : *string* - Payload
 
-**Returns**
+#### Returns
 
 Key used to receive the payload
 
@@ -398,20 +419,23 @@ Key used to receive the payload
         +3gnwO0oHXe4kXsr3kegd9jTTqsq3Y6Hm3w26WHR/RM=
         ```
 
-## upcheck
+### upcheck
 
 Confirms if Orion is running.
 
-**HTTP Verb**
+#### HTTP Verb
+
 GET
 
-**Headers:**
+#### Headers
+
 None
 
-**Request Body**
+#### Request Body
+
 None
 
-**Returns**
+#### Returns
 
 *string* : I'm up
 

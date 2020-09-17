@@ -19,10 +19,7 @@ layer with enterprise support available from [ConsenSys](https://consensys.net/q
 Orion:
 
 * Generates and maintains private/public keypairs.
-
 * Stores privacy group details.
-
 * Self manages and discovers all nodes in the Orion network.
-
-* Provides an API for communicating between Orion nodes and an API for communicating with Ethereum
-clients (for example, Hyperledger Besu).
+* Provides an API for communicating between Orion nodes and an API for communicating with
+    Ethereum clients (for example, Hyperledger Besu).

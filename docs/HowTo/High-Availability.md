@@ -34,6 +34,7 @@ When configuring for high availability, configure the nodes in the Orion cluster
 above diagram) with the same set of keys and advertise the load balancer address.
 
 !!! example "Nginx configuration with two Orion nodes"
+
     ```
      events { }
 

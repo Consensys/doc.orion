@@ -29,7 +29,7 @@ The public/private key pair is generated, and the keys are saved in the `nodeKey
 
 Create a file called `orion.conf` and add the following properties:
 
-```
+```toml
 nodeurl = "http://127.0.0.1:8080/"
 nodeport = 8080
 clienturl = "http://127.0.0.1:8888/"
@@ -44,7 +44,7 @@ tls = "off"
 
 Start Orion specifying the [configuration file](#3-create-a-configuration-file):
 
-```
+```bash
 orion orion.conf
 ```
 
@@ -53,6 +53,7 @@ orion orion.conf
 Use the `upcheck` method to confirm Orion is up and running:
 
 === "Request"
+
     ```bash
     curl http://localhost:8888/upcheck
     ```
@@ -66,7 +67,6 @@ Use the `upcheck` method to confirm Orion is up and running:
 ### 6. Send a payload
 
 With one node running, send a payload to yourself where the `from` and `to` values are the [generated public key](#2-generate-keys) (`nodeKey.pub`):
-
 
 === "Request"
 

@@ -35,16 +35,19 @@ Build Orion with the Gradle wrapper `gradlew`, omitting tests as follows:
 ```
 
 Go to the distribution directory:
+
 ```bash
 cd build/distributions/
 ```
 
 Expand the distribution archive:
+
 ```bash
 tar -xzf orion-<version>.tar.gz
 ```
 
 Move to the expanded folder and display the Orion help to confirm installation.
+
 ````bash
 cd orion-<version>/
 bin/orion --help
@@ -79,16 +82,19 @@ Build Orion with the Gradle wrapper `gradlew`, omitting tests as follows:
     For example: `JAVA_HOME = C:\Program Files\Java\jdk1.8.0_181`.
 
 Go to the distribution directory:
+
 ```bat
 cd build\distributions
 ```
 
 Expand the distribution archive:
+
 ```bat
 tar -xzf orion-<version>.tar.gz
 ```
 
 Go to the expanded folder and display the Orion help to confirm installation.
+
 ```bat
 cd orion-<version>
 bin\orion --help
