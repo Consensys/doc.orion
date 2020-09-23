@@ -61,7 +61,7 @@ To use a public IP address as CN:
 1. Find the `openssl.cfn` file, and create a copy of it.
 1. In your copy of the `openssl.cfn` file, find the `[req]` section, and add:
 
-    ```
+    ```ini
     req_extensions = v3_req
 
     [ v3_req ]

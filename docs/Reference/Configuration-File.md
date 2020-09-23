@@ -59,6 +59,3 @@ Orion node on the network. That is, there must be an Orion node with the specifi
 ### passwords
 
 File contains one password per line. Include an empty line for keys that are not locked.
-
-
-

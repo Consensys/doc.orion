@@ -19,5 +19,3 @@ network to use the same Besu and Orion node. [Configure multi-tenancy in Besu](h
 
     You can use [TLS](TLS-Communication.md) with the [`whitelist`](../Tutorials/TLS.md#clientconnectiontlsservertrust) trust mode to
     secure access.
-
-

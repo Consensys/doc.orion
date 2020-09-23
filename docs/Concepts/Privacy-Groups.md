@@ -12,7 +12,3 @@ Endpoints are provided to create, delete, and privacy groups:
 * [`createPrivacyGroup`](../Reference/API-Methods.md#createprivacygroup)
 * [`deletePrivacyGroup`](../Reference/API-Methods.md#deleteprivacygroup)
 * [`findPrivacyGroup`](../Reference/API-Methods.md#findprivacygroup)
-
-
-
-

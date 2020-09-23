@@ -37,7 +37,7 @@ storage="jdbc:oracle:thin:<USER-NAME>, <PASSWORD>, <HOST>, <PORT>, <SID>"
 
 1. Send the payload to Orion by running the following request:
 
-     ```
+     ```bash
      curl -X POST \
      http://localhost:8888/send \
      -H 'Content-Type: application/json' \
@@ -52,7 +52,7 @@ storage="jdbc:oracle:thin:<USER-NAME>, <PASSWORD>, <HOST>, <PORT>, <SID>"
 
 1. Receive the payload by running the following request:
 
-     ```
+     ```bash
       curl -X POST \
       http://localhost:8888/receive \
       -H 'Content-Type: application/json' \
