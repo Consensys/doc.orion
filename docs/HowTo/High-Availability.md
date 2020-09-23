@@ -1,4 +1,4 @@
-description: Orion deployment for high availability 
+description: Orion deployment for high availability
 <!--- END of page meta data -->
 
 # High availability
@@ -10,17 +10,17 @@ By placing the instances behind a load balancer, downtime can be limited during 
 
 ## Storage
 
-When configuring for high availability, both storage and known nodes storage must match so Orion 
-provides up to date information. Known nodes are discovered Orion nodes. 
+When configuring for high availability, both storage and known nodes storage must match so Orion
+provides up to date information. Known nodes are discovered Orion nodes.
 
 !!! tip
-    Use the [`knownnodes`](../Reference/API-Methods.md#knownnodes) client API methods to retrieve the 
-    known nodes.  
+    Use the [`knownnodes`](../Reference/API-Methods.md#knownnodes) client API methods to retrieve the
+    known nodes.
 
-Use a relational database to enable highly available scenarios. Orion supports relational databases 
-[PostgreSQL](../Tutorials/Using-PostgreSQL.md) and [Oracle](../Tutorials/Using-Oracle.md). 
+Use a relational database to enable highly available scenarios. Orion supports relational databases
+[PostgreSQL](../Tutorials/Using-PostgreSQL.md) and [Oracle](../Tutorials/Using-Oracle.md).
 
-Orion also supports LevelDB and MapDB stores. LevelDB and MapDB lock the local file system and 
+Orion also supports LevelDB and MapDB stores. LevelDB and MapDB lock the local file system and
 are not suitable for highly available scenarios.
 
 For high availability, ensure the `storage` and `knownnodesstorage` in the [configuration file](../Reference/Configuration-File.md)
@@ -34,6 +34,7 @@ When configuring for high availability, configure the nodes in the Orion cluster
 above diagram) with the same set of keys and advertise the load balancer address.
 
 !!! example "Nginx configuration with two Orion nodes"
+
     ```
      events { }
 
@@ -70,5 +71,5 @@ The configuration defines two upstreams: `orion_8080` and `orion_8888`.
 
 Both upstreams define health checks: `max_fails=3 fail_timeout=5s`
 
-The [health checks](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-health-check/) help 
+The [health checks](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-health-check/) help
 Nginx balance traffic among upstream servers.

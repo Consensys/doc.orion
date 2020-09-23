@@ -1,14 +1,14 @@
-description: Configuration File 
+description: Configuration File
 <!--- END of page meta data -->
 
-# Configuration file 
+# Configuration file
 
 The Configuration file is a TOML file that must be specified when
 [starting Orion](../Reference/Orion-CLI-Syntax.md#configuration-file).
 
 Configuration entries may be overridden by environment variables.
 
-## Properties 
+## Properties
 
 | Property                          | Required | Environment variable name             | Description                                                                               | Default                           |
 |-----------------------------------|--:- :----|---------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------|
@@ -47,18 +47,15 @@ Configuration entries may be overridden by environment variables.
 
 ### libsodiumpath
 
-Depends on the operational system. Check the class LibSodiumSettings for more details. 
+Depends on the operational system. Check the class LibSodiumSettings for more details.
 
 ### alwayssendto
 
 Specifies list of files containing public keys to include as a recipient for every transaction sent
-through the node (for example, for backup purposes). The specified public keys must be advertised by an 
+through the node (for example, for backup purposes). The specified public keys must be advertised by an
 Orion node on the network. That is, there must be an Orion node with the specified public keys included in the node
-`publickeys` list. 
+`publickeys` list.
 
 ### passwords
 
-File contains one password per line. Include an empty line for keys that are not locked. 
-
-
-
+File contains one password per line. Include an empty line for keys that are not locked.

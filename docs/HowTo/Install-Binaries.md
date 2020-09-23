@@ -18,14 +18,13 @@ description: Install Orion from binary distribution
 ### Version compatibility
 
 The latest minor version of Orion is compatible with the latest minor version of Hyperledger Besu.
-That is, upgrading Besu from 1.4.x to 1.5 requires upgrading Orion from 1.5.x to 1.6. Upgrading from 
-Besu 1.4.x to Besu 1.4.y does not require an Orion upgrade. 
+That is, upgrading Besu from 1.4.x to 1.5 requires upgrading Orion from 1.5.x to 1.6. Upgrading from
+Besu 1.4.x to Besu 1.4.y does not require an Orion upgrade.
 
-| Besu version              | Orion version         |        
+| Besu version              | Orion version         |
 |---------------------------|-----------------------|
-| 1.5.x                     | 1.6.x                 |        
+| 1.5.x                     | 1.6.x                 |
 | 1.4.x                     | 1.5.x                 |
-
 
 ## Install binaries
 
@@ -35,10 +34,14 @@ Unpack the downloaded files and change into the `orion-<release>` directory.
 
 Display Orion command-line help to confirm installation:
 
-```bash tab="Linux/macOS"
-$ bin/orion --help
-```
+=== "Linux/macOS"
 
-```bat tab="Windows"
-bin\orion --help
-```
+    ```bash
+    $ bin/orion --help
+    ```
+
+=== "Windows"
+
+    ```bat
+    bin\orion --help
+    ```

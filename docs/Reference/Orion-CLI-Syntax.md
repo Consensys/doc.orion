@@ -13,52 +13,66 @@ Runs Orion private transaction manager.
 
 ## Options
 
+### clear-known-nodes
+
+=== "Syntax"
+
+    ```bash
+      --clear-known-nodes
+    ```
+
+Clears known nodes. By default, known nodes are stored in memory but can be stored persistently to
+enable [high availability](../HowTo/High-Availability.md). `knownnodestorage` is defined in the
+[configuration file](../Reference/Configuration-File.md).
+
 ### generatekeys
 
-```bash tab="Syntax"
--g, --generatekeys <names>
-```
+=== "Syntax"
 
-```bash tab="Example"
---generatekeys orion
-```
+    ```bash
+    -g, --generatekeys <names>
+    ```
 
-Generates public/private key pairs for each name supplied where `<names>` is a comma-separated list. 
+=== "Example"
+
+    ```bash
+    --generatekeys orion
+    ```
+
+Generates public/private key pairs for each name supplied where `<names>` is a comma-separated list.
 
 ### help
 
-```bash tab="Syntax"
--h, --help
-```
+=== "Syntax"
+
+    ```bash
+    -h, --help
+    ```
 
 Displays help and exits.
 
 ### version
 
-```bash tab="Syntax"
-  -v, --version
-```
+=== "Syntax"
+
+    ```bash
+      -v, --version
+    ```
 
 Displays version information and exits.
 
-### clear-known-nodes
+## Configuration file
 
-```bash tab="Syntax"
-  --clear-known-nodes
-```
+=== "Syntax"
 
-Clears known nodes. By default, known nodes are stored in memory but can be stored persistently to 
-enable [high availability](../HowTo/High-Availability.md). `knownnodestorage` is defined in the 
-[configuration file](../Reference/Configuration-File.md). 
+    ```bash
+    orion <configFile>
+    ```
 
-## Configuration file 
+=== "Example"
 
-```bash tab="Syntax"
-orion <configFile>
-```
+    ```bash
+    orion orion.conf
+    ```
 
-```bash tab="Example"
-orion orion.conf
-```
-
-Specifies the [configuration file](../Reference/Configuration-File.md) with which to start Orion. 
+Specifies the [configuration file](../Reference/Configuration-File.md) with which to start Orion.

@@ -19,7 +19,6 @@ In this example we create the [password file](#2-create-password-file), [public/
 and [Orion configuration file](#4-create-a-configuration-file) in the
 `/Users/user1/Node1/Orion` directory.
 
-
 ## 1. Create the Directory Structure
 
 Create the sub-directories in the home directory.
@@ -54,7 +53,7 @@ directory.
 
 Create a file called `orion.conf` and add the following [properties](../Reference/Configuration-File.md):
 
-```
+```toml
 nodeurl = "http://127.0.0.1:8080/"
 nodeport = 8080
 nodenetworkinterface = "0.0.0.0"
