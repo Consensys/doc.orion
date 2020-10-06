@@ -18,7 +18,7 @@ description: Building Orion from source code
 
 ### Clone the Orion repository
 
-Clone the **PegaSysEng/orion** repository:
+Clone the `PegaSysEng/orion` repository:
 
 ```bash
 git clone https://github.com/PegaSysEng/orion.git

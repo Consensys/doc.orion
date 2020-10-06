@@ -1,8 +1,8 @@
 # Orion documentation
 
-[Orion] is a PegaSys component for doing private transactions.
+[Orion] is a Consensys Quorum component for doing private transactions.
 
-The software sources are hosted in <https://github.com/PegaSysEng/orion>
+The software sources are hosted in [`https://github.com/PegaSysEng/orion`](https://github.com/PegaSysEng/orion)
 
 This repository only contains the sources for [Orion documentation website hosted by ReadTheDocs].
 

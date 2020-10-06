@@ -13,7 +13,7 @@ Runs Orion private transaction manager.
 
 ## Options
 
-### clear-known-nodes
+### `clear-known-nodes`
 
 === "Syntax"
 
@@ -25,7 +25,7 @@ Clears known nodes. By default, known nodes are stored in memory but can be stor
 enable [high availability](../HowTo/High-Availability.md). `knownnodestorage` is defined in the
 [configuration file](../Reference/Configuration-File.md).
 
-### generatekeys
+### `generatekeys`
 
 === "Syntax"
 
@@ -41,7 +41,7 @@ enable [high availability](../HowTo/High-Availability.md). `knownnodestorage` is
 
 Generates public/private key pairs for each name supplied where `<names>` is a comma-separated list.
 
-### help
+### `help`
 
 === "Syntax"
 
@@ -51,7 +51,7 @@ Generates public/private key pairs for each name supplied where `<names>` is a c
 
 Displays help and exits.
 
-### version
+### `version`
 
 === "Syntax"
 
