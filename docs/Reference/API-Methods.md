@@ -283,7 +283,7 @@ To return the privacy group ID with the payload, use the `receive` method with t
 
 ### `receiveraw`
 
-Receives a raw payload from Orion using the payload key. The payload key is returned by the [sendraw](#sendraw) method
+Receives a raw payload from Orion using the payload key. The payload key is returned by the [`sendraw`](#sendraw) method
 
 #### HTTP Verb
 

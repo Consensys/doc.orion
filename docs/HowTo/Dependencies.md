@@ -35,7 +35,7 @@ sudo make install
 
 Perform the following steps:
 
-1. Download the [latest stable **msvc** build](https://download.libsodium.org/libsodium/releases/) of libsodium.
+1. Download the [latest stable MSVC build](https://download.libsodium.org/libsodium/releases/) of libsodium.
 1. Extract the libsodium archive.
 1. Navigate to the current OS architecture (win32 or x64) directory.
 1. Navigate to the _Release_ directory.
@@ -55,3 +55,5 @@ Windows _may_ require the Microsoft Visual C++ 2010 Redistributable Package to u
 
 * [32 bit](https://www.microsoft.com/en-au/download/details.aspx?id=5555)
 * [64 bit](https://www.microsoft.com/en-au/download/details.aspx?id=14632)
+
+*[MSVC]: Microsoft Visual C++

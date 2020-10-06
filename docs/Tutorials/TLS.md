@@ -67,7 +67,7 @@ Properties to configure TLS between Orion nodes.
 TLS status options are:
 
 * `strict` - All connections to and from other Orion nodes must use TLS with
-    mutual authentication. See [tlsservertrust](#tlsservertrust) and [tlsclienttrust](#tlsclienttrust).
+    mutual authentication. See [`tlsservertrust`](#tlsservertrust) and [`tlsclienttrust`](#tlsclienttrust).
 * `off` - Mutually authenticated TLS is not used between Orion nodes.
     Unauthenticated connections to HTTPS hosts are still possible.
     Use only if another transport security mechanism like WireGuard is in place.
@@ -173,7 +173,7 @@ Properties to configure TLS between the client (for example [Besu](https://besu.
 TLS status options are:
 
 * `strict` - All connections between the client and Orion must use TLS with mutual authentication.
-    See [clientconnectiontlsservertrust](#clientconnectiontlsservertrust).
+    See [`clientconnectiontlsservertrust`](#clientconnectiontlsservertrust).
 * `off` - Mutually authenticated TLS is not used for client connections.
     Unauthenticated connections to HTTPS hosts are still possible.
     Use only if another transport security mechanism like WireGuard is in place.

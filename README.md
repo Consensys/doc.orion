@@ -1,6 +1,6 @@
 # Orion documentation
 
-[Orion] is a Consensys Quorum component for doing private transactions.
+[Orion] is a ConsenSys Quorum component for doing private transactions.
 
 The software sources are hosted in [`https://github.com/PegaSysEng/orion`](https://github.com/PegaSysEng/orion)
 
