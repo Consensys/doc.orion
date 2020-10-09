@@ -45,7 +45,7 @@ In your [Orion configuration file](../Reference/Configuration-File.md), specify 
           }'
       ```
 
-1. Using psql, the terminal-based front-end to PostgreSQL, retrieve the new row in the `store` table.
+1. Using `psql`, the terminal-based front-end to PostgreSQL, retrieve the new row in the `store` table.
 
 1. Receive the payload by running the following request:
 
@@ -59,4 +59,4 @@ In your [Orion configuration file](../Reference/Configuration-File.md), specify 
           }'
       ```
 
-1. Using psql, retrieve the data in the `store` table.
+1. Using `psql`, retrieve the data in the `store` table.

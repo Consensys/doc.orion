@@ -6,14 +6,13 @@ description: Orion dependencies
 
 ## libsodium
 
-Orion requires the [Sodium crypto library](https://download.libsodium.org/doc/) (libsodium) to provide the encryption
-primitives.
+Orion requires the [Sodium cryptographic library](https://download.libsodium.org/doc/) (libsodium) to provide the encryption primitives.
 
 ### Install libsodium
 
 #### MacOS
 
-Install using [homebrew](https://brew.sh/):
+Install using [Homebrew](https://brew.sh/):
 
 ```bash
 brew install libsodium
@@ -36,7 +35,7 @@ sudo make install
 
 Perform the following steps:
 
-1. Download the [latest stable **msvc** build](https://download.libsodium.org/libsodium/releases/) of libsodium.
+1. Download the [latest stable MSVC build](https://download.libsodium.org/libsodium/releases/) of libsodium.
 1. Extract the libsodium archive.
 1. Navigate to the current OS architecture (win32 or x64) directory.
 1. Navigate to the _Release_ directory.
@@ -52,7 +51,9 @@ See the [libsodium installation docs](https://download.libsodium.org/doc/install
 
 ### Windows
 
-Windows _may_ require the Microsoft Visual C++ 2010 Redistributable Package to utilize LevelDB. The distributables:
+Windows _may_ require the Microsoft Visual C++ 2010 Redistributable Package to utilize LevelDB:
 
 * [32 bit](https://www.microsoft.com/en-au/download/details.aspx?id=5555)
 * [64 bit](https://www.microsoft.com/en-au/download/details.aspx?id=14632)
+
+*[MSVC]: Microsoft Visual C++

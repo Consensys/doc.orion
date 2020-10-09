@@ -15,7 +15,7 @@ __Prerequisites__:
 
     In this example the required volume is mounted at the `/data` path.
 
-In this example we create the [password file](#2-create-password-file), [public/private keypair](#3-generate-keys),
+In this example we create the [password file](#2-create-password-file), [public/private key pairs](#3-generate-keys),
 and [Orion configuration file](#4-create-a-configuration-file) in the
 `/Users/user1/Node1/Orion` directory.
 
@@ -36,7 +36,7 @@ file is specified for the `passwords` property in the [configuration file](#4-cr
 
 ## 3. Generate Keys
 
-Generate a public/private keypair for the Orion node using Docker:
+Generate the public/private key pairs for the Orion node using Docker:
 
 ``` bash
 docker run -i --rm --mount type=bind,source=/Users/user1/Node1/Orion,target=/data pegasyseng/orion:latest -g /data/testKey

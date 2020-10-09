@@ -11,17 +11,17 @@ The default port is `8888`.
 
 ## Methods
 
-### createPrivacyGroup
+### `createPrivacyGroup`
 
 Creates a privacy group with the specified members.
 
 #### HTTP Verb
 
-POST
+`POST`
 
 #### Headers
 
-- Content-Type: application/json
+- `Content-Type: application/json`
 
 #### Request Body
 
@@ -67,17 +67,17 @@ POST
         }
         ```
 
-### deletePrivacyGroup
+### `deletePrivacyGroup`
 
 Deletes a privacy group.
 
 #### HTTP Verb
 
-POST
+`POST`
 
 #### Headers
 
-- Content-Type: application/json
+- `Content-Type: application/json`
 
 #### Request Body
 
@@ -120,17 +120,17 @@ POST
         "C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q="
         ```
 
-### findPrivacyGroup
+### `findPrivacyGroup`
 
 Finds all privacy groups containing only the specified members.
 
 #### HTTP Verb
 
-POST
+`POST`
 
 #### Headers
 
-- Content-Type: application/json
+- `Content-Type: application/json`
 
 #### Request Body
 
@@ -170,13 +170,13 @@ POST
         ]
         ```
 
-### knownnodes
+### `knownnodes`
 
 Returns the public key and URL of nodes discovered by Orion.
 
 #### HTTP Verb
 
-GET
+`GET`
 
 #### Headers
 
@@ -213,17 +213,17 @@ None
         ]
         ```
 
-### receive
+### `receive`
 
 Receives a payload from Orion using the payload key. The payload key is returned by the [send](#send) method.
 
 #### HTTP Verb
 
-POST
+`POST`
 
 #### Headers
 
-- Content-Type: application/json
+- `Content-Type: application/json`
 
 #### Request Body
 
@@ -281,18 +281,18 @@ To return the privacy group ID with the payload, use the `receive` method with t
          }
         ```
 
-### receiveraw
+### `receiveraw`
 
-Receives a raw payload from Orion using the payload key. The payload key is returned by the [sendraw](#sendraw) method
+Receives a raw payload from Orion using the payload key. The payload key is returned by the [`sendraw`](#sendraw) method
 
 #### HTTP Verb
 
-POST
+`POST`
 
 #### Headers
 
-- Content-Type: application/octet-stream
-- c11n-key: Key used to receive the payload
+- `Content-Type: application/octet-stream`
+- `c11n-key`: Key used to receive the payload
 
 #### Request Body
 
@@ -319,17 +319,17 @@ Payload
         Hello, World!
         ```
 
-### send
+### `send`
 
 Sends a payload to Orion.
 
 #### HTTP Verb
 
-POST
+`POST`
 
 #### Headers
 
-- Content-Type: application/json
+- `Content-Type: application/json`
 
 #### Request Body
 
@@ -379,19 +379,19 @@ or
         {"key":"wS+RMprLKIuCaHzOBfPeHmkJWUdOJ7Ji/9U3qj2jbXQ="}
         ```
 
-### sendraw
+### `sendraw`
 
 Sends a raw payload to Orion.
 
 #### HTTP Verb
 
-POST
+`POST`
 
 #### Headers
 
-- Content-Type: application/octet-stream
-- c11n-from: Orion node key of the sender
-- c11n-to: List of Orion node keys to receive this payload
+- `Content-Type: application/octet-stream`
+- `c11n-from`: Orion node key of the sender
+- `c11n-to`: List of Orion node keys to receive this payload
 
 #### Request Body
 
@@ -419,13 +419,13 @@ Key used to receive the payload
         +3gnwO0oHXe4kXsr3kegd9jTTqsq3Y6Hm3w26WHR/RM=
         ```
 
-### upcheck
+### `upcheck`
 
 Confirms if Orion is running.
 
 #### HTTP Verb
 
-GET
+`GET`
 
 #### Headers
 
@@ -437,7 +437,7 @@ None
 
 #### Returns
 
-*string* : I'm up
+*string* : `I'm up`
 
 !!! example
 
