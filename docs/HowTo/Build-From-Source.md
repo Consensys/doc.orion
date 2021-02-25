@@ -18,10 +18,10 @@ description: Building Orion from source code
 
 ### Clone the Orion repository
 
-Clone the `PegaSysEng/orion` repository:
+Clone the `ConsenSys/orion` repository:
 
 ```bash
-git clone https://github.com/PegaSysEng/orion.git
+git clone https://github.com/ConsenSys/orion.git
 ```
 
 ### Build Orion
@@ -57,10 +57,10 @@ bin/orion --help
 
 ### Install Orion
 
-Clone the `PegaSysEng/orion` repository:
+Clone the `ConsenSys/orion` repository:
 
 ```bat
-git clone https://github.com/PegaSysEng/orion.git
+git clone https://github.com/ConsenSys/orion.git
 ```
 
 ### Build Orion
