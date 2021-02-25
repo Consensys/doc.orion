@@ -30,7 +30,7 @@ extra:
     email: quorum@consensys.net
     website: https://consensys.net/quorum/developers
     company: Consensys
-    issues: https://github.com/PegaSysEng/orion/issues
+    issues: https://github.com/ConsenSys/orion/issues
     faq: https://consensys.net/quorum/faq
   google:
     tag_manager: 'GTM-T5Q86JM'
@@ -38,8 +38,8 @@ extra:
   inverted_logo: 'images/inverted_logo.svg'
 
 # Repository
-repo_name: PegaSysEng/orion
-repo_url: https://github.com/PegaSysEng/orion
+repo_name: ConsenSys/orion
+repo_url: https://github.com/ConsenSys/orion
 
 theme:
   name: material
