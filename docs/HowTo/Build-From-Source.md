@@ -5,7 +5,7 @@ description: Building Orion from source code
 
 ## Prerequisites
 
-* [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
 
 !!!important
     Orion requires Java 11+; earlier versions are not supported.
