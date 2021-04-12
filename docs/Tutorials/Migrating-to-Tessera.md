@@ -80,6 +80,9 @@ for help with other databases.
     added to the `CLASSPATH` environment variable and added to
     the start script at `~/bin/migrate.bash`
 
+!!! note
+    Password protected keys are renamed to `.orion` on migration and added to the Tessera config.
+
 1. Verify the state on your Besu and Orion network using `priv_debugGetStateRoot` and `priv_getTransactionCount`.
 
 1. Stop your Besu and Orion nodes.
