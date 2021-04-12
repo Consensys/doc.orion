@@ -15,7 +15,8 @@ A full migration workflow would be as follows:
 1. Download or build the migration utility
 1. Shut down the Orion and Hyperledger Besu nodes
 1. Perform the config and database migration
-1. Start Tessera and Hyperledger Besu nodes with the new config and database files
+1. Start Tessera with the new config and database files
+1. Start Hyperledger Besu nodes
 
 ## Build Migration Utility
 
