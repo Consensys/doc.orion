@@ -32,7 +32,7 @@ The utility can be built from the [Tessera repository](https://github.com/Consen
 
 1. Build the migration utility using gradle:
 
-`./gradlew`
+`./gradlew clean migration:orion-to-tessera:installDist -x test`
 
 ## Download Migration Utility
 
