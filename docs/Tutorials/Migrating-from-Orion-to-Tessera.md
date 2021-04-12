@@ -23,14 +23,19 @@ A full migration workflow would be as follows:
 The utility can be built from the [Tessera repository](https://github.com/ConsenSys/tessera/).
 
 First clone the Tessera repository:
+
 ```bash
 git clone https://github.com/ConsenSys/tessera
 ```
+
 Navigate to the project root directory:
+
 ```bash
 cd tessera
 ```
+
 Build the migration utility with the Gradle wrapper `gradlew`:
+
 ```bash
 ./gradlew clean migration:orion-to-tessera:installDist -x test
 ```
@@ -107,7 +112,7 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
 
     === "Result"
 
-    ```
+    ```bash
     === Migration report ===
     Migrated 2156 of 2156 transactions
     Migrated 56 of 56 privacy groups
@@ -117,7 +122,7 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
 
 ### Restart Services
 
-1. Start Besu and Tessera using the new Tessera config file and database.
+1. Start Besu and Tessera using the new Tessera configuration file and database.
 
 1. Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`, it should be identical to the results from earlier.
 
@@ -125,7 +130,8 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
 
 You must specify the following options in order to run the migration tool:
 
-`Orion config file`= Orion configuration file location
+`Orion 
+file`= Orion configuration file location
 
 `outputFile`= Target Tessera configuration file location
 
