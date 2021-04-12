@@ -104,7 +104,7 @@ Substitute `main class`, `Orion config file`, `outputFile`, `password`, `url` an
     Migrated 2156 of 2156 transactions
     Migrated 56 of 56 privacy groups
     ```
-1. On a successful migration, the count of transactions and privacy groups migrated will be output.
+1. On a successful migration, the count of transactions and privacy groups migrated will match expected values.
 
 1. Start Besu and Tessera using the new Tessera config file and database.
 
