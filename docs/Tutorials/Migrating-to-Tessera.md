@@ -8,7 +8,7 @@ description: Migrate your Orion configuration and data to Tessera.
 ## Migration Process
 
 A utility is included in Tessera which enables migration of an Orion config
-file and database to a Tessera config file and database.
+file and database to a Tessera config file and database. No changes are required to the config of Besu itself to migrate.
 
 A full migration workflow would be as follows:
 
