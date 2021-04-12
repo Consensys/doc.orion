@@ -34,6 +34,7 @@ Build the migration utility with the Gradle wrapper `gradlew`:
 ```bash
 ./gradlew clean migration:orion-to-tessera:installDist -x test
 ```
+
 ## Download Migration Utility
 
 Or download the migration utility binaries, which are available at the following [download link](to be added).
