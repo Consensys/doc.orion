@@ -80,6 +80,8 @@ for help with other databases.
     added to the `CLASSPATH` environment variable and added to
     the start script at `~/bin/migrate.bash`
 
+1. Verify the state on your Besu and Orion network using `priv_debugGetStateRoot` and `priv_getTransactionCount`.
+
 1. Stop your Besu and Orion nodes.
 
 1. Begin the migration by running `migrate` with all required options.
@@ -108,7 +110,7 @@ Substitute `main class`, `Orion config file`, `outputFile`, `password`, `url` an
 
 1. Start Besu and Tessera using the new Tessera config file and database.
 
-1. Verify the state using `priv_debugGetStateRoot` and `priv_getTransactionCount`.
+1. Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`, it should be identical to the results from earlier.
 
 ### Options
 
