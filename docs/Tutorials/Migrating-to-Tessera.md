@@ -73,7 +73,7 @@ Verify the installation by running the migration utility with the `--help` flag.
 
 By default Tessera uses an H2 database, however alternative databases can be configured.
 Refer to the following [SQL Data Definition Language files](https://github.com/consensys/tessera/tree/master/ddls/create-table)
-for help with defining with other databases.
+for help with other databases.
 
 !!! warning
     If migrating from an SQL database to Tessera then the JDBC driver must be
