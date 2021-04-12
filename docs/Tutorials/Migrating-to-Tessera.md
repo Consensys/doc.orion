@@ -26,13 +26,13 @@ The utility can be built from the [Tessera repository](https://github.com/Consen
 
 `git clone https://github.com/ConsenSys/tessera`
 
-1. Navigate to the orion-to-tessera migration utility directory:
+1. Navigate to the project root directory:
 
-`cd migration/orion-to-tessera/`
+`cd tessera`
 
 1. Build the migration utility using gradle:
 
-`gradle clean build`
+`./gradlew`
 
 ## Download Migration Utility
 
@@ -45,7 +45,7 @@ Verify the installation by running the migration utility with the `--help` flag.
 === "Request"
 
     ```bash
-    ./bin/migrate --help
+    ./tessera/migration/orion-to-tessera/build/install/migrate --help
     ```
 
 === "Result"
@@ -79,7 +79,7 @@ for help with other databases.
 !!! warning
     If migrating from an SQL database to Tessera then the JDBC driver must be
     added to the `CLASSPATH` environment variable and added to
-    the start script at `~/bin/migrate.bash`
+    the start script at `tessera/migration/orion-to-tessera/build/install/migrate`
 
 !!! note
     Password protected keys are renamed to `.orion` on migration and added to the Tessera config.
