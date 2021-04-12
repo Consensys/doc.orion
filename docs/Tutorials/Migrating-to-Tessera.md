@@ -70,7 +70,7 @@ Verify the installation by running the migration utility with the `--help` flag.
         tessera.jdbc.user=<username>
         Target Tessera DB username
     ```
-## Run Migration
+## Migrate
 
 By default Tessera uses an H2 database, however alternative databases can be configured.
 Refer to the following [SQL Data Definition Language files](https://github.com/consensys/tessera/tree/master/ddls/create-table)
