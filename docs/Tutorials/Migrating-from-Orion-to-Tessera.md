@@ -130,8 +130,7 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
 
 You must specify the following options in order to run the migration tool:
 
-`Orion 
-file`= Orion configuration file location
+`Orion config file`= Orion configuration file location
 
 `outputFile`= Target Tessera configuration file location
 
