@@ -51,7 +51,7 @@ Verify the installation by running the migration utility with the `--help` flag.
 === "Result"
 
     ```bash
-    % ./bin/migrate --help
+    ./bin/migrate --help
     Usage: orion-to-tessera/bin/migrate [-h] -f=Orion config file -o=<outputFile>
                                     tessera.jdbc.password=<password> tessera.
                                     jdbc.url=<url> tessera.jdbc.user=<username>
@@ -76,7 +76,7 @@ for help with other databases.
 !!! warning
     If migrating from an SQL database to Tessera then the JDBC driver must be
     added to the `CLASSPATH` environment variable and added to
-    the start script at `tessera/migration/orion-to-tessera/build/install/migrate`
+    the start script at `./bin/migrate`
 
 !!! note
     Password protected keys are renamed to `.orion` on migration and added to the Tessera config.
@@ -86,12 +86,12 @@ for help with other databases.
 1. Stop your Besu and Orion nodes.
 
 1. Begin the migration by running `migrate` with all required options.
-Substitute `main class`, `Orion config file`, `outputFile`, `password`, `url` and `username` with your own values.
+Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` with your own values.
 
 === "Request"
 
     ```bash
-    <main class> -f <Orion config file> -o <outputFile> tessera.jdbc.password <password> tessera.jdbc.url <url> tessera.jdbc.user <username>
+    ./bin/migrate -f <Orion config file> -o <outputFile> tessera.jdbc.password <password> tessera.jdbc.url <url> tessera.jdbc.user <username>
     ```
 
 === "Example"
