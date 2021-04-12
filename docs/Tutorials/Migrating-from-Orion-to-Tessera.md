@@ -1,9 +1,9 @@
 ---
-title: Migrating to Tessera
+title: Migrating from Orion to Tessera
 description: Migrate your Orion configuration and data to Tessera.
 ---
 
-# Migrating to Tessera
+# Migrating from Orion to Tessera
 
 ## Migration Process
 
