@@ -97,7 +97,7 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
 === "Example"
 
     ```bash
-    ~/workspace/tessera/migration/orion-to-tessera/build/install/migrate/bin/migrate -f ~/workspace/orion/orion.conf -o=~/workspace/tessera/tessera-migrated.conf tessera.jdbc.password password tessera.jdbc.url jdbc:h2:./workdir/tessera/tessera1 tessera.jdbc.user username
+    ./bin/migrate -f "orion.conf" -o="tessera-migrated.conf" tessera.jdbc.password "My Secret Pass" tessera.jdbc.url "jdbc:h2:tessera1" tessera.jdbc.user "user1"
     ```
 
 === "Result"
