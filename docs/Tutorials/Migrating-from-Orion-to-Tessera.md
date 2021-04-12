@@ -81,9 +81,13 @@ for help with other databases.
 !!! note
     Password protected keys are renamed to `.orion` on migration and added to the Tessera config.
 
+### Stop Services
+
 1. Verify the state on your Besu and Orion network using `priv_debugGetStateRoot` and `priv_getTransactionCount`.
 
 1. Stop your Besu and Orion nodes.
+
+### Run Migration
 
 1. Begin the migration by running `migrate` with all required options.
 Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` with your own values.
@@ -108,6 +112,8 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
     Migrated 56 of 56 privacy groups
     ```
 1. On a successful migration, the count of transactions and privacy groups migrated will match expected values.
+
+### Restart Services
 
 1. Start Besu and Tessera using the new Tessera config file and database.
 
