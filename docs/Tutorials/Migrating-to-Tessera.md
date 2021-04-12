@@ -51,24 +51,21 @@ Verify the installation by running the migration utility with the `--help` flag.
 === "Result"
 
     ```bash
-    Missing required options: 'orionconfig=Orion config file',
-    'outputfile=<outputFile>', 'tessera.jdbc.user=<username>',
-    'tessera.jdbc.password=<password>', 'tessera.jdbc.url=<url>'
-
-    Usage: <main class> -f=Orion config file -o=<outputFile>
-    tessera.jdbc.password=<password> tessera.jdbc.url=<url>
-    tessera.jdbc.user=<username>
-
+    % ./bin/migrate --help
+    Usage: orion-to-tessera/bin/migrate [-h] -f=Orion config file -o=<outputFile>
+                                    tessera.jdbc.password=<password> tessera.
+                                    jdbc.url=<url> tessera.jdbc.user=<username>
     -f, orionfile, orionconfig=Orion config file
-        Orion config file
+                       Orion config file
+    -h, help, --help   Print this message
     -o, outputfile=<outputFile>
-        Output Tessera config file
+                       Output Tessera config file
         tessera.jdbc.password=<password>
-        Target Tessera DB password
+                       Target Tessera DB password
         tessera.jdbc.url=<url>
-        Target Tessera DB JDBC connection string
+                       Target Tessera DB JDBC connection string
         tessera.jdbc.user=<username>
-        Target Tessera DB username
+                       Target Tessera DB username
     ```
 ## Migrate
 
