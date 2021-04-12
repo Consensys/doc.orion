@@ -13,10 +13,10 @@ file and database to a Tessera configuration file and database. No changes are r
 A full migration workflow would be as follows:
 
 1. [Build](#build-migration-utility) or [download](#download-migration-utility) the migration utility.
-2. Shut down the Orion and Hyperledger Besu nodes.
-3. Perform [configuration and database migration](#migrate).
-4. Start Tessera with the new configuration and database files.
-5. Start Hyperledger Besu nodes.
+1. Shut down the Orion and Hyperledger Besu nodes.
+1. Perform [configuration and database migration](#migrate).
+1. Start Tessera with the new configuration and database files.
+1. Start Hyperledger Besu nodes.
 
 ## Build Migration Utility
 
@@ -93,19 +93,19 @@ Stop your Besu and Orion nodes.
 1. Begin the migration by running `migrate` with all required options.
 Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` with your own values.
 
-=== "Request"
+    === "Request"
 
     ```bash
     ./bin/migrate -f <Orion config file> -o <outputFile> tessera.jdbc.password <password> tessera.jdbc.url <url> tessera.jdbc.user <username>
     ```
 
-=== "Example"
+    === "Example"
 
     ```bash
     ./bin/migrate -f "orion.conf" -o="tessera-migrated.conf" tessera.jdbc.password "My Secret Pass" tessera.jdbc.url "jdbc:h2:tessera1" tessera.jdbc.user "user1"
     ```
 
-=== "Result"
+    === "Result"
 
     ```
     === Migration report ===
@@ -113,13 +113,13 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
     Migrated 56 of 56 privacy groups
     ```
 
-2. On a successful migration, the count of transactions and privacy groups migrated will match expected values.
+1. On a successful migration, the count of transactions and privacy groups migrated will match expected values.
 
 ### Restart Services
 
 1. Start Besu and Tessera using the new Tessera config file and database.
 
-2. Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`, it should be identical to the results from earlier.
+1. Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`, it should be identical to the results from earlier.
 
 ### Options
 
