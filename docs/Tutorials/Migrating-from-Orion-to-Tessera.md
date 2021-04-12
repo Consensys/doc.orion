@@ -7,33 +7,33 @@ description: Migrate your Orion configuration and data to Tessera.
 
 ## Migration Process
 
-A utility is included in Tessera which enables migration of an Orion config
-file and database to a Tessera config file and database. No changes are required to the config of Besu itself to migrate.
+A utility is included in Tessera which enables migration of an Orion configuration
+file and database to a Tessera configuration file and database. No changes are required to the Besu configuration file to migrate.
 
 A full migration workflow would be as follows:
 
-1. Download or build the migration utility
-1. Shut down the Orion and Hyperledger Besu nodes
-1. Perform the config and database migration
-1. Start Tessera with the new config and database files
-1. Start Hyperledger Besu nodes
+1. [Build](#build-migration-utility) or [download](#download-migration-utility) the migration utility.
+2. Shut down the Orion and Hyperledger Besu nodes.
+3. Perform [configuration and database migration](#migrate).
+4. Start Tessera with the new configuration and database files.
+5. Start Hyperledger Besu nodes.
 
 ## Build Migration Utility
 
-The utility can be built from the [Tessera repository](https://github.com/ConsenSys/tessera/)
+The utility can be built from the [Tessera repository](https://github.com/ConsenSys/tessera/).
 
-1. First clone the Tessera repostory:
-
-`git clone https://github.com/ConsenSys/tessera`
-
-1. Navigate to the project root directory:
-
-`cd tessera`
-
-1. Build the migration utility using gradle:
-
-`./gradlew clean migration:orion-to-tessera:installDist -x test`
-
+First clone the Tessera repository:
+```bash
+git clone https://github.com/ConsenSys/tessera
+```
+Navigate to the project root directory:
+```bash
+cd tessera
+```
+Build the migration utility with the Gradle wrapper `gradlew`:
+```bash
+./gradlew clean migration:orion-to-tessera:installDist -x test
+```
 ## Download Migration Utility
 
 Or download the migration utility binaries, which are available at the following [download link](to be added).
@@ -45,7 +45,7 @@ Verify the installation by running the migration utility with the `--help` flag.
 === "Request"
 
     ```bash
-    ./tessera/migration/orion-to-tessera/build/install/migrate --help
+    ./bin/migrate --help
     ```
 
 === "Result"
@@ -67,25 +67,25 @@ Verify the installation by running the migration utility with the `--help` flag.
         tessera.jdbc.user=<username>
                        Target Tessera DB username
     ```
+
 ## Migrate
 
-By default Tessera uses an H2 database, however alternative databases can be configured.
-Refer to the following [SQL Data Definition Language files](https://github.com/consensys/tessera/tree/master/ddls/create-table)
+By default Tessera uses an H2 database. However, you can configure alternative databases.
+Refer to the [SQL Data Definition Language files](https://github.com/consensys/tessera/tree/master/ddls/create-table)
 for help with other databases.
 
 !!! warning
-    If migrating from an SQL database to Tessera then the JDBC driver must be
-    added to the `CLASSPATH` environment variable and added to
-    the start script at `./bin/migrate`
+    If migrating from an SQL database to Tessera, you must add the JDBC driver
+    to the `CLASSPATH` environment variable and to the start script at `./bin/migrate`.
 
 !!! note
-    Password protected keys are renamed to `.orion` on migration and added to the Tessera config.
+    Password protected keys are renamed to `.orion` on migration and added to the Tessera configuration file.
 
 ### Stop Services
 
-1. Verify the state on your Besu and Orion network using `priv_debugGetStateRoot` and `priv_getTransactionCount`.
+Verify the state on your Besu and Orion network using `priv_debugGetStateRoot` and `priv_getTransactionCount`.
 
-1. Stop your Besu and Orion nodes.
+Stop your Besu and Orion nodes.
 
 ### Run Migration
 
@@ -111,24 +111,25 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
     Migrated 2156 of 2156 transactions
     Migrated 56 of 56 privacy groups
     ```
-1. On a successful migration, the count of transactions and privacy groups migrated will match expected values.
+
+2. On a successful migration, the count of transactions and privacy groups migrated will match expected values.
 
 ### Restart Services
 
 1. Start Besu and Tessera using the new Tessera config file and database.
 
-1. Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`, it should be identical to the results from earlier.
+2. Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`, it should be identical to the results from earlier.
 
 ### Options
 
 You must specify the following options in order to run the migration tool:
 
-`Orion config file`= Orion config file location
+`Orion config file`= Orion configuration file location
 
-`outputFile`= Target Tessera config file location
+`outputFile`= Target Tessera configuration file location
 
-`username`= Target Tessera DB username
+`username`= Target Tessera database username
 
-`password`= Target Tessera DB password
+`password`= Target Tessera database password
 
-`url`= Target Tessera DB JDBC connection string
+`url`= Target Tessera database JDBC connection string
