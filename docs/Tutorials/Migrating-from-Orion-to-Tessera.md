@@ -48,7 +48,7 @@ Or download the migration utility binaries, which are available at the following
 
 Verify the installation by running the migration utility with the `--help` flag.
 
-=== "Request"
+=== "Command"
 
     ```bash
     ./bin/migrate --help
