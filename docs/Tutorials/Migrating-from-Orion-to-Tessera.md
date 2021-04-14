@@ -85,7 +85,7 @@ for help with other databases.
     to the `CLASSPATH` environment variable and to the start script at `./bin/migrate`.
 
 !!! note
-    Password protected keys are renamed to `.orion` on migration and added to the Tessera configuration file.
+    Password protected keys are migrated to the Tessera format as part of the migration. The original Orion format keys are renamed with a `.orion` suffix.
 
 ### Stop Services
 
