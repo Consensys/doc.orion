@@ -118,7 +118,7 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
     Migrated 56 of 56 privacy groups
     ```
 
-1. On a successful migration, the count of transactions and privacy groups migrated will match expected values.
+On a successful migration, the count of transactions and privacy groups migrated will match expected values.
 
 ### Restart Services
 
