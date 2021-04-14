@@ -124,7 +124,7 @@ On a successful migration, the count of transactions and privacy groups migrated
 
 Start Besu and Tessera using the new Tessera configuration file and database.
 
-1. Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`, it should be identical to the results from earlier.
+Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`; it should be identical to the results from earlier.
 
 ### Options
 
