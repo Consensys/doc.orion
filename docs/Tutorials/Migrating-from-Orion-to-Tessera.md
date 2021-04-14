@@ -95,7 +95,7 @@ Stop your Besu and Orion nodes.
 
 ### Run Migration
 
-1. Begin the migration by running `migrate` with all required options.
+Begin the migration by running `migrate` with all required options.
 Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` with your own values.
 
     === "Request"
