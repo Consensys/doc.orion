@@ -87,11 +87,62 @@ for help with other databases.
 !!! note
     Password protected keys are migrated to the Tessera format as part of the migration. The original Orion format keys are renamed with a `.orion` suffix.
 
-### Stop Services
+### Verify State and Stop Services
 
-Verify the state on your Besu and Orion network using `priv_debugGetStateRoot` and `priv_getTransactionCount`.
+Verify the private state root and private transaction count on your Besu and Orion network using [`priv_debugGetStateRoot`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_debugGetStateRoot)
 
-Stop your Besu and Orion nodes.
+=== "Command"
+
+    ```json
+    {
+        "jsonrpc": "2.0",
+        "method": "priv_debugGetStateRoot",
+        "params": [
+            "MC4aHjApHsGb0j5glU2iAj5KcR5LId52S0BU9mtdeuY=",
+            "latest"
+        ],
+        "id": 1
+    }
+    ```
+
+=== "Result"
+
+    ```json
+    {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x69904cc3945ada15579fa6f7f1c95e31555210ac017646b4a1373412281dce82"
+    }
+
+    ```
+
+and then [`priv_getTransactionCount`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_getTransactionCount).
+
+=== "Command"
+
+    ```json
+    {
+        "jsonrpc": "2.0",
+        "method": "priv_getTransactionCount",
+        "params": [
+            "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+            "67NmE7/94nuomQiZv/g19BzyhhX84kwJo3lr5+n43xI="
+        ],
+        "id": 1
+    }
+    ```
+
+=== "Result"
+
+    ```json
+    {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0xb4"
+    }
+    ```
+
+After recording the state root and transaction count, stop your Besu and Orion nodes.
 
 ### Run Migration
 
@@ -120,11 +171,13 @@ Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` w
 
 On a successful migration, the count of transactions and privacy groups migrated will match expected values.
 
-### Restart Services
+### Restart Services and Verify State
 
 Start Besu and Tessera using the new Tessera configuration file and database.
 
-Verify the state on your Besu and Tessera nodes using `priv_debugGetStateRoot` and `priv_getTransactionCount`; it should be identical to the results from earlier.
+Verify the private state root and private transaction count on your Besu and Tessera network using [`priv_debugGetStateRoot`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_debugGetStateRoot) and [`priv_getTransactionCount`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_getTransactionCount).
+
+It should give identical results to [those collected earlier](Migrating-from-Orion-to-Tessera.md#Verify State and Stop Services).
 
 ### Options
 
