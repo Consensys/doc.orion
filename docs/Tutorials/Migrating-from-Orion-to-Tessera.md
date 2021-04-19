@@ -42,8 +42,8 @@ Build the migration utility with the Gradle wrapper `gradlew`:
 
 ## Download Migration Utility
 
-  Or download the migration utility binaries, which are available at the following download links: [.zip](https://github.com/ConsenSys/tessera/releases/download/untagged-632f4ccfac413526ff8e/migrate-21.1.1.zip)
-  and [.tar](https://github.com/ConsenSys/tessera/releases/download/untagged-632f4ccfac413526ff8e/migrate-21.1.1.tar).
+  Or download the migration utility binaries, which are available at the following download links: [.zip](https://github.com/ConsenSys/tessera/releases/download/tessera-21.1.1/migrate-21.1.1.zip)
+  and [.tar](https://github.com/ConsenSys/tessera/releases/download/tessera-21.1.1/migrate-21.1.1.tar).
 
 ## Verify Installation
 
