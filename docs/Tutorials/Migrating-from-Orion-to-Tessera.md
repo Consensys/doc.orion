@@ -42,7 +42,8 @@ Build the migration utility with the Gradle wrapper `gradlew`:
 
 ## Download Migration Utility
 
-Or download the migration utility binaries, which are available at the following [download link](to be added).
+  Or download the migration utility binaries, which are available at the following download links: [.zip](https://github.com/ConsenSys/tessera/releases/download/untagged-6bead3ab9b624321b1aa/migrate-21.1.1.zip)
+  and [.tar](https://github.com/ConsenSys/tessera/releases/download/untagged-6bead3ab9b624321b1aa/migrate-21.1.1.tar).
 
 ## Verify Installation
 
@@ -177,7 +178,7 @@ Start Besu and Tessera using the new Tessera configuration file and database.
 
 Verify the private state root and private transaction count on your Besu and Tessera network using [`priv_debugGetStateRoot`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_debugGetStateRoot) and [`priv_getTransactionCount`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_getTransactionCount).
 
-It should give identical results to [those collected earlier](Migrating-from-Orion-to-Tessera.md#Verify State and Stop Services).
+It should give identical results to [those collected earlier](#verify-state-and-stop-services).
 
 ### Options
 
