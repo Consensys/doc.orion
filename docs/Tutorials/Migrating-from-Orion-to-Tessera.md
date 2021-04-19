@@ -92,7 +92,7 @@ for help with other databases.
 
 Verify the private state root and private transaction count on your Besu and Orion network using [`priv_debugGetStateRoot`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_debugGetStateRoot)
 
-=== "Command"
+=== "Request"
 
     ```json
     {
@@ -119,7 +119,7 @@ Verify the private state root and private transaction count on your Besu and Ori
 
 and then [`priv_getTransactionCount`](https://besu.hyperledger.org/en/latest/Reference/API-Methods/#priv_getTransactionCount).
 
-=== "Command"
+=== "Request"
 
     ```json
     {
