@@ -63,6 +63,7 @@ nav:
         - Using PostgreSQL: Tutorials/Using-PostgreSQL.md
         - TLS: Tutorials/TLS.md
         - Generating Orion certificates: Tutorials/Generating-Certificates.md
+        - Migrating from Orion to Tessera: Tutorials/Migrating-from-Orion-to-Tessera.md
         - Quorum Developer Quickstart: Tutorials/Quorum-Dev-Quickstart.md
     - Concepts:
         - Privacy groups: Concepts/Privacy-Groups.md
