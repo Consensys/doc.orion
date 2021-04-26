@@ -7,8 +7,8 @@ description: Migrate your Orion configuration and data to Tessera.
 
 ## Migration Process
 
-We recommend use of Tessera as a drop-in replacement private transaction manager in place of Orion. 
-As Tessera supports the same endpoints and functionality, nothing needs to be changed in your Besu deployment to migrate. 
+We recommend use of Tessera as a drop-in replacement private transaction manager in place of Orion.
+As Tessera supports the same endpoints and functionality, nothing needs to be changed in your Besu deployment to migrate.
 However, short downtime is required to migrate the private state database, transaction manager configuration and associated key files.
 
 A utility is included in Tessera which enables migration of an Orion configuration
@@ -200,6 +200,6 @@ You must specify the following options in order to run the migration tool:
 
 # Support
 
-If you require support to undertake this process or any other use of ConsenSys Quorum software, 
+If you require support to undertake this process or any other use of ConsenSys Quorum software,
 ConsenSys offers support subscriptions for Quorum to accelerate time to market and provide confidence in production networks.
 Visit the following site to find out more: [ConsenSys Quorum Support](https://consensys.net/quorum/support/).
