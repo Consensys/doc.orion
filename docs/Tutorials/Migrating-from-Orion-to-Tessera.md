@@ -7,8 +7,12 @@ description: Migrate your Orion configuration and data to Tessera.
 
 ## Migration Process
 
+We recommend use of Tessera as a drop-in replacement private transaction manager in place of Orion. 
+As Tessera supports the same endpoints and functionality, nothing needs to be changed in your Besu deployment to migrate. 
+However, short downtime is required to migrate the private state database, transaction manager configuration and associated key files.
+
 A utility is included in Tessera which enables migration of an Orion configuration
-file and database to a Tessera configuration file and database. No changes are required to the Besu configuration file to migrate.
+file and database to a Tessera configuration file and database.
 
 A full migration workflow would be as follows:
 
@@ -16,7 +20,7 @@ A full migration workflow would be as follows:
 1. Shut down the Orion and Hyperledger Besu nodes.
 1. Perform [configuration and database migration](#migrate).
 1. Start Tessera with the new configuration and database files.
-1. Start Hyperledger Besu nodes.
+1. Restart Hyperledger Besu nodes.
 
 ## Build Migration Utility
 
@@ -193,3 +197,9 @@ You must specify the following options in order to run the migration tool:
 `password`= Target Tessera database password
 
 `url`= Target Tessera database JDBC connection string
+
+# Support
+
+If you require support to undertake this process or any other use of ConsenSys Quorum software, 
+ConsenSys offers support subscriptions for Quorum to accelerate time to market and provide confidence in production networks.
+Visit the following site to find out more: [ConsenSys Quorum Support](https://consensys.net/quorum/support/).
