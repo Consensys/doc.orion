@@ -18,10 +18,10 @@ file and database to a Tessera configuration file and database.
 A full migration workflow would be as follows:
 
 1. [Build](#build-migration-utility) or [download](#download-migration-utility) the migration utility.
-1. Shut down the Orion and Hyperledger Besu nodes.
+1. Shut down all privacy-enabled Besu nodes and Orion instances in the network (non-privacy-enabled nodes can remain active).
 1. Perform [configuration and database migration](#migrate).
-1. Start Tessera with the new configuration and database files.
-1. Restart Hyperledger Besu nodes.
+1. Start Tessera instances with the new configuration and database files.
+1. Restart all privacy-enabled Besu nodes in the network.
 
 ## Build Migration Utility
 
