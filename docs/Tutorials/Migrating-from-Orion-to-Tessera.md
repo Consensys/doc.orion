@@ -9,7 +9,8 @@ description: Migrate your Orion configuration and data to Tessera.
 
 We recommend use of Tessera as a drop-in replacement private transaction manager in place of Orion.
 As Tessera supports the same endpoints and functionality, nothing needs to be changed in your Besu deployment to migrate.
-However, short downtime is required to migrate the private state database, transaction manager configuration and associated key files.
+However, as Orion and Tessera can not communicate, you must stop all privacy-enabled Besu nodes in the network to perform the migration.
+Besu nodes without an associated private transaction manager can remain live during this time.
 
 A utility is included in Tessera which enables migration of an Orion configuration
 file and database to a Tessera configuration file and database.
