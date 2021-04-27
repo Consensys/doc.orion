@@ -199,7 +199,7 @@ You must specify the following options in order to run the migration tool:
 
 `url`= Target Tessera database JDBC connection string
 
-# Support
+# Enterprise support
 
 If you require support to undertake this process or any other use of ConsenSys Quorum software,
 ConsenSys offers support subscriptions for Quorum to accelerate time to market and provide confidence in production networks.
