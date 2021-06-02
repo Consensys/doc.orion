@@ -24,6 +24,9 @@ extra:
     text: 'You are reading Orion development version documentation and
     some displayed features may not be available in the stable release.
     You can switch to stable version using the version box at screen bottom.'
+  warning_banner: 'Orion features have been merged into Tessera!
+  Read our <a href="https://docs.orion.consensys.net/en/latest/Tutorials/Migrating-from-Orion-to-Tessera/">Orion to Tessera migration guide</a>
+  and about all <a href="https://consensys.net/blog/quorum/tessera-the-privacy-manager-of-choice-for-consensys-quorum-networks/">the new Tessera features</a>.'
   support:
     tool: Discord
     channel: https://discord.gg/n8m22JK
@@ -110,11 +113,18 @@ markdown_extensions:
 plugins:
   - search:
       lang: 'en'
-      separator: '[\s]+'
+      separator: '[\s\-\.\_]+'
   - markdownextradata
   - exclude:
       glob:
         - global/*
+  - git-revision-date-localized:
+      locale: en
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
   - redirects:
       redirect_maps:
         # Configure redirects using key:value pairs:
