@@ -7,16 +7,21 @@ description: Migrate your Orion configuration and data to Tessera.
 
 ## Migration Process
 
+We recommend use of Tessera as a drop-in replacement private transaction manager in place of Orion.
+As Tessera supports the same endpoints and functionality, nothing needs to be changed in your Besu deployment to migrate.
+However, as Orion and Tessera can not communicate, you must stop all privacy-enabled Besu nodes in the network to perform the migration.
+Besu nodes without an associated private transaction manager can remain live during this time.
+
 A utility is included in Tessera which enables migration of an Orion configuration
-file and database to a Tessera configuration file and database. No changes are required to the Besu configuration file to migrate.
+file and database to a Tessera configuration file and database.
 
 A full migration workflow would be as follows:
 
 1. [Build](#build-migration-utility) or [download](#download-migration-utility) the migration utility.
-1. Shut down the Orion and Hyperledger Besu nodes.
+1. Shut down all privacy-enabled Besu nodes and Orion instances in the network (non-privacy-enabled nodes can remain active).
 1. Perform [configuration and database migration](#migrate).
-1. Start Tessera with the new configuration and database files.
-1. Start Hyperledger Besu nodes.
+1. Start Tessera instances with the new configuration and database files.
+1. Restart all privacy-enabled Besu nodes in the network.
 
 ## Build Migration Utility
 
@@ -193,3 +198,9 @@ You must specify the following options in order to run the migration tool:
 `password`= Target Tessera database password
 
 `url`= Target Tessera database JDBC connection string
+
+# Enterprise support
+
+If you require support to undertake this process or any other use of ConsenSys Quorum software,
+ConsenSys offers support subscriptions for Quorum to accelerate time to market and provide confidence in production networks.
+Visit the following site to find out more: [ConsenSys Quorum Support](https://consensys.net/quorum/support/).
