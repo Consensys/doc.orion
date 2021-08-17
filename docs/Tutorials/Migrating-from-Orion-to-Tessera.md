@@ -155,19 +155,25 @@ After recording the state root and transaction count, stop your Besu and Orion n
 Begin the migration by running `migrate` with all required options.
 Substitute `Orion config file`, `outputFile`, `password`, `url` and `username` with your own values.
 
-    === "Request"
+!!! important
+
+    To ensure you have the correct database path, run the migration tool from the same directory in which Orion was running.
+    Alternatively, modify the [Orion configuration file](../Reference/Configuration-File.md) to add `storage` and
+    `workdir` parameters with absolute paths.
+
+=== "Request"
 
     ```bash
     ./bin/migrate -f <Orion config file> -o <outputFile> tessera.jdbc.password <password> tessera.jdbc.url <url> tessera.jdbc.user <username>
     ```
 
-    === "Example"
+=== "Example"
 
     ```bash
     ./bin/migrate -f "orion.conf" -o="tessera-migrated.conf" tessera.jdbc.password "My Secret Pass" tessera.jdbc.url "jdbc:h2:tessera1" tessera.jdbc.user "user1"
     ```
 
-    === "Result"
+=== "Result"
 
     ```bash
     === Migration report ===
