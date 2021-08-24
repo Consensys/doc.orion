@@ -56,7 +56,7 @@ nav:
     - How to:
         - Get started with Orion:
             - Dependencies: HowTo/Dependencies.md
-            - Install binary distribution: HowTo/Install-Binaries.md
+            # - Install binary distribution: HowTo/Install-Binaries.md
             - Build from source: HowTo/Build-From-Source.md
             - Start Orion: HowTo/Quickstart.md
             - Run Orion from Docker Image: HowTo/Run-Docker-Image.md

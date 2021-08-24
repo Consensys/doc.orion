@@ -28,7 +28,7 @@ Besu 1.4.x to Besu 1.4.y does not require an Orion upgrade.
 
 ## Install binaries
 
-Download the Orion [packaged binaries](https://bintray.com/consensys/binaries/orion/_latestVersion#files).
+Download the Orion [packaged binaries].
 
 Unpack the downloaded files and change into the `orion-<release>` directory.
 
