@@ -1,18 +1,24 @@
+---
+title: Build from source
 description: Building Orion from source code
-<!--- END of page meta data -->
+sidebar_position: 4
+---
 
 # Build from source
 
 ## Prerequisites
 
-* [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
 
-!!!important
-    Orion requires Java 11+; earlier versions are not supported.
+:::info important
 
-* [Git](https://git-scm.com/downloads) or [GitHub Desktop](https://desktop.github.com/)
+Orion requires Java 11+; earlier versions are not supported.
 
-* [libsodium](Dependencies.md)
+:::
+
+- [Git](https://git-scm.com/downloads) or [GitHub Desktop](https://desktop.github.com/)
+
+- [libsodium](Dependencies.md)
 
 ## Installation on Linux / Unix / MacOS X
 
@@ -48,10 +54,10 @@ tar -xzf orion-<version>.tar.gz
 
 Move to the expanded folder and display the Orion help to confirm installation.
 
-````bash
+```bash
 cd orion-<version>/
 bin/orion --help
-````
+```
 
 ## Installation on Windows
 
@@ -77,9 +83,11 @@ Build Orion with the Gradle wrapper `gradlew`, omitting tests as follows:
 .\gradlew build -x test
 ```
 
-!!!note
-    To run `gradlew`, you must have the **JAVA_HOME** system variable set to the Java installation directory.
-    For example: `JAVA_HOME = C:\Program Files\Java\jdk1.8.0_181`.
+:::note
+
+To run `gradlew`, you must have the **JAVA_HOME** system variable set to the Java installation directory. For example: `JAVA_HOME = C:\Program Files\Java\jdk1.8.0_181`.
+
+:::
 
 Go to the distribution directory:
 

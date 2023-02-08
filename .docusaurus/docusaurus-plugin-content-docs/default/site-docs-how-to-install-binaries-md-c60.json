@@ -1,0 +1,32 @@
+{
+  "unversionedId": "HowTo/Install-Binaries",
+  "id": "HowTo/Install-Binaries",
+  "title": "Use Binary",
+  "description": "Install Orion from binary distribution",
+  "source": "@site/docs/HowTo/Install-Binaries.md",
+  "sourceDirName": "HowTo",
+  "slug": "/HowTo/Install-Binaries",
+  "permalink": "/HowTo/Install-Binaries",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Install-Binaries.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "rolandtyler",
+  "lastUpdatedAt": 1630357006,
+  "formattedLastUpdatedAt": "Aug 30, 2021",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Use Binary",
+    "description": "Install Orion from binary distribution",
+    "sidebar_position": 3
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Dependencies",
+    "permalink": "/HowTo/Dependencies"
+  },
+  "next": {
+    "title": "Use Docker",
+    "permalink": "/HowTo/Run-Docker-Image"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Reference/API-Methods",
+  "id": "Reference/API-Methods",
+  "title": "Client API methods",
+  "description": "Orion RPC API",
+  "source": "@site/docs/Reference/API-Methods.md",
+  "sourceDirName": "Reference",
+  "slug": "/Reference/API-Methods",
+  "permalink": "/Reference/API-Methods",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/API-Methods.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1602242872,
+  "formattedLastUpdatedAt": "Oct 9, 2020",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Client API methods",
+    "description": "Orion RPC API",
+    "sidebar_position": 2
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Orion command line",
+    "permalink": "/Reference/Orion-CLI-Syntax"
+  },
+  "next": {
+    "title": "Configuration File",
+    "permalink": "/Reference/Configuration-File"
+  }
+}

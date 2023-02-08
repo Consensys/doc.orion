@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Concepts/TLS-Communication",
+  "id": "Concepts/TLS-Communication",
+  "title": "TLS Communication",
+  "description": "TLS",
+  "source": "@site/docs/Concepts/TLS-Communication.md",
+  "sourceDirName": "Concepts",
+  "slug": "/Concepts/TLS-Communication",
+  "permalink": "/Concepts/TLS-Communication",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Concepts/TLS-Communication.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1600856978,
+  "formattedLastUpdatedAt": "Sep 23, 2020",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "TLS Communication",
+    "description": "TLS",
+    "sidebar_position": 3
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Disaster recovery",
+    "permalink": "/Concepts/Disaster-Recovery"
+  },
+  "next": {
+    "title": "Multi-tenancy",
+    "permalink": "/Concepts/Multi-Tenancy"
+  }
+}

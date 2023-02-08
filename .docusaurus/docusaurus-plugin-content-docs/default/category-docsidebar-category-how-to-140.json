@@ -1,0 +1,15 @@
+{
+  "title": "How To",
+  "slug": "/category/how-to",
+  "permalink": "/category/how-to",
+  "navigation": {
+    "previous": {
+      "title": "Orion Private Transaction Manager",
+      "permalink": "/index"
+    },
+    "next": {
+      "title": "Quickstart",
+      "permalink": "/HowTo/Quickstart"
+    }
+  }
+}

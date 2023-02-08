@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Concepts/Privacy-Groups",
+  "id": "Concepts/Privacy-Groups",
+  "title": "Privacy groups",
+  "description": "Privacy groups",
+  "source": "@site/docs/Concepts/Privacy-Groups.md",
+  "sourceDirName": "Concepts",
+  "slug": "/Concepts/Privacy-Groups",
+  "permalink": "/Concepts/Privacy-Groups",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Concepts/Privacy-Groups.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1600856978,
+  "formattedLastUpdatedAt": "Sep 23, 2020",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Privacy groups",
+    "description": "Privacy groups",
+    "sidebar_position": 1
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Concepts",
+    "permalink": "/category/concepts"
+  },
+  "next": {
+    "title": "Disaster recovery",
+    "permalink": "/Concepts/Disaster-Recovery"
+  }
+}

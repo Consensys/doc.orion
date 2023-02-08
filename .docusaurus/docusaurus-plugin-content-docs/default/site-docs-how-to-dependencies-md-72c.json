@@ -1,0 +1,32 @@
+{
+  "unversionedId": "HowTo/Dependencies",
+  "id": "HowTo/Dependencies",
+  "title": "Dependencies",
+  "description": "Dependencies",
+  "source": "@site/docs/HowTo/Dependencies.md",
+  "sourceDirName": "HowTo",
+  "slug": "/HowTo/Dependencies",
+  "permalink": "/HowTo/Dependencies",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Dependencies.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1620248485,
+  "formattedLastUpdatedAt": "May 5, 2021",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Dependencies",
+    "description": "Dependencies",
+    "sidebar_position": 2
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Quickstart",
+    "permalink": "/HowTo/Quickstart"
+  },
+  "next": {
+    "title": "Use Binary",
+    "permalink": "/HowTo/Install-Binaries"
+  }
+}

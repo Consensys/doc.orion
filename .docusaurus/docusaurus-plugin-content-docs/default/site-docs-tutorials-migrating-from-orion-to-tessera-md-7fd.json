@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Tutorials/Migrating-from-Orion-to-Tessera",
+  "id": "Tutorials/Migrating-from-Orion-to-Tessera",
+  "title": "Migrating from Orion to Tessera",
+  "description": "Migrate your Orion configuration and data to Tessera.",
+  "source": "@site/docs/Tutorials/Migrating-from-Orion-to-Tessera.md",
+  "sourceDirName": "Tutorials",
+  "slug": "/Tutorials/Migrating-from-Orion-to-Tessera",
+  "permalink": "/Tutorials/Migrating-from-Orion-to-Tessera",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Migrating-from-Orion-to-Tessera.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Alexandra Tran",
+  "lastUpdatedAt": 1630371664,
+  "formattedLastUpdatedAt": "Aug 31, 2021",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Migrating from Orion to Tessera",
+    "description": "Migrate your Orion configuration and data to Tessera.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Generate Orion Certificates",
+    "permalink": "/Tutorials/Generating-Certificates"
+  },
+  "next": {
+    "title": "Quorum Developer Quickstart",
+    "permalink": "/Tutorials/Quorum-Dev-Quickstart"
+  }
+}

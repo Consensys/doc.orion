@@ -1,29 +1,32 @@
+---
+title: Use Docker
 description: Run Orion using the official docker image
-<!--- END of page meta data -->
+sidebar_position: 3
+---
 
 # Running the Orion Docker Image
 
 Use the Orion Docker image to run a single Orion node without installing Orion.
 
-__Prerequisites__:
+**Prerequisites**:
 
-* [Docker](https://docs.docker.com/install/)
+- [Docker](https://docs.docker.com/install/)
 
-!!! important
-    Do not mount a volume at the (`/opt/orion`) path, this prevents
-    Orion from safely launching.
+:::info
 
-    In this example the required volume is mounted at the `/data` path.
+Do not mount a volume at the (`/opt/orion`) path, this prevents Orion from safely launching.
 
-In this example we create the [password file](#2-create-password-file), [public/private key pairs](#3-generate-keys),
-and [Orion configuration file](#4-create-a-configuration-file) in the
-`/Users/user1/Node1/Orion` directory.
+:::
+
+In this example the required volume is mounted at the `/data` path.
+
+In this example we create the [password file](#2-create-password-file), [public/private key pairs](#3-generate-keys), and [Orion configuration file](#4-create-a-configuration-file) in the `/Users/user1/Node1/Orion` directory.
 
 ## 1. Create the Directory Structure
 
 Create the sub-directories in the home directory.
 
-``` bash
+```bash
 mkdir -p Node1/Orion
 ```
 
@@ -31,23 +34,19 @@ mkdir -p Node1/Orion
 
 Create a file containing the password used to encrypt the key pair.
 
-Specify the password when [generating the keys](#3-generate-keys), the
-file is specified for the `passwords` property in the [configuration file](#4-create-a-configuration-file).
+Specify the password when [generating the keys](#3-generate-keys), the file is specified for the `passwords` property in the [configuration file](#4-create-a-configuration-file).
 
 ## 3. Generate Keys
 
 Generate the public/private key pairs for the Orion node using Docker:
 
-``` bash
+```bash
 docker run -i --rm --mount type=bind,source=/Users/user1/Node1/Orion,target=/data pegasyseng/orion:latest -g /data/testKey
 ```
 
-At the prompt, enter the [password](#2-create-password-file) to encrypt the
-key pair.
+At the prompt, enter the [password](#2-create-password-file) to encrypt the key pair.
 
-The public/private key pair is generated and the keys saved in the `nodeKey.pub`
-and `nodeKey.key` files. The files are generated in the `/Users/user1/Node1/Orion`
-directory.
+The public/private key pair is generated and the keys saved in the `nodeKey.pub` and `nodeKey.key` files. The files are generated in the `/Users/user1/Node1/Orion` directory.
 
 ## 4. Create a Configuration File
 
@@ -67,19 +66,18 @@ workdir = "/data"
 tls = "off"
 ```
 
-!!! note
+:::note
 
-    * The file locations specified in `orion.conf` is relative the mounted
-      path (`/data`).
-    * `nodeurl` and `clienturl` is set to the host IP address, not the
-      Docker container's internal IP address.
-    * `clientnetworkinterface` is set to listen on all available network
-      interfaces (`0.0.0.0`).
+- The file locations specified in `orion.conf` is relative the mounted path (`/data`).
+- `nodeurl` and `clienturl` is set to the host IP address, not the Docker container's internal IP address.
+- `clientnetworkinterface` is set to listen on all available network interfaces (`0.0.0.0`).
+
+:::
 
 ## 5. Start Orion
 
 To start the Orion node:
 
-``` bash
+```bash
 docker run -p 8080:8080 -p 8888:8888 --mount type=bind,source=/Users/user1/Node1/Orion,target=/data pegasyseng/orion:latest /data/orion.conf
 ```

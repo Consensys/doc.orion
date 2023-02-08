@@ -1,5 +1,8 @@
+---
+title: Orion command line
 description: Orion command line interface reference
-<!--- END of page meta data -->
+sidebar_position: 1
+---
 
 # Orion command line
 
@@ -15,64 +18,64 @@ Runs Orion private transaction manager.
 
 ### `clear-known-nodes`
 
-=== "Syntax"
+```bash
+    --clear-known-nodes
+```
 
-    ```bash
-      --clear-known-nodes
-    ```
-
-Clears known nodes. By default, known nodes are stored in memory but can be stored persistently to
-enable [high availability](../HowTo/High-Availability.md). `knownnodestorage` is defined in the
-[configuration file](../Reference/Configuration-File.md).
+Clears known nodes. By default, known nodes are stored in memory but can be stored persistently to enable [high availability](../HowTo/High-Availability.md). `knownnodestorage` is defined in the [configuration file](../Reference/Configuration-File.md).
 
 ### `generatekeys`
 
-=== "Syntax"
+<!--tabs-->
 
-    ```bash
-    -g, --generatekeys <names>
-    ```
+# Syntax
 
-=== "Example"
+```bash
+-g, --generatekeys <names>
+```
 
-    ```bash
-    --generatekeys orion
-    ```
+# Example
+
+```bash
+--generatekeys orion
+```
+
+<!--/tabs-->
 
 Generates public/private key pairs for each name supplied where `<names>` is a comma-separated list.
 
 ### `help`
 
-=== "Syntax"
-
-    ```bash
-    -h, --help
-    ```
+```bash
+-h, --help
+```
 
 Displays help and exits.
 
 ### `version`
 
-=== "Syntax"
-
-    ```bash
-      -v, --version
-    ```
+```bash
+    -v, --version
+```
 
 Displays version information and exits.
 
 ## Configuration file
 
-=== "Syntax"
+<!--tabs-->
 
-    ```bash
-    orion <configFile>
-    ```
+# Syntax
 
-=== "Example"
+```bash
+orion <configFile>
+```
 
-    ```bash
-    orion orion.conf
-    ```
+# Example
+
+```bash
+orion orion.conf
+```
+
+<!--/tabs-->
 
 Specifies the [configuration file](../Reference/Configuration-File.md) with which to start Orion.

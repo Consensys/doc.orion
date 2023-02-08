@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Concepts/Disaster-Recovery",
+  "id": "Concepts/Disaster-Recovery",
+  "title": "Disaster recovery",
+  "description": "Disaster recovery strategies",
+  "source": "@site/docs/Concepts/Disaster-Recovery.md",
+  "sourceDirName": "Concepts",
+  "slug": "/Concepts/Disaster-Recovery",
+  "permalink": "/Concepts/Disaster-Recovery",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Concepts/Disaster-Recovery.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1600856978,
+  "formattedLastUpdatedAt": "Sep 23, 2020",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Disaster recovery",
+    "description": "Disaster recovery strategies",
+    "sidebar_position": 2
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Privacy groups",
+    "permalink": "/Concepts/Privacy-Groups"
+  },
+  "next": {
+    "title": "TLS Communication",
+    "permalink": "/Concepts/TLS-Communication"
+  }
+}

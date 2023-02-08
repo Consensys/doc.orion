@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Tutorials/Quorum-Dev-Quickstart",
+  "id": "Tutorials/Quorum-Dev-Quickstart",
+  "title": "Quorum Developer Quickstart",
+  "description": "Rapidly generate local Quorum blockchain networks.",
+  "source": "@site/docs/Tutorials/Quorum-Dev-Quickstart.md",
+  "sourceDirName": "Tutorials",
+  "slug": "/Tutorials/Quorum-Dev-Quickstart",
+  "permalink": "/Tutorials/Quorum-Dev-Quickstart",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Quorum-Dev-Quickstart.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "MadelineMurray",
+  "lastUpdatedAt": 1604274360,
+  "formattedLastUpdatedAt": "Nov 1, 2020",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Quorum Developer Quickstart",
+    "description": "Rapidly generate local Quorum blockchain networks.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Migrating from Orion to Tessera",
+    "permalink": "/Tutorials/Migrating-from-Orion-to-Tessera"
+  },
+  "next": {
+    "title": "Reference",
+    "permalink": "/category/reference"
+  }
+}

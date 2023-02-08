@@ -1,0 +1,32 @@
+{
+  "unversionedId": "HowTo/High-Availability",
+  "id": "HowTo/High-Availability",
+  "title": "High availability",
+  "description": "Orion deployment for high availability",
+  "source": "@site/docs/HowTo/High-Availability.md",
+  "sourceDirName": "HowTo",
+  "slug": "/HowTo/High-Availability",
+  "permalink": "/HowTo/High-Availability",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/High-Availability.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1602242872,
+  "formattedLastUpdatedAt": "Oct 9, 2020",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "High availability",
+    "description": "Orion deployment for high availability",
+    "sidebar_position": 5
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Build from source",
+    "permalink": "/HowTo/Build-From-Source"
+  },
+  "next": {
+    "title": "Concepts",
+    "permalink": "/category/concepts"
+  }
+}

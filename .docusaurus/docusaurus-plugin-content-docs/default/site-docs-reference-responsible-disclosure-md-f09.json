@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Reference/Responsible-Disclosure",
+  "id": "Reference/Responsible-Disclosure",
+  "title": "Responsible disclosure policy",
+  "description": "Orion responsible disclosure statement.",
+  "source": "@site/docs/Reference/Responsible-Disclosure.md",
+  "sourceDirName": "Reference",
+  "slug": "/Reference/Responsible-Disclosure",
+  "permalink": "/Reference/Responsible-Disclosure",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/Responsible-Disclosure.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1602242872,
+  "formattedLastUpdatedAt": "Oct 9, 2020",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Responsible disclosure policy",
+    "description": "Orion responsible disclosure statement.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Configuration File",
+    "permalink": "/Reference/Configuration-File"
+  }
+}

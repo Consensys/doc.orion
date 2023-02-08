@@ -1,0 +1,15 @@
+{
+  "title": "Concepts",
+  "slug": "/category/concepts",
+  "permalink": "/category/concepts",
+  "navigation": {
+    "previous": {
+      "title": "High availability",
+      "permalink": "/HowTo/High-Availability"
+    },
+    "next": {
+      "title": "Privacy groups",
+      "permalink": "/Concepts/Privacy-Groups"
+    }
+  }
+}

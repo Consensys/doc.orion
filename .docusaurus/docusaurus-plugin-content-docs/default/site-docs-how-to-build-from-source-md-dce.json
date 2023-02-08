@@ -1,0 +1,32 @@
+{
+  "unversionedId": "HowTo/Build-From-Source",
+  "id": "HowTo/Build-From-Source",
+  "title": "Build from source",
+  "description": "Building Orion from source code",
+  "source": "@site/docs/HowTo/Build-From-Source.md",
+  "sourceDirName": "HowTo",
+  "slug": "/HowTo/Build-From-Source",
+  "permalink": "/HowTo/Build-From-Source",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Build-From-Source.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "alexandratran",
+  "lastUpdatedAt": 1615880010,
+  "formattedLastUpdatedAt": "Mar 16, 2021",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Build from source",
+    "description": "Building Orion from source code",
+    "sidebar_position": 4
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Use Docker",
+    "permalink": "/HowTo/Run-Docker-Image"
+  },
+  "next": {
+    "title": "High availability",
+    "permalink": "/HowTo/High-Availability"
+  }
+}

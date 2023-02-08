@@ -1,6 +1,8 @@
+---
 title: Dependencies
-description: Orion dependencies
-<!--- END of page meta data -->
+description: Dependencies
+sidebar_position: 2
+---
 
 # Dependencies
 
@@ -20,8 +22,7 @@ brew install libsodium
 
 #### Linux
 
-Download the [latest stable version](https://download.libsodium.org/libsodium/releases/LATEST.tar.gz)
-of libsodium.
+Download the [latest stable version](https://download.libsodium.org/libsodium/releases/LATEST.tar.gz) of libsodium.
 
 Execute:
 
@@ -37,4 +38,4 @@ See the [libsodium installation docs](https://download.libsodium.org/doc/install
 
 #### Windows
 
-Reach out to us on [Orion Discord channel]({{support.channel}}) or at [{{support.email}}](mailto:{{support.email}}) if you need support to install on Windows.
+Reach out to us on [Orion Discord channel](https://discord.com/channels/697535391594446898/905421497416433704)

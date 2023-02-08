@@ -1,0 +1,29 @@
+{
+  "unversionedId": "index",
+  "id": "index",
+  "title": "Orion Private Transaction Manager",
+  "description": "Orion is an open-source private transaction manager developed under the Apache 2.0 license and written in Java.",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/index",
+  "permalink": "/index",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/index.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "MadelineMurray",
+  "lastUpdatedAt": 1604274360,
+  "formattedLastUpdatedAt": "Nov 1, 2020",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Orion Private Transaction Manager",
+    "description": "Orion is an open-source private transaction manager developed under the Apache 2.0 license and written in Java.",
+    "sidebar_position": 1,
+    "slug": "index"
+  },
+  "sidebar": "docSidebar",
+  "next": {
+    "title": "How To",
+    "permalink": "/category/how-to"
+  }
+}

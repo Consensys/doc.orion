@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Tutorials/Using-PostgreSQL",
+  "id": "Tutorials/Using-PostgreSQL",
+  "title": "Use PostgreSQL",
+  "description": "Storing Information with PostgreSQL",
+  "source": "@site/docs/Tutorials/Using-PostgreSQL.md",
+  "sourceDirName": "Tutorials",
+  "slug": "/Tutorials/Using-PostgreSQL",
+  "permalink": "/Tutorials/Using-PostgreSQL",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Using-PostgreSQL.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1602242872,
+  "formattedLastUpdatedAt": "Oct 9, 2020",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Use PostgreSQL",
+    "description": "Storing Information with PostgreSQL",
+    "sidebar_position": 2
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Use Oracle",
+    "permalink": "/Tutorials/Using-Oracle"
+  },
+  "next": {
+    "title": "TLS",
+    "permalink": "/Tutorials/TLS"
+  }
+}

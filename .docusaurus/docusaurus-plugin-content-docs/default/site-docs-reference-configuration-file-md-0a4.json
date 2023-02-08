@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Reference/Configuration-File",
+  "id": "Reference/Configuration-File",
+  "title": "Configuration File",
+  "description": "Configuration File",
+  "source": "@site/docs/Reference/Configuration-File.md",
+  "sourceDirName": "Reference",
+  "slug": "/Reference/Configuration-File",
+  "permalink": "/Reference/Configuration-File",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/Configuration-File.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1602242872,
+  "formattedLastUpdatedAt": "Oct 9, 2020",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Configuration File",
+    "description": "Configuration File",
+    "sidebar_position": 3
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Client API methods",
+    "permalink": "/Reference/API-Methods"
+  },
+  "next": {
+    "title": "Responsible disclosure policy",
+    "permalink": "/Reference/Responsible-Disclosure"
+  }
+}

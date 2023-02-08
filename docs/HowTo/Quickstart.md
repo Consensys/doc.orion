@@ -1,4 +1,8 @@
-# Getting Started
+---
+title: Quickstart
+description: Quickstart
+sidebar_position: 1
+---
 
 ## Prerequisites
 
@@ -10,14 +14,13 @@
 
 Create a file containing the password used to encrypt the key pair.
 
-The password is specified when [generating the keys](#2-generate-keys), and the file is specified for the `passwords` property in the
-[configuration file](#3-create-a-configuration-file).
+The password is specified when [generating the keys](#2-generate-keys), and the file is specified for the `passwords` property in the [configuration file](#3-create-a-configuration-file).
 
 ### 2. Generate keys
 
 To generate a public/private key pair for the Orion node:
 
-``` bash
+```bash
 orion -g nodeKey
 ```
 
@@ -52,86 +55,73 @@ orion orion.conf
 
 Use the `upcheck` method to confirm Orion is up and running:
 
-=== "Request"
+<!--tabs-->
 
-    ```bash
-    curl http://localhost:8888/upcheck
-    ```
+# Request
 
-=== "Result"
+```bash
+curl http://localhost:8888/upcheck
+```
 
-    ```bash
-    I'm up!
-    ```
+# Result
+
+```bash
+I'm up!
+```
+
+<!--/tabs-->
 
 ### 6. Send a payload
 
 With one node running, send a payload to yourself where the `from` and `to` values are the [generated public key](#2-generate-keys) (`nodeKey.pub`):
 
-=== "Request"
+<!--tabs-->
 
-    ```bash
-    curl -X POST \
-    http://localhost:8888/send \
-    -H 'Content-Type: application/json' \
-    -d '{
-          "payload": "SGVsbG8sIFdvcmxkIQ==",
-          "from": "<OrionPublicKey>",
-          "to": ["<OrionPublicKey>"]
-        }'
-    ```
+# Request
 
-=== "Example"
+```bash
+curl -X POST \
+http://localhost:8888/send \
+-H 'Content-Type: application/json' \
+-d '{
+        "payload": "SGVsbG8sIFdvcmxkIQ==",
+        "from": "<OrionPublicKey>",
+        "to": ["<OrionPublicKey>"]
+    }'
+```
 
-    ```bash
-    curl -X POST \
-    http://localhost:8888/send \
-    -H 'Content-Type: application/json' \
-    -d '{
-          "payload": "SGVsbG8sIFdvcmxkIQ==",
-          "from": "4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE=",
-          "to": ["4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE="]
-        }'
-    ```
+# Result
 
-=== "Result"
+```bash
+{"key":"LcF7I+UnR2XBdSxZesiYE/lTtxVfFeY4EvL9fDXb0Uo="}
+```
 
-    ```bash
-    {"key":"LcF7I+UnR2XBdSxZesiYE/lTtxVfFeY4EvL9fDXb0Uo="}
-    ```
+<!--/tabs-->
 
 ### 7. Receive a payload
 
 Use the key received when [sending the payload](#6-send-a-payload) to receive the payload:
 
-=== "Request"
+<!--tabs-->
 
-    ```bash
-    curl -X POST \
-    http://localhost:8888/receive \
-    -H 'Content-Type: application/json' \
-    -d '{
-          "key": "<KeyReceivedFromSendMethod>",
-          "to": "<OrionPublicKey>"
-        }'
-    ```
+# Request
 
-=== "Example"
+```bash
+curl -X POST \
+http://localhost:8888/receive \
+-H 'Content-Type: application/json' \
+-d '{
+        "key": "<KeyReceivedFromSendMethod>",
+        "to": "<OrionPublicKey>"
+    }'
+```
 
-    ```bash
-    curl -X POST \
-    http://localhost:8888/receive \
-    -H 'Content-Type: application/json' \
-    -d '{
-          "key": "LcF7I+UnR2XBdSxZesiYE/lTtxVfFeY4EvL9fDXb0Uo=",
-          "to": "4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE="
-        }'
-    ```
+# Result
 
-=== "Result"
+```bash
+{"payload":"SGVsbG8sIFdvcmxkIQ=="}
+```
 
-    ```bash
-    {"payload":"SGVsbG8sIFdvcmxkIQ=="}
-    ```
+<!--/tabs-->
 
 Where `SGVsbG8sIFdvcmxkIQ==` is `Hello, World!` in Base64.

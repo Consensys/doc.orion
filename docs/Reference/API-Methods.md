@@ -1,13 +1,14 @@
 ---
+title: Client API methods
 description: Orion RPC API
+sidebar_position: 2
 ---
 
 # Client API
 
 The Client API is used by Ethereum clients (for example, Hyperledger Besu) to interact with Orion.
 
-The port used by the Client API is defined by the `clientport ` property in the [configuration file](../Reference/Configuration-File.md).
-The default port is `8888`.
+The port used by the Client API is defined by the `clientport ` property in the [configuration file](../Reference/Configuration-File.md). The default port is `8888`.
 
 ## Methods
 
@@ -25,47 +26,52 @@ Creates a privacy group with the specified members.
 
 #### Request Body
 
-`addresses` : *array of strings* - Orion node keys to include in the privacy group
+`addresses` : _array of strings_ - Orion node keys to include in the privacy group
 
-`from` : *string* - Orion node key of node creating the privacy group
+`from` : _string_ - Orion node key of node creating the privacy group
 
-`name` : *string* - Name of the privacy group
+`name` : _string_ - Name of the privacy group
 
-`description` : *string* - Description for the privacy group
+`description` : _string_ - Description for the privacy group
 
 #### Returns
 
-`privacy group` : *object* - Privacy group object
+`privacy group` : _object_ - Privacy group object
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X POST http://127.0.0.1:8888/createPrivacyGroup \
-          -H 'Content-Type: application/json' \
-          -d '{
-            "addresses": [
-              "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=",
-              "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
-            ],
-            "from": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk=",
-           "name": "Organisation A",
-           "description": "Contains members of Organisation A"
-         }'
-        ```
+```bash
+curl -X POST http://127.0.0.1:8888/createPrivacyGroup \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "addresses": [
+      "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=",
+      "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
+    ],
+    "from": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk=",
+    "name": "Organisation A",
+    "description": "Contains members of Organisation A"
+  }'
+```
 
-    === "Result"
+# Result
 
-        ```json
-        {"privacyGroupId":
-          "C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q=",
-          "name":"Organisation A",
-          "description":"Contains members of Organisation A",
-          "type":"PANTHEON",
-          "members":["g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=","negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="]
-        }
-        ```
+```json
+{
+  "privacyGroupId": "C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q=",
+  "name": "Organisation A",
+  "description": "Contains members of Organisation A",
+  "type": "PANTHEON",
+  "members": [
+    "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=",
+    "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
+  ]
+}
+```
+
+<!--/tabs-->
 
 ### `deletePrivacyGroup`
 
@@ -81,44 +87,46 @@ Deletes a privacy group.
 
 #### Request Body
 
-`privacyGroupId` : *string* - ID of the privacy group to delete
+`privacyGroupId` : _string_ - ID of the privacy group to delete
 
-`from` : *string* - Orion node key of node deleting the privacy group
+`from` : _string_ - Orion node key of node deleting the privacy group
 
 #### Returns
 
-`privacyGroupId` : *string* - ID of the deleted privacy group
+`privacyGroupId` : _string_ - ID of the deleted privacy group
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X POST http://127.0.0.1:8888/deletePrivacyGroup \
-          -H 'Content-Type: application/json' \
-          -d '{
-            "privacyGroupId": "C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q=",
-            "from": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
-          }'
-        ```
+```bash
+curl -X POST http://127.0.0.1:8888/deletePrivacyGroup \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "privacyGroupId": "C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q=",
+    "from": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
+  }'
+```
 
-    === "With Privacy Group ID"
+# With Privacy Group ID
 
-        ```bash
-            curl -X POST http://127.0.0.1:8888/send \
-              -H 'Content-Type: application/json' \
-              -d '{
-                "payload": "SGVsbG8sIFdvcmxkIQ==",
-                "from": "4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE=",
-                "privacyGroupId": "kAbelwaVW7okoEn1+okO+AbA4Hhz/7DaCOWVQz9nx5M="
-            }'
-        ```
+```bash
+    curl -X POST http://127.0.0.1:8888/send \
+      -H 'Content-Type: application/json' \
+      -d '{
+        "payload": "SGVsbG8sIFdvcmxkIQ==",
+        "from": "4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE=",
+        "privacyGroupId": "kAbelwaVW7okoEn1+okO+AbA4Hhz/7DaCOWVQz9nx5M="
+    }'
+```
 
-    === "Result"
+# Result
 
-        ```json
-        "C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q="
-        ```
+```json
+"C68ZfeG6wHeXb+CyfwS6NjmmaMWwRaj8ZkrPq/o+S8Q="
+```
+
+<!--/tabs-->
 
 ### `findPrivacyGroup`
 
@@ -134,41 +142,43 @@ Finds all privacy groups containing only the specified members.
 
 #### Request Body
 
-`addresses` : *array of strings* - Orion node keys for which to return privacy groups
+`addresses` : _array of strings_ - Orion node keys for which to return privacy groups
 
 #### Returns
 
 `array of objects` - Privacy group objects for all privacy groups containing only the specified members
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X POST http://127.0.0.1:8888/findPrivacyGroup \
-          -H 'Content-Type: application/json' \
-          -d '{
-          "addresses" : [
-              "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=",
-              "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
-          ]
-        }'
-        ```
+```bash
+curl -X POST http://127.0.0.1:8888/findPrivacyGroup \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "addresses" : [
+      "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=",
+      "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
+  ]
+}'
+```
 
-    === "Result"
+# Result
 
-        ```json
-        [
-          {
-            "privacyGroupId": "DVMXn3N6VIerZOJjixFFoGQBu8AleyonJ1sK33aYdtg=",
-            "type": "PANTHEON",
-            "members": [
-              "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=",
-              "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
-            ]
-          }
-        ]
-        ```
+```json
+[
+  {
+    "privacyGroupId": "DVMXn3N6VIerZOJjixFFoGQBu8AleyonJ1sK33aYdtg=",
+    "type": "PANTHEON",
+    "members": [
+      "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw=",
+      "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
+    ]
+  }
+]
+```
+
+<!--/tabs-->
 
 ### `knownnodes`
 
@@ -190,28 +200,30 @@ None
 
 `array of objects` - Public key and URL of each discovered node.
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X GET http://127.0.0.1:8888/knownnodes
-        ```
+```bash
+curl -X GET http://127.0.0.1:8888/knownnodes
+```
 
-    === "Result"
+# Result
 
-        ```json
-        [
-          {
-            "publicKey": "i/6jwvVSK/V2qvbXSuXG6/jEHZFcjkE/qLD3rs47PDs=",
-            "nodeUrl": "http://127.0.0.1:8080/"
-          },
-          {
-            "publicKey": "Gy/mgkqgCZ960o9pmYAONmPHRD0LDH/5ymywNLrzz08=",
-            "nodeUrl": "http://127.0.0.1:9090/"
-          }
-        ]
-        ```
+```json
+[
+  {
+    "publicKey": "i/6jwvVSK/V2qvbXSuXG6/jEHZFcjkE/qLD3rs47PDs=",
+    "nodeUrl": "http://127.0.0.1:8080/"
+  },
+  {
+    "publicKey": "Gy/mgkqgCZ960o9pmYAONmPHRD0LDH/5ymywNLrzz08=",
+    "nodeUrl": "http://127.0.0.1:9090/"
+  }
+]
+```
+
+<!--/tabs-->
 
 ### `receive`
 
@@ -227,59 +239,63 @@ Receives a payload from Orion using the payload key. The payload key is returned
 
 #### Request Body
 
-`key` : *string* - Key used to receive the payload
+`key` : _string_ - Key used to receive the payload
 
-`to` : *string* - Orion key of the receiver
+`to` : _string_ - Orion key of the receiver
 
 #### Returns
 
-`payload` : *string* - Base64 encoded payload
+`payload` : _string_ - Base64 encoded payload
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X POST http://127.0.0.1:8888/receive \
-          -H 'Content-Type: application/json' \
-          -d '{
-            "key": "wS+RMprLKIuCaHzOBfPeHmkJWUdOJ7Ji/9U3qj2jbXQ=",
-            "to": "YE5cJRJYTRO4XFo7yuAi/0K9DwjySGjsHB2YrFPnJXo="
-        }'
-        ```
+```bash
+curl -X POST http://127.0.0.1:8888/receive \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "key": "wS+RMprLKIuCaHzOBfPeHmkJWUdOJ7Ji/9U3qj2jbXQ=",
+    "to": "YE5cJRJYTRO4XFo7yuAi/0K9DwjySGjsHB2YrFPnJXo="
+}'
+```
 
-    === "Result"
+# Result
 
-        ```json
-         {"payload":"SGVsbG8sIFdvcmxkIQ=="}
-        ```
+```json
+{ "payload": "SGVsbG8sIFdvcmxkIQ==" }
+```
+
+<!--/tabs-->
 
 #### receive with privacy group ID
 
 To return the privacy group ID with the payload, use the `receive` method with the header `Content-Type: application/vnd.orion.v1+json`.
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X POST \
-          http://127.0.0.1:8888/receive \
-          -H 'Content-Type: application/vnd.orion.v1+json' \
-          -d '{
-            "key": "dRQUqPeGy6sj9LQJUYqNlUFroBiWm/tJO+CriTce6AA=",
-            "to": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
-        }'
-        ```
+```bash
+curl -X POST \
+  http://127.0.0.1:8888/receive \
+  -H 'Content-Type: application/vnd.orion.v1+json' \
+  -d '{
+    "key": "dRQUqPeGy6sj9LQJUYqNlUFroBiWm/tJO+CriTce6AA=",
+    "to": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk="
+}'
+```
 
-    === "Result"
+# Result
 
-        ```json
-         {
-             "payload": "SGVsbG8sIFdvcmxkIQ==",
-             "privacyGroupId": "68/Cq0mVjB8FbXDLE1tbDRAvD/srluIok137uFOaClM="
-         }
-        ```
+```json
+{
+  "payload": "SGVsbG8sIFdvcmxkIQ==",
+  "privacyGroupId": "68/Cq0mVjB8FbXDLE1tbDRAvD/srluIok137uFOaClM="
+}
+```
+
+<!--/tabs-->
 
 ### `receiveraw`
 
@@ -302,22 +318,24 @@ None
 
 Payload
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X POST \
-          http://127.0.0.1:8888/receiveraw \
-          -H 'Content-Type: application/octet-stream' \
-          -H 'c11n-key: +3gnwO0oHXe4kXsr3kegd9jTTqsq3Y6Hm3w26WHR/RM='
-        ```
+```bash
+curl -X POST \
+  http://127.0.0.1:8888/receiveraw \
+  -H 'Content-Type: application/octet-stream' \
+  -H 'c11n-key: +3gnwO0oHXe4kXsr3kegd9jTTqsq3Y6Hm3w26WHR/RM='
+```
 
-    === "Result"
+# Result
 
-        ```json
-        Hello, World!
-        ```
+```json
+Hello, World!
+```
+
+<!--/tabs-->
 
 ### `send`
 
@@ -333,51 +351,53 @@ Sends a payload to Orion.
 
 #### Request Body
 
-`payload` : *string* - Base64-encoded payload
+`payload` : _string_ - Base64-encoded payload
 
-`from` : *string*  - Orion node key of sender
+`from` : _string_ - Orion node key of sender
 
-`to` : *array of strings* - Orion node keys to receive this payload
+`to` : _array of strings_ - Orion node keys to receive this payload
 
 or
 
- `privacyGroupId` : *string* - Privacy group to receive this payload
+`privacyGroupId` : _string_ - Privacy group to receive this payload
 
 #### Returns
 
-`key` : *string* - Key used to receive the payload
+`key` : _string_ - Key used to receive the payload
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request with to"
+# curl HTTP request with to
 
-        ```bash
-        curl -X POST http://127.0.0.1:8888/send \
-          -H 'Content-Type: application/json' \
-          -d '{
-            "payload": "SGVsbG8sIFdvcmxkIQ==",
-            "from": "4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE=",
-            "to": ["YE5cJRJYTRO4XFo7yuAi/0K9DwjySGjsHB2YrFPnJXo="]
-        }'
-        ```
+```bash
+curl -X POST http://127.0.0.1:8888/send \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "payload": "SGVsbG8sIFdvcmxkIQ==",
+    "from": "4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE=",
+    "to": ["YE5cJRJYTRO4XFo7yuAi/0K9DwjySGjsHB2YrFPnJXo="]
+}'
+```
 
-    === "curl HTTP request with privacyGroupId"
+# curl HTTP request with privacyGroupId
 
-        ```bash
-        curl -X POST http://127.0.0.1:8888/send \
-           -H 'Content-Type: application/json' \
-           -d '{
-             "payload": "SGVsbG8sIFdvcmxkIQ==",
-             "from": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk=",
-             "privacyGroupId": "DVMXn3N6VIerZOJjixFFoGQBu8AleyonJ1sK33aYdtg="
-        }'
-        ```
+```bash
+curl -X POST http://127.0.0.1:8888/send \
+    -H 'Content-Type: application/json' \
+    -d '{
+      "payload": "SGVsbG8sIFdvcmxkIQ==",
+      "from": "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk=",
+      "privacyGroupId": "DVMXn3N6VIerZOJjixFFoGQBu8AleyonJ1sK33aYdtg="
+}'
+```
 
-    === "Result"
+# Result
 
-        ```json
-        {"key":"wS+RMprLKIuCaHzOBfPeHmkJWUdOJ7Ji/9U3qj2jbXQ="}
-        ```
+```json
+{ "key": "wS+RMprLKIuCaHzOBfPeHmkJWUdOJ7Ji/9U3qj2jbXQ=" }
+```
+
+<!--/tabs-->
 
 ### `sendraw`
 
@@ -395,29 +415,31 @@ Sends a raw payload to Orion.
 
 #### Request Body
 
-`payload` : *string* - Payload
+`payload` : _string_ - Payload
 
 #### Returns
 
 Key used to receive the payload
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X POST http://127.0.0.1:8888/sendraw \
-          -H 'Content-Type: application/octet-stream' \
-          -H 'c11n-from: 4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE=' \
-          -H 'c11n-to: YE5cJRJYTRO4XFo7yuAi/0K9DwjySGjsHB2YrFPnJXo=' \
-          -d 'Hello, World!'
-        ```
+```bash
+curl -X POST http://127.0.0.1:8888/sendraw \
+  -H 'Content-Type: application/octet-stream' \
+  -H 'c11n-from: 4xanJzyaDPcBVMUSwl/tLp+DbXzd3jF9MKk1yJuyewE=' \
+  -H 'c11n-to: YE5cJRJYTRO4XFo7yuAi/0K9DwjySGjsHB2YrFPnJXo=' \
+  -d 'Hello, World!'
+```
 
-    === "Result"
+# Result
 
-        ```json
-        +3gnwO0oHXe4kXsr3kegd9jTTqsq3Y6Hm3w26WHR/RM=
-        ```
+```json
++3gnwO0oHXe4kXsr3kegd9jTTqsq3Y6Hm3w26WHR/RM=
+```
+
+<!--/tabs-->
 
 ### `upcheck`
 
@@ -437,18 +459,20 @@ None
 
 #### Returns
 
-*string* : `I'm up`
+_string_ : `I'm up`
 
-!!! example
+<!--tabs-->
 
-    === "curl HTTP request"
+# curl HTTP request
 
-        ```bash
-        curl -X GET http://127.0.0.1:8888/upcheck
-        ```
+```bash
+curl -X GET http://127.0.0.1:8888/upcheck
+```
 
-    === "Result"
+# Result
 
-        ```json
-        I'm up
-        ```
+```json
+I'm up
+```
+
+<!--/tabs-->

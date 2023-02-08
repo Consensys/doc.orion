@@ -1,0 +1,2440 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/",
+          "tagsPath": "/tags",
+          "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs",
+          "editUrlLocalized": "https://github.com/ConsenSys/doc.orion/tree/main/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/jfernandes/workspace/docs/doc.orion/sidebars.js",
+          "contentPath": "/home/jfernandes/workspace/docs/doc.orion/docs",
+          "contentPathLocalized": "/home/jfernandes/workspace/docs/doc.orion/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "Concepts/Disaster-Recovery",
+              "id": "Concepts/Disaster-Recovery",
+              "title": "Disaster recovery",
+              "description": "Disaster recovery strategies",
+              "source": "@site/docs/Concepts/Disaster-Recovery.md",
+              "sourceDirName": "Concepts",
+              "slug": "/Concepts/Disaster-Recovery",
+              "permalink": "/Concepts/Disaster-Recovery",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Concepts/Disaster-Recovery.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Disaster recovery",
+                "description": "Disaster recovery strategies",
+                "sidebar_position": 2
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Privacy groups",
+                "permalink": "/Concepts/Privacy-Groups"
+              },
+              "next": {
+                "title": "TLS Communication",
+                "permalink": "/Concepts/TLS-Communication"
+              }
+            },
+            {
+              "unversionedId": "Concepts/Multi-Tenancy",
+              "id": "Concepts/Multi-Tenancy",
+              "title": "Multi-tenancy",
+              "description": "Multi-tenancy",
+              "source": "@site/docs/Concepts/Multi-Tenancy.md",
+              "sourceDirName": "Concepts",
+              "slug": "/Concepts/Multi-Tenancy",
+              "permalink": "/Concepts/Multi-Tenancy",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Concepts/Multi-Tenancy.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Multi-tenancy",
+                "description": "Multi-tenancy",
+                "sidebar_position": 4
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "TLS Communication",
+                "permalink": "/Concepts/TLS-Communication"
+              },
+              "next": {
+                "title": "Tutorials",
+                "permalink": "/category/tutorials"
+              }
+            },
+            {
+              "unversionedId": "Concepts/Privacy-Groups",
+              "id": "Concepts/Privacy-Groups",
+              "title": "Privacy groups",
+              "description": "Privacy groups",
+              "source": "@site/docs/Concepts/Privacy-Groups.md",
+              "sourceDirName": "Concepts",
+              "slug": "/Concepts/Privacy-Groups",
+              "permalink": "/Concepts/Privacy-Groups",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Concepts/Privacy-Groups.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Privacy groups",
+                "description": "Privacy groups",
+                "sidebar_position": 1
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Concepts",
+                "permalink": "/category/concepts"
+              },
+              "next": {
+                "title": "Disaster recovery",
+                "permalink": "/Concepts/Disaster-Recovery"
+              }
+            },
+            {
+              "unversionedId": "Concepts/TLS-Communication",
+              "id": "Concepts/TLS-Communication",
+              "title": "TLS Communication",
+              "description": "TLS",
+              "source": "@site/docs/Concepts/TLS-Communication.md",
+              "sourceDirName": "Concepts",
+              "slug": "/Concepts/TLS-Communication",
+              "permalink": "/Concepts/TLS-Communication",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Concepts/TLS-Communication.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "TLS Communication",
+                "description": "TLS",
+                "sidebar_position": 3
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Disaster recovery",
+                "permalink": "/Concepts/Disaster-Recovery"
+              },
+              "next": {
+                "title": "Multi-tenancy",
+                "permalink": "/Concepts/Multi-Tenancy"
+              }
+            },
+            {
+              "unversionedId": "HowTo/Build-From-Source",
+              "id": "HowTo/Build-From-Source",
+              "title": "Build from source",
+              "description": "Building Orion from source code",
+              "source": "@site/docs/HowTo/Build-From-Source.md",
+              "sourceDirName": "HowTo",
+              "slug": "/HowTo/Build-From-Source",
+              "permalink": "/HowTo/Build-From-Source",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Build-From-Source.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Build from source",
+                "description": "Building Orion from source code",
+                "sidebar_position": 4
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Use Docker",
+                "permalink": "/HowTo/Run-Docker-Image"
+              },
+              "next": {
+                "title": "High availability",
+                "permalink": "/HowTo/High-Availability"
+              }
+            },
+            {
+              "unversionedId": "HowTo/Dependencies",
+              "id": "HowTo/Dependencies",
+              "title": "Dependencies",
+              "description": "Dependencies",
+              "source": "@site/docs/HowTo/Dependencies.md",
+              "sourceDirName": "HowTo",
+              "slug": "/HowTo/Dependencies",
+              "permalink": "/HowTo/Dependencies",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Dependencies.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Dependencies",
+                "description": "Dependencies",
+                "sidebar_position": 2
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Quickstart",
+                "permalink": "/HowTo/Quickstart"
+              },
+              "next": {
+                "title": "Use Binary",
+                "permalink": "/HowTo/Install-Binaries"
+              }
+            },
+            {
+              "unversionedId": "HowTo/High-Availability",
+              "id": "HowTo/High-Availability",
+              "title": "High availability",
+              "description": "Orion deployment for high availability",
+              "source": "@site/docs/HowTo/High-Availability.md",
+              "sourceDirName": "HowTo",
+              "slug": "/HowTo/High-Availability",
+              "permalink": "/HowTo/High-Availability",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/High-Availability.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "title": "High availability",
+                "description": "Orion deployment for high availability",
+                "sidebar_position": 5
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Build from source",
+                "permalink": "/HowTo/Build-From-Source"
+              },
+              "next": {
+                "title": "Concepts",
+                "permalink": "/category/concepts"
+              }
+            },
+            {
+              "unversionedId": "HowTo/Install-Binaries",
+              "id": "HowTo/Install-Binaries",
+              "title": "Use Binary",
+              "description": "Install Orion from binary distribution",
+              "source": "@site/docs/HowTo/Install-Binaries.md",
+              "sourceDirName": "HowTo",
+              "slug": "/HowTo/Install-Binaries",
+              "permalink": "/HowTo/Install-Binaries",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Install-Binaries.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Use Binary",
+                "description": "Install Orion from binary distribution",
+                "sidebar_position": 3
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Dependencies",
+                "permalink": "/HowTo/Dependencies"
+              },
+              "next": {
+                "title": "Use Docker",
+                "permalink": "/HowTo/Run-Docker-Image"
+              }
+            },
+            {
+              "unversionedId": "HowTo/Quickstart",
+              "id": "HowTo/Quickstart",
+              "title": "Quickstart",
+              "description": "Quickstart",
+              "source": "@site/docs/HowTo/Quickstart.md",
+              "sourceDirName": "HowTo",
+              "slug": "/HowTo/Quickstart",
+              "permalink": "/HowTo/Quickstart",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Quickstart.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Quickstart",
+                "description": "Quickstart",
+                "sidebar_position": 1
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "How To",
+                "permalink": "/category/how-to"
+              },
+              "next": {
+                "title": "Dependencies",
+                "permalink": "/HowTo/Dependencies"
+              }
+            },
+            {
+              "unversionedId": "HowTo/Run-Docker-Image",
+              "id": "HowTo/Run-Docker-Image",
+              "title": "Use Docker",
+              "description": "Run Orion using the official docker image",
+              "source": "@site/docs/HowTo/Run-Docker-Image.md",
+              "sourceDirName": "HowTo",
+              "slug": "/HowTo/Run-Docker-Image",
+              "permalink": "/HowTo/Run-Docker-Image",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/HowTo/Run-Docker-Image.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Use Docker",
+                "description": "Run Orion using the official docker image",
+                "sidebar_position": 3
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Use Binary",
+                "permalink": "/HowTo/Install-Binaries"
+              },
+              "next": {
+                "title": "Build from source",
+                "permalink": "/HowTo/Build-From-Source"
+              }
+            },
+            {
+              "unversionedId": "index",
+              "id": "index",
+              "title": "Orion Private Transaction Manager",
+              "description": "Orion is an open-source private transaction manager developed under the Apache 2.0 license and written in Java.",
+              "source": "@site/docs/index.md",
+              "sourceDirName": ".",
+              "slug": "/index",
+              "permalink": "/index",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/index.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Orion Private Transaction Manager",
+                "description": "Orion is an open-source private transaction manager developed under the Apache 2.0 license and written in Java.",
+                "sidebar_position": 1,
+                "slug": "index"
+              },
+              "sidebar": "docSidebar",
+              "next": {
+                "title": "How To",
+                "permalink": "/category/how-to"
+              }
+            },
+            {
+              "unversionedId": "Reference/API-Methods",
+              "id": "Reference/API-Methods",
+              "title": "Client API methods",
+              "description": "Orion RPC API",
+              "source": "@site/docs/Reference/API-Methods.md",
+              "sourceDirName": "Reference",
+              "slug": "/Reference/API-Methods",
+              "permalink": "/Reference/API-Methods",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/API-Methods.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Client API methods",
+                "description": "Orion RPC API",
+                "sidebar_position": 2
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Orion command line",
+                "permalink": "/Reference/Orion-CLI-Syntax"
+              },
+              "next": {
+                "title": "Configuration File",
+                "permalink": "/Reference/Configuration-File"
+              }
+            },
+            {
+              "unversionedId": "Reference/Configuration-File",
+              "id": "Reference/Configuration-File",
+              "title": "Configuration File",
+              "description": "Configuration File",
+              "source": "@site/docs/Reference/Configuration-File.md",
+              "sourceDirName": "Reference",
+              "slug": "/Reference/Configuration-File",
+              "permalink": "/Reference/Configuration-File",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/Configuration-File.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Configuration File",
+                "description": "Configuration File",
+                "sidebar_position": 3
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Client API methods",
+                "permalink": "/Reference/API-Methods"
+              },
+              "next": {
+                "title": "Responsible disclosure policy",
+                "permalink": "/Reference/Responsible-Disclosure"
+              }
+            },
+            {
+              "unversionedId": "Reference/Orion-CLI-Syntax",
+              "id": "Reference/Orion-CLI-Syntax",
+              "title": "Orion command line",
+              "description": "Orion command line interface reference",
+              "source": "@site/docs/Reference/Orion-CLI-Syntax.md",
+              "sourceDirName": "Reference",
+              "slug": "/Reference/Orion-CLI-Syntax",
+              "permalink": "/Reference/Orion-CLI-Syntax",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/Orion-CLI-Syntax.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Orion command line",
+                "description": "Orion command line interface reference",
+                "sidebar_position": 1
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Reference",
+                "permalink": "/category/reference"
+              },
+              "next": {
+                "title": "Client API methods",
+                "permalink": "/Reference/API-Methods"
+              }
+            },
+            {
+              "unversionedId": "Reference/Responsible-Disclosure",
+              "id": "Reference/Responsible-Disclosure",
+              "title": "Responsible disclosure policy",
+              "description": "Orion responsible disclosure statement.",
+              "source": "@site/docs/Reference/Responsible-Disclosure.md",
+              "sourceDirName": "Reference",
+              "slug": "/Reference/Responsible-Disclosure",
+              "permalink": "/Reference/Responsible-Disclosure",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/Responsible-Disclosure.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Responsible disclosure policy",
+                "description": "Orion responsible disclosure statement.",
+                "sidebar_position": 4
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Configuration File",
+                "permalink": "/Reference/Configuration-File"
+              }
+            },
+            {
+              "unversionedId": "Tutorials/Generating-Certificates",
+              "id": "Tutorials/Generating-Certificates",
+              "title": "Generate Orion Certificates",
+              "description": "Generate Orion Certificates",
+              "source": "@site/docs/Tutorials/Generating-Certificates.md",
+              "sourceDirName": "Tutorials",
+              "slug": "/Tutorials/Generating-Certificates",
+              "permalink": "/Tutorials/Generating-Certificates",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Generating-Certificates.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Generate Orion Certificates",
+                "description": "Generate Orion Certificates",
+                "sidebar_position": 4
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "TLS",
+                "permalink": "/Tutorials/TLS"
+              },
+              "next": {
+                "title": "Migrating from Orion to Tessera",
+                "permalink": "/Tutorials/Migrating-from-Orion-to-Tessera"
+              }
+            },
+            {
+              "unversionedId": "Tutorials/Migrating-from-Orion-to-Tessera",
+              "id": "Tutorials/Migrating-from-Orion-to-Tessera",
+              "title": "Migrating from Orion to Tessera",
+              "description": "Migrate your Orion configuration and data to Tessera.",
+              "source": "@site/docs/Tutorials/Migrating-from-Orion-to-Tessera.md",
+              "sourceDirName": "Tutorials",
+              "slug": "/Tutorials/Migrating-from-Orion-to-Tessera",
+              "permalink": "/Tutorials/Migrating-from-Orion-to-Tessera",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Migrating-from-Orion-to-Tessera.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "title": "Migrating from Orion to Tessera",
+                "description": "Migrate your Orion configuration and data to Tessera.",
+                "sidebar_position": 5
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Generate Orion Certificates",
+                "permalink": "/Tutorials/Generating-Certificates"
+              },
+              "next": {
+                "title": "Quorum Developer Quickstart",
+                "permalink": "/Tutorials/Quorum-Dev-Quickstart"
+              }
+            },
+            {
+              "unversionedId": "Tutorials/Quorum-Dev-Quickstart",
+              "id": "Tutorials/Quorum-Dev-Quickstart",
+              "title": "Quorum Developer Quickstart",
+              "description": "Rapidly generate local Quorum blockchain networks.",
+              "source": "@site/docs/Tutorials/Quorum-Dev-Quickstart.md",
+              "sourceDirName": "Tutorials",
+              "slug": "/Tutorials/Quorum-Dev-Quickstart",
+              "permalink": "/Tutorials/Quorum-Dev-Quickstart",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Quorum-Dev-Quickstart.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "title": "Quorum Developer Quickstart",
+                "description": "Rapidly generate local Quorum blockchain networks.",
+                "sidebar_position": 6
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Migrating from Orion to Tessera",
+                "permalink": "/Tutorials/Migrating-from-Orion-to-Tessera"
+              },
+              "next": {
+                "title": "Reference",
+                "permalink": "/category/reference"
+              }
+            },
+            {
+              "unversionedId": "Tutorials/TLS",
+              "id": "Tutorials/TLS",
+              "title": "TLS",
+              "description": "TLS",
+              "source": "@site/docs/Tutorials/TLS.md",
+              "sourceDirName": "Tutorials",
+              "slug": "/Tutorials/TLS",
+              "permalink": "/Tutorials/TLS",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/TLS.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "TLS",
+                "description": "TLS",
+                "sidebar_position": 3
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Use PostgreSQL",
+                "permalink": "/Tutorials/Using-PostgreSQL"
+              },
+              "next": {
+                "title": "Generate Orion Certificates",
+                "permalink": "/Tutorials/Generating-Certificates"
+              }
+            },
+            {
+              "unversionedId": "Tutorials/Using-Oracle",
+              "id": "Tutorials/Using-Oracle",
+              "title": "Use Oracle",
+              "description": "Storing Information with Oracle",
+              "source": "@site/docs/Tutorials/Using-Oracle.md",
+              "sourceDirName": "Tutorials",
+              "slug": "/Tutorials/Using-Oracle",
+              "permalink": "/Tutorials/Using-Oracle",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Using-Oracle.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Use Oracle",
+                "description": "Storing Information with Oracle",
+                "sidebar_position": 1
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Tutorials",
+                "permalink": "/category/tutorials"
+              },
+              "next": {
+                "title": "Use PostgreSQL",
+                "permalink": "/Tutorials/Using-PostgreSQL"
+              }
+            },
+            {
+              "unversionedId": "Tutorials/Using-PostgreSQL",
+              "id": "Tutorials/Using-PostgreSQL",
+              "title": "Use PostgreSQL",
+              "description": "Storing Information with PostgreSQL",
+              "source": "@site/docs/Tutorials/Using-PostgreSQL.md",
+              "sourceDirName": "Tutorials",
+              "slug": "/Tutorials/Using-PostgreSQL",
+              "permalink": "/Tutorials/Using-PostgreSQL",
+              "draft": false,
+              "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Using-PostgreSQL.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Use PostgreSQL",
+                "description": "Storing Information with PostgreSQL",
+                "sidebar_position": 2
+              },
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Use Oracle",
+                "permalink": "/Tutorials/Using-Oracle"
+              },
+              "next": {
+                "title": "TLS",
+                "permalink": "/Tutorials/TLS"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "docSidebar": [
+              {
+                "type": "doc",
+                "id": "index",
+                "label": "Overview",
+                "translatable": true
+              },
+              {
+                "type": "category",
+                "label": "How To",
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/how-to",
+                  "permalink": "/category/how-to"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "HowTo/Quickstart"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "HowTo/Dependencies"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "HowTo/Install-Binaries"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "HowTo/Run-Docker-Image"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "HowTo/Build-From-Source"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "HowTo/High-Availability"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Concepts",
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/concepts",
+                  "permalink": "/category/concepts"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Concepts/Privacy-Groups"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Concepts/Disaster-Recovery"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Concepts/TLS-Communication"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Concepts/Multi-Tenancy"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Tutorials",
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/tutorials",
+                  "permalink": "/category/tutorials"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Tutorials/Using-Oracle"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Tutorials/Using-PostgreSQL"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Tutorials/TLS"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Tutorials/Generating-Certificates"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Tutorials/Migrating-from-Orion-to-Tessera"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Tutorials/Quorum-Dev-Quickstart"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Reference",
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/reference",
+                  "permalink": "/category/reference"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Reference/Orion-CLI-Syntax"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Reference/API-Methods"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Reference/Configuration-File"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Reference/Responsible-Disclosure"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.tsx"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-plugin-redoc": {
+    "using-remote-url": {
+      "converted": {
+        "openapi": "3.0.0",
+        "servers": [
+          {
+            "url": "//petstore.swagger.io/v2",
+            "description": "Default server"
+          },
+          {
+            "url": "//petstore.swagger.io/sandbox",
+            "description": "Sandbox server"
+          }
+        ],
+        "info": {
+          "description": "This is a sample server Petstore server.\nYou can find out more about Swagger at\n[http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).\nFor this sample, you can use the api key `special-key` to test the authorization filters.\n\n# Introduction\nThis API is documented in **OpenAPI format** and is based on\n[Petstore sample](http://petstore.swagger.io/) provided by [swagger.io](http://swagger.io) team.\nIt was **extended** to illustrate features of [generator-openapi-repo](https://github.com/Rebilly/generator-openapi-repo)\ntool and [ReDoc](https://github.com/Redocly/redoc) documentation. In addition to standard\nOpenAPI syntax we use a few [vendor extensions](https://github.com/Redocly/redoc/blob/master/docs/redoc-vendor-extensions.md).\n\n# OpenAPI Specification\nThis API is documented in **OpenAPI format** and is based on\n[Petstore sample](http://petstore.swagger.io/) provided by [swagger.io](http://swagger.io) team.\nIt was **extended** to illustrate features of [generator-openapi-repo](https://github.com/Rebilly/generator-openapi-repo)\ntool and [ReDoc](https://github.com/Redocly/redoc) documentation. In addition to standard\nOpenAPI syntax we use a few [vendor extensions](https://github.com/Redocly/redoc/blob/master/docs/redoc-vendor-extensions.md).\n\n# Cross-Origin Resource Sharing\nThis API features Cross-Origin Resource Sharing (CORS) implemented in compliance with  [W3C spec](https://www.w3.org/TR/cors/).\nAnd that allows cross-domain communication from the browser.\nAll responses have a wildcard same-origin which makes them completely public and accessible to everyone, including any code on any site.\n\n# Authentication\n\nPetstore offers two forms of authentication:\n  - API Key\n  - OAuth2\nOAuth2 - an open protocol to allow secure authorization in a simple\nand standard method from web, mobile and desktop applications.\n\n<SecurityDefinitions />\n",
+          "version": "1.0.0",
+          "title": "Swagger Petstore [Automatic Page From File]",
+          "termsOfService": "http://swagger.io/terms/",
+          "contact": {
+            "name": "API Support",
+            "email": "apiteam@swagger.io",
+            "url": "https://github.com/Redocly/redoc"
+          },
+          "x-logo": {
+            "url": "https://redocly.github.io/redoc/petstore-logo.png",
+            "altText": "Petstore logo"
+          },
+          "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+          }
+        },
+        "externalDocs": {
+          "description": "Find out how to create Github repo for your OpenAPI spec.",
+          "url": "https://github.com/Rebilly/generator-openapi-repo"
+        },
+        "tags": [
+          {
+            "name": "pet",
+            "description": "Everything about your Pets"
+          },
+          {
+            "name": "store",
+            "description": "Access to Petstore orders"
+          },
+          {
+            "name": "user",
+            "description": "Operations about user"
+          },
+          {
+            "name": "pet_model",
+            "x-displayName": "The Pet Model",
+            "description": "<SchemaDefinition schemaRef=\"#/components/schemas/Pet\" />\n"
+          },
+          {
+            "name": "store_model",
+            "x-displayName": "The Order Model",
+            "description": "<SchemaDefinition schemaRef=\"#/components/schemas/Order\" exampleRef=\"#/components/examples/Order\" showReadOnly={true} showWriteOnly={true} />\n"
+          }
+        ],
+        "x-tagGroups": [
+          {
+            "name": "General",
+            "tags": ["pet", "store"]
+          },
+          {
+            "name": "User Management",
+            "tags": ["user"]
+          },
+          {
+            "name": "Models",
+            "tags": ["pet_model", "store_model"]
+          }
+        ],
+        "paths": {
+          "/pet": {
+            "parameters": [
+              {
+                "name": "Accept-Language",
+                "in": "header",
+                "description": "The language you prefer for messages. Supported values are en-AU, en-CA, en-GB, en-US",
+                "example": "en-US",
+                "required": false,
+                "schema": {
+                  "type": "string",
+                  "default": "en-AU"
+                }
+              },
+              {
+                "name": "cookieParam",
+                "in": "cookie",
+                "description": "Some cookie",
+                "required": true,
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            ],
+            "post": {
+              "tags": ["pet"],
+              "summary": "Add a new pet to the store",
+              "description": "Add new pet to the store inventory.",
+              "operationId": "addPet",
+              "responses": {
+                "405": {
+                  "description": "Invalid input"
+                }
+              },
+              "security": [
+                {
+                  "petstore_auth": ["write:pets", "read:pets"]
+                }
+              ],
+              "x-codeSamples": [
+                {
+                  "lang": "C#",
+                  "source": "PetStore.v1.Pet pet = new PetStore.v1.Pet();\npet.setApiKey(\"your api key\");\npet.petType = PetStore.v1.Pet.TYPE_DOG;\npet.name = \"Rex\";\n// set other fields\nPetStoreResponse response = pet.create();\nif (response.statusCode == HttpStatusCode.Created)\n{\n  // Successfully created\n}\nelse\n{\n  // Something wrong -- check response for errors\n  Console.WriteLine(response.getRawResponse());\n}\n"
+                },
+                {
+                  "lang": "PHP",
+                  "source": "$form = new \\PetStore\\Entities\\Pet();\n$form->setPetType(\"Dog\");\n$form->setName(\"Rex\");\n// set other fields\ntry {\n    $pet = $client->pets()->create($form);\n} catch (UnprocessableEntityException $e) {\n    var_dump($e->getErrors());\n}\n"
+                }
+              ],
+              "requestBody": {
+                "$ref": "#/components/requestBodies/Pet"
+              }
+            },
+            "put": {
+              "tags": ["pet"],
+              "summary": "Update an existing pet",
+              "description": "",
+              "operationId": "updatePet",
+              "responses": {
+                "400": {
+                  "description": "Invalid ID supplied"
+                },
+                "404": {
+                  "description": "Pet not found"
+                },
+                "405": {
+                  "description": "Validation exception"
+                }
+              },
+              "security": [
+                {
+                  "petstore_auth": ["write:pets", "read:pets"]
+                }
+              ],
+              "x-codeSamples": [
+                {
+                  "lang": "PHP",
+                  "source": "$form = new \\PetStore\\Entities\\Pet();\n$form->setPetId(1);\n$form->setPetType(\"Dog\");\n$form->setName(\"Rex\");\n// set other fields\ntry {\n    $pet = $client->pets()->update($form);\n} catch (UnprocessableEntityException $e) {\n    var_dump($e->getErrors());\n}\n"
+                }
+              ],
+              "requestBody": {
+                "$ref": "#/components/requestBodies/Pet"
+              }
+            }
+          },
+          "/pet/{petId}": {
+            "get": {
+              "tags": ["pet"],
+              "summary": "Find pet by ID",
+              "description": "Returns a single pet",
+              "operationId": "getPetById",
+              "parameters": [
+                {
+                  "name": "petId",
+                  "in": "path",
+                  "description": "ID of pet to return",
+                  "required": true,
+                  "deprecated": true,
+                  "schema": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Pet"
+                      }
+                    },
+                    "application/xml": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Pet"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid ID supplied"
+                },
+                "404": {
+                  "description": "Pet not found"
+                }
+              },
+              "security": [
+                {
+                  "api_key": []
+                }
+              ]
+            },
+            "post": {
+              "tags": ["pet"],
+              "summary": "Updates a pet in the store with form data",
+              "description": "",
+              "operationId": "updatePetWithForm",
+              "parameters": [
+                {
+                  "name": "petId",
+                  "in": "path",
+                  "description": "ID of pet that needs to be updated",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              ],
+              "responses": {
+                "405": {
+                  "description": "Invalid input"
+                }
+              },
+              "security": [
+                {
+                  "petstore_auth": ["write:pets", "read:pets"]
+                }
+              ],
+              "requestBody": {
+                "content": {
+                  "application/x-www-form-urlencoded": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "description": "Updated name of the pet",
+                          "type": "string"
+                        },
+                        "status": {
+                          "description": "Updated status of the pet",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "tags": ["pet"],
+              "summary": "Deletes a pet",
+              "description": "",
+              "operationId": "deletePet",
+              "parameters": [
+                {
+                  "name": "api_key",
+                  "in": "header",
+                  "required": false,
+                  "schema": {
+                    "type": "string"
+                  },
+                  "example": "Bearer <TOKEN>"
+                },
+                {
+                  "name": "petId",
+                  "in": "path",
+                  "description": "Pet id to delete",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              ],
+              "responses": {
+                "400": {
+                  "description": "Invalid pet value"
+                }
+              },
+              "security": [
+                {
+                  "petstore_auth": ["write:pets", "read:pets"]
+                }
+              ]
+            }
+          },
+          "/pet/{petId}/uploadImage": {
+            "post": {
+              "tags": ["pet"],
+              "summary": "uploads an image",
+              "description": "",
+              "operationId": "uploadFile",
+              "parameters": [
+                {
+                  "name": "petId",
+                  "in": "path",
+                  "description": "ID of pet to update",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ApiResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "petstore_auth": ["write:pets", "read:pets"]
+                }
+              ],
+              "requestBody": {
+                "content": {
+                  "application/octet-stream": {
+                    "schema": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/pet/findByStatus": {
+            "get": {
+              "tags": ["pet"],
+              "summary": "Finds Pets by status",
+              "description": "Multiple status values can be provided with comma separated strings",
+              "operationId": "findPetsByStatus",
+              "parameters": [
+                {
+                  "name": "status",
+                  "in": "query",
+                  "description": "Status values that need to be considered for filter",
+                  "required": true,
+                  "style": "form",
+                  "schema": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "string",
+                      "enum": ["available", "pending", "sold"],
+                      "default": "available"
+                    }
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Pet"
+                        }
+                      }
+                    },
+                    "application/xml": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Pet"
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid status value"
+                }
+              },
+              "security": [
+                {
+                  "petstore_auth": ["write:pets", "read:pets"]
+                }
+              ]
+            }
+          },
+          "/pet/findByTags": {
+            "get": {
+              "tags": ["pet"],
+              "summary": "Finds Pets by tags",
+              "description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+              "operationId": "findPetsByTags",
+              "deprecated": true,
+              "parameters": [
+                {
+                  "name": "tags",
+                  "in": "query",
+                  "description": "Tags to filter by",
+                  "required": true,
+                  "style": "form",
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Pet"
+                        }
+                      }
+                    },
+                    "application/xml": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Pet"
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid tag value"
+                }
+              },
+              "security": [
+                {
+                  "petstore_auth": ["write:pets", "read:pets"]
+                }
+              ]
+            }
+          },
+          "/store/inventory": {
+            "get": {
+              "tags": ["store"],
+              "summary": "Returns pet inventories by status",
+              "description": "Returns a map of status codes to quantities",
+              "operationId": "getInventory",
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "integer",
+                          "format": "int32"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "api_key": []
+                }
+              ]
+            }
+          },
+          "/store/order": {
+            "post": {
+              "tags": ["store"],
+              "summary": "Place an order for a pet",
+              "description": "",
+              "operationId": "placeOrder",
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Order"
+                      }
+                    },
+                    "application/xml": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Order"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid Order",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "status": 400,
+                        "message": "Invalid Order"
+                      }
+                    }
+                  }
+                }
+              },
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Order"
+                    }
+                  }
+                },
+                "description": "order placed for purchasing the pet",
+                "required": true
+              }
+            }
+          },
+          "/store/order/{orderId}": {
+            "get": {
+              "tags": ["store"],
+              "summary": "Find purchase order by ID",
+              "description": "For valid response try integer IDs with value <= 5 or > 10. Other values will generated exceptions",
+              "operationId": "getOrderById",
+              "parameters": [
+                {
+                  "name": "orderId",
+                  "in": "path",
+                  "description": "ID of pet that needs to be fetched",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "format": "int64",
+                    "minimum": 1,
+                    "maximum": 5
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Order"
+                      }
+                    },
+                    "application/xml": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Order"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid ID supplied"
+                },
+                "404": {
+                  "description": "Order not found"
+                }
+              }
+            },
+            "delete": {
+              "tags": ["store"],
+              "summary": "Delete purchase order by ID",
+              "description": "For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors",
+              "operationId": "deleteOrder",
+              "parameters": [
+                {
+                  "name": "orderId",
+                  "in": "path",
+                  "description": "ID of the order that needs to be deleted",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "minimum": 1
+                  }
+                }
+              ],
+              "responses": {
+                "400": {
+                  "description": "Invalid ID supplied"
+                },
+                "404": {
+                  "description": "Order not found"
+                }
+              }
+            }
+          },
+          "/store/subscribe": {
+            "post": {
+              "tags": ["store"],
+              "summary": "Subscribe to the Store events",
+              "description": "Add subscription for a store events",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "callbackUrl": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "This URL will be called by the server when the desired event will occur",
+                          "example": "https://myserver.com/send/callback/here"
+                        },
+                        "eventName": {
+                          "type": "string",
+                          "description": "Event name for the subscription",
+                          "enum": [
+                            "orderInProgress",
+                            "orderShipped",
+                            "orderDelivered"
+                          ],
+                          "example": "orderInProgress"
+                        }
+                      },
+                      "required": ["callbackUrl", "eventName"]
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "201": {
+                  "description": "Subscription added",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "subscriptionId": {
+                            "type": "string",
+                            "example": "AAA-123-BBB-456"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "callbacks": {
+                "orderInProgress": {
+                  "{$request.body#/callbackUrl}?event={$request.body#/eventName}": {
+                    "servers": [
+                      {
+                        "url": "//callback-url.path-level/v1",
+                        "description": "Path level server 1"
+                      },
+                      {
+                        "url": "//callback-url.path-level/v2",
+                        "description": "Path level server 2"
+                      }
+                    ],
+                    "post": {
+                      "summary": "Order in Progress (Summary)",
+                      "description": "A callback triggered every time an Order is updated status to \"inProgress\" (Description)",
+                      "externalDocs": {
+                        "description": "Find out more",
+                        "url": "https://more-details.com/demo"
+                      },
+                      "requestBody": {
+                        "content": {
+                          "application/json": {
+                            "schema": {
+                              "type": "object",
+                              "properties": {
+                                "orderId": {
+                                  "type": "string",
+                                  "example": "123"
+                                },
+                                "timestamp": {
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "example": "2018-10-19T16:46:45Z"
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "example": "inProgress"
+                                }
+                              }
+                            }
+                          },
+                          "application/xml": {
+                            "schema": {
+                              "type": "object",
+                              "properties": {
+                                "orderId": {
+                                  "type": "string",
+                                  "example": "123"
+                                }
+                              }
+                            },
+                            "example": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root>\n  <orderId>123</orderId>\n  <status>inProgress</status>\n  <timestamp>2018-10-19T16:46:45Z</timestamp>\n</root>\n"
+                          }
+                        }
+                      },
+                      "responses": {
+                        "200": {
+                          "description": "Callback successfully processed and no retries will be performed",
+                          "content": {
+                            "application/json": {
+                              "schema": {
+                                "type": "object",
+                                "properties": {
+                                  "someProp": {
+                                    "type": "string",
+                                    "example": "123"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "299": {
+                          "description": "Response for cancelling subscription"
+                        },
+                        "500": {
+                          "description": "Callback processing failed and retries will be performed"
+                        }
+                      },
+                      "x-codeSamples": [
+                        {
+                          "lang": "C#",
+                          "source": "PetStore.v1.Pet pet = new PetStore.v1.Pet();\npet.setApiKey(\"your api key\");\npet.petType = PetStore.v1.Pet.TYPE_DOG;\npet.name = \"Rex\";\n// set other fields\nPetStoreResponse response = pet.create();\nif (response.statusCode == HttpStatusCode.Created)\n{\n  // Successfully created\n}\nelse\n{\n  // Something wrong -- check response for errors\n  Console.WriteLine(response.getRawResponse());\n}\n"
+                        },
+                        {
+                          "lang": "PHP",
+                          "source": "$form = new \\PetStore\\Entities\\Pet();\n$form->setPetType(\"Dog\");\n$form->setName(\"Rex\");\n// set other fields\ntry {\n    $pet = $client->pets()->create($form);\n} catch (UnprocessableEntityException $e) {\n    var_dump($e->getErrors());\n}\n"
+                        }
+                      ]
+                    },
+                    "put": {
+                      "description": "Order in Progress (Only Description)",
+                      "servers": [
+                        {
+                          "url": "//callback-url.operation-level/v1",
+                          "description": "Operation level server 1 (Operation override)"
+                        },
+                        {
+                          "url": "//callback-url.operation-level/v2",
+                          "description": "Operation level server 2 (Operation override)"
+                        }
+                      ],
+                      "requestBody": {
+                        "content": {
+                          "application/json": {
+                            "schema": {
+                              "type": "object",
+                              "properties": {
+                                "orderId": {
+                                  "type": "string",
+                                  "example": "123"
+                                },
+                                "timestamp": {
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "example": "2018-10-19T16:46:45Z"
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "example": "inProgress"
+                                }
+                              }
+                            }
+                          },
+                          "application/xml": {
+                            "schema": {
+                              "type": "object",
+                              "properties": {
+                                "orderId": {
+                                  "type": "string",
+                                  "example": "123"
+                                }
+                              }
+                            },
+                            "example": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root>\n  <orderId>123</orderId>\n  <status>inProgress</status>\n  <timestamp>2018-10-19T16:46:45Z</timestamp>\n</root>\n"
+                          }
+                        }
+                      },
+                      "responses": {
+                        "200": {
+                          "description": "Callback successfully processed and no retries will be performed",
+                          "content": {
+                            "application/json": {
+                              "schema": {
+                                "type": "object",
+                                "properties": {
+                                  "someProp": {
+                                    "type": "string",
+                                    "example": "123"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "orderShipped": {
+                  "{$request.body#/callbackUrl}?event={$request.body#/eventName}": {
+                    "post": {
+                      "description": "Very long description\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\nculpa qui officia deserunt mollit anim id est laborum.\n",
+                      "requestBody": {
+                        "content": {
+                          "application/json": {
+                            "schema": {
+                              "type": "object",
+                              "properties": {
+                                "orderId": {
+                                  "type": "string",
+                                  "example": "123"
+                                },
+                                "timestamp": {
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "example": "2018-10-19T16:46:45Z"
+                                },
+                                "estimatedDeliveryDate": {
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "example": "2018-11-11T16:00:00Z"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "responses": {
+                        "200": {
+                          "description": "Callback successfully processed and no retries will be performed"
+                        }
+                      }
+                    }
+                  }
+                },
+                "orderDelivered": {
+                  "http://notificationServer.com?url={$request.body#/callbackUrl}&event={$request.body#/eventName}": {
+                    "post": {
+                      "deprecated": true,
+                      "summary": "Order delivered",
+                      "description": "A callback triggered every time an Order is delivered to the recipient",
+                      "requestBody": {
+                        "content": {
+                          "application/json": {
+                            "schema": {
+                              "type": "object",
+                              "properties": {
+                                "orderId": {
+                                  "type": "string",
+                                  "example": "123"
+                                },
+                                "timestamp": {
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "example": "2018-10-19T16:46:45Z"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "responses": {
+                        "200": {
+                          "description": "Callback successfully processed and no retries will be performed"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/user": {
+            "post": {
+              "tags": ["user"],
+              "summary": "Create user",
+              "description": "This can only be done by the logged in user.",
+              "operationId": "createUser",
+              "responses": {
+                "default": {
+                  "description": "successful operation"
+                }
+              },
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                },
+                "description": "Created user object",
+                "required": true
+              }
+            }
+          },
+          "/user/{username}": {
+            "get": {
+              "tags": ["user"],
+              "summary": "Get user by user name",
+              "description": "",
+              "operationId": "getUserByName",
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "path",
+                  "description": "The name that needs to be fetched. Use user1 for testing. ",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    },
+                    "application/xml": {
+                      "schema": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid username supplied"
+                },
+                "404": {
+                  "description": "User not found"
+                }
+              }
+            },
+            "put": {
+              "tags": ["user"],
+              "summary": "Updated user",
+              "description": "This can only be done by the logged in user.",
+              "operationId": "updateUser",
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "path",
+                  "description": "name that need to be deleted",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "400": {
+                  "description": "Invalid user supplied"
+                },
+                "404": {
+                  "description": "User not found"
+                }
+              },
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                },
+                "description": "Updated user object",
+                "required": true
+              }
+            },
+            "delete": {
+              "tags": ["user"],
+              "summary": "Delete user",
+              "description": "This can only be done by the logged in user.",
+              "operationId": "deleteUser",
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "path",
+                  "description": "The name that needs to be deleted",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "400": {
+                  "description": "Invalid username supplied"
+                },
+                "404": {
+                  "description": "User not found"
+                }
+              }
+            }
+          },
+          "/user/createWithArray": {
+            "post": {
+              "tags": ["user"],
+              "summary": "Creates list of users with given input array",
+              "description": "",
+              "operationId": "createUsersWithArrayInput",
+              "responses": {
+                "default": {
+                  "description": "successful operation"
+                }
+              },
+              "requestBody": {
+                "$ref": "#/components/requestBodies/UserArray"
+              }
+            }
+          },
+          "/user/createWithList": {
+            "post": {
+              "tags": ["user"],
+              "summary": "Creates list of users with given input array",
+              "description": "",
+              "operationId": "createUsersWithListInput",
+              "responses": {
+                "default": {
+                  "description": "successful operation"
+                }
+              },
+              "requestBody": {
+                "$ref": "#/components/requestBodies/UserArray"
+              }
+            }
+          },
+          "/user/login": {
+            "get": {
+              "tags": ["user"],
+              "summary": "Logs user into the system",
+              "description": "",
+              "operationId": "loginUser",
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "query",
+                  "description": "The user name for login",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "password",
+                  "in": "query",
+                  "description": "The password for login in clear text",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "successful operation",
+                  "headers": {
+                    "X-Rate-Limit": {
+                      "description": "calls per hour allowed by the user",
+                      "schema": {
+                        "type": "integer",
+                        "format": "int32"
+                      }
+                    },
+                    "X-Expires-After": {
+                      "description": "date in UTC when token expires",
+                      "schema": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    }
+                  },
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "string"
+                      },
+                      "examples": {
+                        "response": {
+                          "value": "OK"
+                        }
+                      }
+                    },
+                    "application/xml": {
+                      "schema": {
+                        "type": "string"
+                      },
+                      "examples": {
+                        "response": {
+                          "value": "<Message> OK </Message>"
+                        }
+                      }
+                    },
+                    "text/plain": {
+                      "examples": {
+                        "response": {
+                          "value": "OK"
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid username/password supplied"
+                }
+              }
+            }
+          },
+          "/user/logout": {
+            "get": {
+              "tags": ["user"],
+              "summary": "Logs out current logged in user session",
+              "description": "",
+              "operationId": "logoutUser",
+              "responses": {
+                "default": {
+                  "description": "successful operation"
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "ApiResponse": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                }
+              }
+            },
+            "Cat": {
+              "description": "A representation of a cat",
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/Pet"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "huntingSkill": {
+                      "type": "string",
+                      "description": "The measured skill for hunting",
+                      "default": "lazy",
+                      "example": "adventurous",
+                      "enum": ["clueless", "lazy", "adventurous", "aggressive"]
+                    }
+                  },
+                  "required": ["huntingSkill"]
+                }
+              ]
+            },
+            "Category": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "Category ID",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Id"
+                    }
+                  ]
+                },
+                "name": {
+                  "description": "Category name",
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sub": {
+                  "description": "Test Sub Category",
+                  "type": "object",
+                  "properties": {
+                    "prop1": {
+                      "type": "string",
+                      "description": "Dumb Property"
+                    }
+                  }
+                }
+              },
+              "xml": {
+                "name": "Category"
+              }
+            },
+            "Dog": {
+              "description": "A representation of a dog",
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/Pet"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "packSize": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "The size of the pack the dog is from",
+                      "default": 1,
+                      "minimum": 1
+                    }
+                  },
+                  "required": ["packSize"]
+                }
+              ]
+            },
+            "HoneyBee": {
+              "description": "A representation of a honey bee",
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/Pet"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "honeyPerDay": {
+                      "type": "number",
+                      "description": "Average amount of honey produced per day in ounces",
+                      "example": 3.14,
+                      "multipleOf": 0.01
+                    }
+                  },
+                  "required": ["honeyPerDay"]
+                }
+              ]
+            },
+            "Id": {
+              "type": "integer",
+              "format": "int64",
+              "readOnly": true
+            },
+            "Order": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "Order ID",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Id"
+                    }
+                  ]
+                },
+                "petId": {
+                  "description": "Pet ID",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Id"
+                    }
+                  ]
+                },
+                "quantity": {
+                  "type": "integer",
+                  "format": "int32",
+                  "minimum": 1,
+                  "default": 1
+                },
+                "shipDate": {
+                  "description": "Estimated ship date",
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "Order Status",
+                  "enum": ["placed", "approved", "delivered"]
+                },
+                "complete": {
+                  "description": "Indicates whenever order was completed or not",
+                  "type": "boolean",
+                  "default": false,
+                  "readOnly": true
+                },
+                "requestId": {
+                  "description": "Unique Request Id",
+                  "type": "string",
+                  "writeOnly": true
+                }
+              },
+              "xml": {
+                "name": "Order"
+              }
+            },
+            "Pet": {
+              "type": "object",
+              "required": ["name", "photoUrls"],
+              "discriminator": {
+                "propertyName": "petType",
+                "mapping": {
+                  "cat": "#/components/schemas/Cat",
+                  "dog": "#/components/schemas/Dog",
+                  "bee": "#/components/schemas/HoneyBee"
+                }
+              },
+              "properties": {
+                "id": {
+                  "externalDocs": {
+                    "description": "Find more info here",
+                    "url": "https://example.com"
+                  },
+                  "description": "Pet ID",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Id"
+                    }
+                  ]
+                },
+                "category": {
+                  "description": "Categories this pet belongs to",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Category"
+                    }
+                  ]
+                },
+                "name": {
+                  "description": "The name given to a pet",
+                  "type": "string",
+                  "example": "Guru"
+                },
+                "photoUrls": {
+                  "description": "The list of URL to a cute photos featuring pet",
+                  "type": "array",
+                  "maxItems": 20,
+                  "xml": {
+                    "name": "photoUrl",
+                    "wrapped": true
+                  },
+                  "items": {
+                    "type": "string",
+                    "format": "url"
+                  }
+                },
+                "friend": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Pet"
+                    }
+                  ]
+                },
+                "tags": {
+                  "description": "Tags attached to the pet",
+                  "type": "array",
+                  "minItems": 1,
+                  "xml": {
+                    "name": "tag",
+                    "wrapped": true
+                  },
+                  "items": {
+                    "$ref": "#/components/schemas/Tag"
+                  }
+                },
+                "status": {
+                  "type": "string",
+                  "description": "Pet status in the store",
+                  "enum": ["available", "pending", "sold"]
+                },
+                "petType": {
+                  "description": "Type of a pet",
+                  "type": "string"
+                }
+              },
+              "xml": {
+                "name": "Pet"
+              }
+            },
+            "Tag": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "Tag ID",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Id"
+                    }
+                  ]
+                },
+                "name": {
+                  "description": "Tag name",
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "xml": {
+                "name": "Tag"
+              }
+            },
+            "User": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "$ref": "#/components/schemas/Id"
+                },
+                "pet": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Pet"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Tag"
+                    }
+                  ]
+                },
+                "username": {
+                  "description": "User supplied username",
+                  "type": "string",
+                  "minLength": 4,
+                  "example": "John78"
+                },
+                "firstName": {
+                  "description": "User first name",
+                  "type": "string",
+                  "minLength": 1,
+                  "example": "John"
+                },
+                "lastName": {
+                  "description": "User last name",
+                  "type": "string",
+                  "minLength": 1,
+                  "example": "Smith"
+                },
+                "email": {
+                  "description": "User email address",
+                  "type": "string",
+                  "format": "email",
+                  "example": "john.smith@example.com"
+                },
+                "password": {
+                  "type": "string",
+                  "description": "User password, MUST contain a mix of upper and lower case letters, as well as digits",
+                  "format": "password",
+                  "minLength": 8,
+                  "pattern": "/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/",
+                  "example": "drowssaP123"
+                },
+                "phone": {
+                  "description": "User phone number in international format",
+                  "type": "string",
+                  "pattern": "/^\\+(?:[0-9]-?){6,14}[0-9]$/",
+                  "example": "+1-202-555-0192"
+                },
+                "userStatus": {
+                  "description": "User status",
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "xml": {
+                "name": "User"
+              }
+            }
+          },
+          "requestBodies": {
+            "Pet": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "allOf": [
+                      {
+                        "description": "My Pet",
+                        "title": "Pettie"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Pet"
+                      }
+                    ]
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "hooray"
+                      }
+                    }
+                  }
+                }
+              },
+              "description": "Pet object that needs to be added to the store",
+              "required": true
+            },
+            "UserArray": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                }
+              },
+              "description": "List of user object",
+              "required": true
+            }
+          },
+          "securitySchemes": {
+            "petstore_auth": {
+              "description": "Get access to data while protecting your account credentials.\nOAuth2 is also a safer and more secure way to give you access.\n",
+              "type": "oauth2",
+              "flows": {
+                "implicit": {
+                  "authorizationUrl": "http://petstore.swagger.io/api/oauth/dialog",
+                  "scopes": {
+                    "write:pets": "modify pets in your account",
+                    "read:pets": "read your pets"
+                  }
+                }
+              }
+            },
+            "api_key": {
+              "description": "For this sample, you can use the api key `special-key` to test the authorization filters.\n",
+              "type": "apiKey",
+              "name": "api_key",
+              "in": "header"
+            }
+          },
+          "examples": {
+            "Order": {
+              "value": {
+                "quantity": 1,
+                "shipDate": "2018-10-19T16:46:45Z",
+                "status": "placed",
+                "complete": false
+              }
+            }
+          }
+        },
+        "x-webhooks": {
+          "newPet": {
+            "post": {
+              "summary": "New pet",
+              "description": "Information about a new pet in the systems",
+              "operationId": "newPet",
+              "tags": ["pet"],
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Pet"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "Return a 200 status to indicate that the data was received successfully"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "docusaurus-theme-classic": {},
+  "docusaurus-theme-search-algolia": {},
+  "docusaurus-theme-redoc": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

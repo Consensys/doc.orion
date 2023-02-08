@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Tutorials/Generating-Certificates",
+  "id": "Tutorials/Generating-Certificates",
+  "title": "Generate Orion Certificates",
+  "description": "Generate Orion Certificates",
+  "source": "@site/docs/Tutorials/Generating-Certificates.md",
+  "sourceDirName": "Tutorials",
+  "slug": "/Tutorials/Generating-Certificates",
+  "permalink": "/Tutorials/Generating-Certificates",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Tutorials/Generating-Certificates.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Sally MacFarlane",
+  "lastUpdatedAt": 1617243507,
+  "formattedLastUpdatedAt": "Apr 1, 2021",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Generate Orion Certificates",
+    "description": "Generate Orion Certificates",
+    "sidebar_position": 4
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "TLS",
+    "permalink": "/Tutorials/TLS"
+  },
+  "next": {
+    "title": "Migrating from Orion to Tessera",
+    "permalink": "/Tutorials/Migrating-from-Orion-to-Tessera"
+  }
+}

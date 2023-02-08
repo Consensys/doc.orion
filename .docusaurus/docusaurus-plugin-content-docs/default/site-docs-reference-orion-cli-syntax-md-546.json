@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Reference/Orion-CLI-Syntax",
+  "id": "Reference/Orion-CLI-Syntax",
+  "title": "Orion command line",
+  "description": "Orion command line interface reference",
+  "source": "@site/docs/Reference/Orion-CLI-Syntax.md",
+  "sourceDirName": "Reference",
+  "slug": "/Reference/Orion-CLI-Syntax",
+  "permalink": "/Reference/Orion-CLI-Syntax",
+  "draft": false,
+  "editUrl": "https://github.com/ConsenSys/doc.orion/tree/main/docs/Reference/Orion-CLI-Syntax.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Nicolas MASSART",
+  "lastUpdatedAt": 1602242872,
+  "formattedLastUpdatedAt": "Oct 9, 2020",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Orion command line",
+    "description": "Orion command line interface reference",
+    "sidebar_position": 1
+  },
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Reference",
+    "permalink": "/category/reference"
+  },
+  "next": {
+    "title": "Client API methods",
+    "permalink": "/Reference/API-Methods"
+  }
+}
